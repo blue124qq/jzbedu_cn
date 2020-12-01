@@ -1,0 +1,197 @@
+.outerBorder {
+    border-style: solid;
+    border-width: 10px;
+}
+
+.defaultTheme #findVacancy .titl{
+    color: #003473;
+    font-weight: bold;
+    font-size: .95rem;	
+}
+
+#findVacancy .title {
+    margin-bottom: 10px;
+}
+
+#findVacancy .introText {
+    color: #333;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+#findVacancy form {
+    overflow: hidden;
+}
+
+#findVacancy .titleIntro,#findVacancy .locn {
+    float: left;
+}
+
+#findVacancy h2 {
+    margin: 0;
+}
+
+#findVacancy #FYN-location {
+    float: left;
+    margin-right: 60px;
+    width: 100%;
+}
+
+#findVacancy #volunteerSearchedLocation {
+    width: 100%;
+}
+
+#findVacancy .locationConflicts {
+    margin-top: 10px;
+    clear: both;
+    color: red;
+}
+
+#findVacancy.Wide .titleIntro {
+    width: 38%;
+}
+
+#findVacancy.Wide .locn {
+    width: 55%;
+    margin-left: 5%;
+}
+
+#findVacancy.Wide .myBlock {
+    float: left;
+    width: 73%;
+    margin-bottom: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#findVacancy.Wide .locn .myBlock {
+    margin-left: 15px;
+}
+
+#findVacancy.Wide .button {
+    float: right;
+}
+
+@media all and (max-width: 855px) {
+    #findVacancy.Wide .titleIntro {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 695px) {
+    #findVacancy.Wide .titleIntro {
+        width: 95%;
+    }
+
+    #findVacancy.Wide .locn {
+        width: 98%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #back-container #findVacancy.Wide form .myBlock {
+        width: 60%;
+    }
+
+    #findVacancy.Wide .button {
+        margin-top: 9px;
+    }
+
+    #findVacancy.Wide .locn .myBlock {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+@media all and (min-width: 856px) {
+    #findVacancy.Narrow select {
+        width:100%;
+        margin-bottom: 5px;
+    }
+
+    #findVacancy.Narrow .titleIntro,#back-container #findVacancy.Narrow form .myBlock,#findVacancy.Narrow .locn {
+        width: 100%;
+        overflow: hidden;
+        float: none;
+    }
+
+    #findVacancy.Narrow .button {
+        float: right;
+        margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 855px) and (min-width:696px) {
+    #findVacancy.Narrow .titleIntro {
+        width: 38%;
+    }
+
+    #findVacancy.Narrow .locn {
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #findVacancy.Narrow .myBlock {
+        float: left;
+        width: 73%;
+        margin-bottom: 5px;
+    }
+
+    #findVacancy.Narrow .locn .myBlock {
+        margin-left: 5px;
+        margin-left: 5%;
+    }
+
+    #findVacancy.Narrow .button {
+        float: right;
+    }
+
+    #findVacancy.Narrow .titleIntro {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 695px) and (min-width:531px) {
+    #findVacancy.Wide .titleIntro,#findVacancy.Wide .locn,#findVacancy.Narrow .titleIntro,#findVacancy.Narrow .locn {
+        width:98%;
+        float: none;
+    }
+
+    #back-container #findVacancy.Wide form .myBlock,#back-container #findVacancy.Narrow form .myBlock {
+        width: 60%;
+        float: left;
+    }
+
+    #findVacancy.Wide .button,#findVacancy.Narrow .button {
+        float: right;
+        margin-top: 9px;
+    }
+
+    #findVacancy #volunteerSearchedLocation {
+        margin-top: 5px;
+    }
+}
+
+@media all and (max-width: 530px) {
+    #findVacancy.Narrow .titleIntro,#findVacancy.Narrow .locn {
+        width:98%;
+        float: none;
+    }
+
+    #back-container #findVacancy.Wide form .myBlock,#back-container #findVacancy.Narrow form .myBlock {
+        float: none;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #findVacancy.Narrow .button {
+        float: right;
+        margin-top: 9px;
+    }
+
+    #findVacancy #volunteerSearchedLocation {
+        margin-top: 5px;
+    }
+}

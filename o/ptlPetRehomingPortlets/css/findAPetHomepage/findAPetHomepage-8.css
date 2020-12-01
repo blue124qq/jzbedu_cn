@@ -1,0 +1,124 @@
+#theFindAPetPortlet form#searchForm .heading,#theFindAPetPortlet form#searchForm .searchText,.conflictWrapper {
+    text-align: center;
+}
+
+#theFindAPetPortlet div.conflictWrapper {
+	height: 20px;
+}
+
+#theFindAPetPortlet #animalTypeWrapper {
+    margin-bottom: 15px;
+}
+
+#theFindAPetPortlet .goButtonDiv {
+    margin-top: 20px;
+}
+
+#theFindAPetPortlet span#searchedLocationGeo{
+    margin-left: -30px;
+}
+
+
+#theFindAPetPortlet .heading h2{
+    padding-bottom: 30px;
+}
+
+#theFindAPetPortlet p {
+    padding-bottom: 30px;
+}
+
+@media all and (min-width: 1366px) {
+    #wrapper #theFindAPetPortlet {
+        background-image:url("https://www.rspca.org.uk/webContent/staticImages/homepage/findapet.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 15% 0;
+    }
+}
+
+@media all and (max-width: 1365px) and (min-width: 1007px) {
+    #wrapper #theFindAPetPortlet {
+        background:url("https://www.rspca.org.uk/webContent/staticImages/homepage/findapet.jpg") no-repeat center center;
+        padding: 150px 0;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 1006px) and (min-width:758px) {
+    #wrapper #theFindAPetPortlet {
+        background:url("https://www.rspca.org.uk/webContent/staticImages/homepage/findapet_tablet.jpg") no-repeat center center;
+        padding: 151px 0;
+        margin: 0;
+    }
+}
+
+@media all and (min-width:768px) {
+    #theFindAPetPortlet .formDiv.themeBackgroundMouse {
+        width:485px;
+        height: 465px;
+        margin: 0 auto;
+    }
+
+    #theFindAPetPortlet form#searchForm {
+        width: 425px;
+        margin: 0 auto;
+        height: 443px;
+        padding-top: 10px;
+    }
+
+    #theFindAPetPortlet #findAPetSelectAnimalType {
+        width: 280px;
+        margin: 0 0 0 72px;
+    }
+
+    #wrapper #theFindAPetPortlet #searchedLocation {
+        width: 245px;
+        margin: 0 0 0 72px;        
+    	padding-right: 31px;
+    }
+       
+
+    #theFindAPetPortlet input#addressSearchGoButton {
+        margin: 0 auto;
+    }
+}
+
+
+@media all and (max-width:767px) {
+   #theFindAPetPortlet {
+        background: url("https://www.rspca.org.uk/webContent/staticImages/homepage/findapet.jpg") no-repeat center center;
+        padding: 180px 0;
+        margin: 0;
+    }
+    #theFindAPetPortlet .formDiv.themeBackgroundMouse {
+        width: 315px;
+        height: 330px;
+        margin: 0 auto;
+    }
+
+    #theFindAPetPortlet .searchText{
+        display:none;
+    }
+
+    #theFindAPetPortlet form#searchForm {
+        width: 285px;
+        margin: 0 auto;
+        height: 320px;
+        padding-top: 10px;
+    }
+
+    #theFindAPetPortlet #findAPetSelectAnimalType {
+        width: 280px;
+        margin: 0 0 0 5px;
+    }
+
+    #theFindAPetPortlet #searchedLocation {
+        width: 244px;
+        margin: 0 0 0 5px;
+        padding-right: 30px;
+    }
+
+    #theFindAPetPortlet input#addressSearchGoButton {
+        margin: 0 auto;
+    }
+}

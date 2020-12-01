@@ -1,0 +1,36 @@
+#searchedLocationGeo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body form:not(#preferenceCommand) #searchedLocationGeo button {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	
+	border: 0;
+	background-color: transparent; /* IE 'inherit' support is broken */
+    background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/geo-digi.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body form:not(#preferenceCommand) #searchedLocationGeo button.wait {
+    background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait.gif);
+    background-size: 20px 20px;
+}
+body.damselfly-scheme      form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-damselfly.gif); }
+body.default-scheme        form:not(#preferenceCommand) #searchedLocationGeo button.wait,
+body.swallow-scheme        form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-swallow.gif); }
+body.cricket-scheme        form:not(#preferenceCommand) #searchedLocationGeo button.wait,
+body.find-pet-scheme       form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-cricket.gif); }
+body.get-involved-scheme   form:not(#preferenceCommand) #searchedLocationGeo button.wait,
+body.ladybird-scheme       form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-ladybird.gif); }
+body.kingfisher-scheme     form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-kingfisher.gif); }
+body.orange-scheme         form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-orange.gif); }
+body.piglet-scheme         form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-piglet.gif); }
+body.shrimp-scheme         form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-shrimp.gif); }
+body.advice-welfare-scheme form:not(#preferenceCommand) #searchedLocationGeo button.wait,
+body.urchin-scheme         form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-urchin.gif); }
+body.wasp-scheme           form:not(#preferenceCommand) #searchedLocationGeo button.wait,
+body.what-we-do-scheme     form:not(#preferenceCommand) #searchedLocationGeo button.wait { background-image: url(https://www.rspca.org.uk/webContent/webComponents/googleAddressFinder/img/pleaseWait-wasp.gif); }

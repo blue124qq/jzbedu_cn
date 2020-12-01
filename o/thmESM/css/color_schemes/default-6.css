@@ -1,0 +1,463 @@
+/*swallow 100% #003473 */
+/*swallow 80% #335D8F  */
+/*swallow 50% #7F99B9  */
+/*swallow 20% #CCD6E3  */
+
+/* New styles to decrease color scheme CSS size*/
+
+body.default-scheme #back-container .schemeBorder{
+	border-color:#003473;	
+}
+
+body.default-scheme #back-container .schemeFormBorder{
+	border-color:#CCD6E3;	
+}
+
+body.default-scheme #back-container .schemeInfoBorder{
+	border-color:#7F99B9;	
+}
+
+body.default-scheme #back-container .schemeBackgroundDk{
+	background-color:#003473;
+}
+
+body.default-scheme #back-container .schemeBackground, 
+body.default-scheme #back-container .hilight,
+body.default-scheme #back-container .lite{
+	background-color:#CCD6E3;
+}
+
+body.default-scheme #back-container .schemeBox{
+	border-color:#003473;
+	background-color:#CCD6E3;		
+}
+
+body.default-scheme #back-container .shadedBorder{	
+    -moz-box-shadow:    0 6px 8px -3px #335D8F;
+    -webkit-box-shadow: 0 6px 8px -3px #335D8F;
+    box-shadow:         0 6px 8px -3px #335D8F;
+}
+
+/*Override for button color*/
+body .schemeButton.default-scheme,
+body .schemeButton.default-scheme:hover{
+	background-color:#003473;
+	border-color:#003473;
+	color:#fff;
+}
+
+/* Button style is called .schemeButton (further down) padding will need to be added within portlet style sheet*/
+
+/* Mid colour button style*/
+body.default-scheme .schemeButton.mid{
+	background-color:#7F99B9;
+}
+
+/* Help links */
+body.default-scheme div.helpBlock {
+     border:1px solid #003473;
+}
+
+body.default-scheme a.openHelp {
+    background-color: #fff;
+    border: 1px solid #003473;
+    color: #003473;
+}
+
+body.default-scheme a.closeHelp, 
+body.default-scheme a.openHelp.active {
+    background-color: #003473;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* End of New styles */
+
+
+/* Theme and Layout specific styles*/
+
+/*coloured 1st block picking up dark scheme color - mega nav to match when used within section*/
+body.young.default-scheme #wrapper .rspca-layout-01-18 .section-nav,
+body.young.default-scheme #wrapper .rspca-layout-01-18 .section-nav .mega-nav-portlet.top-menu .level-2-links,
+body.young.default-scheme #wrapper .rspca-layout-01-18 .section-nav .mega-nav-portlet.top-menu .level-2-links a{
+	background-color:#003473;
+	color:#fff;	
+}
+
+/* End of Theme and Layout specific styles*/
+
+/*Navigation Hover effects are styled within the navigation.css*/
+#navigationTop .selected.default{
+	background-color:#003473;
+}
+
+/*Content portlet color overrides*/
+body #back-container .contentPortlet.dotted.default-scheme,
+body.default-scheme #back-container .contentPortlet.dotted {
+	border-color: #003473;
+}
+
+body #back-container .contentPortlet.horizontal.default-scheme h3,
+body.default-scheme #back-container .contentPortlet.horizontal h3 {
+	background-color: #003473;
+	color: #fff;
+}
+
+.contentPortlet.default-scheme .abstract span,.default-scheme .contentPortlet .abstract span {
+	color: #003473;
+}
+
+body #back-container .contentPortlet.vertical.default-scheme .contents,
+body.default-scheme #back-container .contentPortlet.vertical .contents{
+	border-color: #003473;
+}
+
+/*Mega Nav*/
+
+body.default-scheme #wrapper .mega-nav-portlet.top-menu.initialised ,
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .more-links,
+body.default-scheme #wrapper .mega-nav-dropdown {
+    border-color: #003473;
+}
+
+body.default-scheme #wrapper .mega-nav-dropdown .selected{
+	background-color: #ccd6e3;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .level-2-links {
+	background-color:#003473;
+	color:#fff;
+}
+
+
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .menu-active,
+body.default-scheme  #wrapper .mega-nav-portlet.top-menu .menu-selected{
+	background-color:#003473;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .menu-active a,
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .menu-active a:hover,
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .menu-selected a,
+body.default-scheme #wrapper .mega-nav-portlet.top-menu .menu-selected a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/*Mega Nav - side*/
+body.default-scheme #wrapper .mega-nav-portlet.sidenav li {
+	border-bottom:1px solid #335D8F;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav .nav-list{
+	background-color:#003473;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav .nav-container {
+    border-color:#003473;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav li a{
+	color:#ffffff;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav li.expand-contents a{
+	color:#000000;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav li.expand-contents > ul.expandable > li > div {
+	background-color:#7F99B9;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav li.expand-contents > ul.expandable > li > div:hover{
+    background-color:#CCD6E3;
+}
+
+body.default-scheme  #wrapper .mega-nav-portlet.sidenav ul li > div.toggle-expand:before{
+	color:#ffffff;
+}
+
+body.default-scheme #wrapper .mega-nav-portlet.sidenav ul li.expand-contents > div.toggle-expand:before{
+	color:#000000;
+}
+
+
+/*2014 spotlight*/
+.default-scheme #spotlight .side {background:#003473;}
+.default-scheme #promoPortlet #promoList{border-color:#003473;}
+
+
+
+/*2014 Breadcrumb */
+@media all and (max-width: 855px) {
+	body.default-scheme #breadCrumb #breadcrumb-nav{
+	    background-color: #003473;
+	 }
+
+}
+
+
+/* forms */
+
+body.default-scheme:not(.weeble) #back-container form:not(#preferenceCommand) {
+	background-color:#CCD6E3;
+}
+
+
+/* Find your nearest and Find a vacancy: forms and inputs are different to the others */
+
+body.default-scheme #findYourNearestRSPCA,
+body.default-scheme #findVacancy{
+	background-color: #CCD6E3;
+}
+
+body.default-scheme #back-container #findYourNearestRSPCA form:not(#preferenceCommand),
+body.default-scheme #back-container #findVacancy form:not(#preferenceCommand) {
+	background-color:white;
+}
+
+body.default-scheme #back-container #findYourNearestRSPCA form:not(#preferenceCommand) input[type="text"],
+body.default-scheme #back-container #findVacancy form:not(#preferenceCommand) input[type="text"] {
+	background-color:#CCD6E3;
+}
+
+body.default-scheme #findYourNearestRSPCA .innerBorder,
+body.default-scheme #findVacancy .innerBorder{
+	border-color:#003473;
+}
+
+/*Button styling*/
+
+body.default-scheme  #wrapper form:not(#preferenceCommand) input[type="submit"],
+body.default-scheme  #wrapper form:not(#preferenceCommand) input[type="button"],
+body.default-scheme  #wrapper form:not(#preferenceCommand) input[type="reset"],
+body.default-scheme  #wrapper form:not(#preferenceCommand) button,
+body.default-scheme  #wrapper #genericFormPortlet .button,
+body.default-scheme  #wrapper #genericFormPortlet .button:hover,
+body.default-scheme  #wrapper .genericAdmin .button,
+body.default-scheme  #wrapper .genericAdmin .button:hover,
+body.default-scheme  #wrapper form:not(#preferenceCommand) .nextLink a,
+body.default-scheme  #wrapper .myRSPCA .nextLink a,
+body.default-scheme  #wrapper .findAddressBlock .findAddressLink,
+body.default-scheme #wrapper .iyaSearchPortlet .ownigBranchLink a,
+body.default-scheme #wrapper .entryInfo .findMoreLink a,
+body.default-scheme #wrapper #justgiving .button,
+body.default-scheme #wrapper #justgiving .button:hover,
+body.default-scheme #wrapper .schemeButton,
+body.default-scheme #wrapper .schemeButton:hover{
+	background-color:#003473;
+	border-color:#003473;
+	color:#ffffff;
+}
+
+body.default-scheme:not(.weeble) #back-container form span.error,
+body.default-scheme:not(.weeble) #back-container form label.error {
+    border: 1px dashed #003473;
+	padding-left:2px;
+	background-color:#ffffff;
+}
+
+body.default-scheme #back-container form .findAddressBlock {
+    border: 1px solid #7F99B9;
+    background-color:#ffffff;
+}
+
+body.default-scheme input.focus, body.default-scheme textarea.focus {
+	border-color: #CCD6E3;
+}
+
+body.default-scheme fieldset {border: 1px solid #003473;}
+
+/*Generic form*/
+body.default-scheme #genericFormPortlet .yourDetails,
+body.default-scheme #genericFormPortlet .purchase{
+    border: 1px solid #003473;
+    background-color:#ffffff;
+}
+
+body.default-scheme .myBlock th{
+	background-color:#CCD6E3;
+}
+
+/* Generic Form help links */
+body.default-scheme #genericFormPortlet div.helpBlock {
+     border:1px solid #003473;
+}
+
+body.default-scheme #genericFormPortlet a.openHelp {
+    background-color: #fff;
+    border: 1px solid #003473;
+    color: #003473;
+}
+
+body.default-scheme #genericFormPortlet a.closeHelp, body.default-scheme #genericFormPortlet a.openHelp.active {
+    background-color: #003473;
+    border: 1px solid #fff;
+    color: #fff;
+}
+/* End of Generic Form help links */
+
+/*Help on forms*/
+body.default-scheme .myBlock.help-enabled-responsive{
+	background-color:#003473;
+}
+
+body.default-scheme #back-container form .myBlock.help-enabled-responsive label,
+body.default-scheme .tool-tip-text-responsive p,
+body.default-scheme .tool-tip-text-mobile p,
+body.default-scheme .commonQAndAMain .help-enabled-responsive .inspectorQue{
+	color:#ffffff;
+}
+
+body.default-scheme .tool-tip-text-responsive{
+	background-color:#003473;
+	border:none;
+}
+
+
+/*Events*/
+body.default-scheme .eventCalendarPortlet .searchErrorMsg{
+    border: 1px dashed #003473;
+    background:#ffffff;
+	padding-left:2px;
+}
+
+
+/* volenteering*/
+body.default-scheme #volunteerSearch .volunteerSearchErrorMsg:not(:empty),
+body.default-scheme #volunteerSearch .searchErrorMsg{
+    border: 1px dashed #003473;
+    background:#ffffff;
+	padding-left:2px;
+}
+
+body.defaultTheme.default-scheme #searchListing .results {
+    border-color: #003473;
+}
+
+body.default-scheme #searchListing .results .establishmentBorder{
+	background-color:#CCD6E3;
+}
+
+/*Google map*/
+body.defaultTheme.default-scheme .listOfAgendaObject .eachEntry.selected{
+	background:#CCD6E3;
+}
+body.defaultTheme.default-scheme .listOfAgendaObject li.selected .entryInfo{
+	background:#CCD6E3;
+}
+
+/* Events*/
+body.defaultTheme.default-scheme .listOfAgendaObject .eventName{
+	border-color: #003473;
+}
+
+body.defaultTheme.default-scheme #listOfObject .infoPan, #listOfObject .detailPan{
+	background:none;
+}
+
+/*IYA*/
+body.defaultTheme.default-scheme #searchedLocationConflicts,
+body.defaultTheme.default-scheme .listOfAgendaObject .eachEntry,
+body.defaultTheme.default-scheme .listOfAgendaObject .entryInfo{
+	border-color: #003473;
+}
+
+/*rss reader */
+body.defaultTheme.default-scheme .rspca-feed{
+	background-color: #CCD6E3;
+}
+
+/*rss reader */
+body.defaultTheme.default-scheme .rspca-feed .rssRow{
+	border-bottom: 1px solid #003473;
+}
+
+/* pet teaser */
+body.defaultTheme.default-scheme #rehomingTeaser{
+	background-color: #CCD6E3;
+}
+body.defaultTheme.default-scheme #rehomingTeaser .teaserButton a{
+	background-color: #003473;
+}
+
+/*Generic and Supporter forms*/
+
+body.default-scheme #supporterForm #bradcrumbNav .hilight{
+	background-color: #003473;
+}
+
+body.default-scheme #supporterForm #bradcrumbNav .breadNav{
+	border: 2px solid;
+	border-color:#CCD6E3;
+}
+
+
+
+/*Jpages */
+body.default-scheme .jpageArrowPrev img,
+body.default-scheme .jpageArrowNext img {
+    background: #003473;
+}
+
+body.default-scheme .jp-current{
+	background-color:#CCD6E3;
+}
+
+body.default-scheme .jpage-holder a{
+	border-color:#003473;
+	color:#003473;
+}
+
+body.default-scheme .jpage-holder span{
+	color:#003473;
+}
+
+/* Full width*/
+body.default-scheme .jpage-full .jpage-holder a.jp-current{
+	background-color:#fff;
+}
+
+body.default-scheme .jpage-full .jpage-holder a{
+	background-color:#CCD6E3;	
+}
+
+body.default-scheme .jpage-full .jpage-holder a:hover{
+    background:#003473;
+    color:#fff;	
+}
+
+
+/* Just giving */
+body.default-scheme #justgiving{
+	background-color:#CCD6E3;	
+}
+
+/* YPA*/
+
+
+body.ypaTheme.default-scheme .LoginWrapper, 
+body.ypaTheme.default-scheme .CreateWrapper,
+body.ypaTheme.default-scheme .PasswordWrapper,
+body.ypaTheme.default-scheme #ypaGallery .category{
+	border-color:#003473;
+	background-color:#CCD6E3;
+}
+
+body.ypaTheme.default-scheme #ypaGallery .category div.helpBlock {
+     border:1px solid #003473;
+}
+
+body.ypaTheme.default-scheme #ypaGallery .category a.openHelp{
+    background-color: #fff;
+    border: 1px solid #003473;
+    color: #003473;
+}
+
+body.default-scheme #ypaGallery .category a.closeHelp, 
+body.default-scheme #ypaGallery .category a.openHelp.active {
+    background-color: #003473;
+    border: 1px solid #fff;
+    color: #fff;
+}

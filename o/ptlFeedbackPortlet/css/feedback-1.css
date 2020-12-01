@@ -1,0 +1,123 @@
+.ratingThankyouContainer {
+    margin-top: 44px;
+    margin-left: 36px;
+    height: 20px
+}
+
+.ratingThankyou {
+    display: none
+}
+
+#wrapper .ratingTitle.themeTxtBd {
+    width: 33%;
+    float: left;
+    padding-top: 13px;
+    padding-right: 40px;
+}
+
+.submitRating {
+    float: right
+}
+
+#wrapper .submitRating .themeActionButton {
+    height: 50px;
+    min-height: 50px
+}
+
+.ratingStars {
+    font-weight: bold
+}
+
+#ratings {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px
+}
+
+.ui-stars-star {
+    float: left;
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+    cursor: pointer;
+    padding-top: 10px
+}
+
+.ui-stars-star a {
+    width: 28px;
+    height: 26px;
+    display: block;
+    position: relative;
+    background: url(https://www.rspca.org.uk/o/ptlFeedbackPortlet/img/crystal-stars.png) no-repeat 0 0
+}
+
+.ui-stars-star a {
+    background-position: 0 -56px
+}
+
+.ui-stars-star-on a {
+    background-position: 0 -84px
+}
+
+.ui-stars-star-hover a {
+    background-position: 0 -112px
+}
+
+.ui-stars-cancel {
+    display: none
+}
+
+.ui-stars-star-disabled,.ui-stars-star-disabled a {
+    cursor: default!important
+}
+
+.message-box {
+    text-align: center;
+    padding: 5px;
+    color: #545454;
+    margin: 5px auto
+}
+
+.ratings {
+    margin: 0 0 1em;
+    width: 100%;
+    overflow: hidden;
+    line-height: 2em
+}
+
+.rating-L {
+    float: left;
+    margin-right: 1em;
+    white-space: nowrap
+}
+
+.rating-R {
+    float: left;
+    margin-left: 1em;
+    width: 300px
+}
+
+@media all and (max-width: 767px) {
+    #wrapper .ratingTitle.themeTxtBd {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    #wrapper .submitRating {
+        position: relative;
+        bottom: -50px;
+        left: 0;
+        float: none
+    }
+
+    #wrapper #ratings {
+        height: 135px;
+    }
+
+    #wrapper .ui-stars-star {
+        position: relative;
+        bottom: 50px;
+    }
+}

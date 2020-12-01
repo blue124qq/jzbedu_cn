@@ -1,0 +1,146 @@
+
+.jpage-holder {
+    float: left;
+    margin: 0 21%;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center;
+    width: 39%;
+}
+.jpage-holder a,
+.estab #wrapper .jpage-holder a
+ {
+    color: #333333;
+    cursor: pointer;
+    font-size: 0.75rem;
+    margin: 2.9%;
+    padding: 1.9%;
+    text-decoration: none;
+}
+
+body:not(.defaultTheme) #wrapper 
+.jpage-holder a {
+    color: #003473;
+    margin: 2.9%;
+    padding: 1.9%;
+}
+
+.jpage-holder a.jp-disabled,
+.non-touchscreen-device .jpage-holder a.jp-disabled:hover,
+.estab #wrapper .jpage-holder a.jp-disabled,
+.estab #wrapper .non-touchscreen-device .jpage-holder a.jp-disabled:hover {
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+    cursor: default;
+    text-decoration: none;
+}
+
+.jpage-prevNextBtns:first-child {
+    float: left;
+    margin-left: 0;
+    padding: 13px 0;
+    width: 9%;
+}
+.jpage-prevNextBtns:last-child {
+    float: right;
+    margin-right: 0;
+    padding: 13px 0;
+    width: 9%;
+}
+.jpageArrowPrev img {
+    float: left;
+    margin: 0 6% 0 0;
+    max-width: 29px;
+    width: 100%;
+}
+.jpageArrowNext img {
+    float: right;
+    margin: 0 0 0 6%;
+    max-width: 29px;
+    width: 100%;
+}
+.jpageArrowPrev img:hover, .jpageArrowNext img:hover {
+    cursor: pointer;
+}
+.jp-current {
+    background-color: #808080;
+}
+
+body:not(.defaultTheme) #wrapper .jpage-holder .jp-current,
+body:not(.defaultTheme) #wrapper .jpage-holder a:hover,
+body.estab:not(.defaultTheme) #wrapper .jpage-holder .jp-current,
+body.estab:not(.defaultTheme) #wrapper .jpage-holder a:hover{
+    background-color: #003473;
+    color: #fff
+}
+
+.jpageArrowPrev.jp-disabled, .jpageArrowNext.jp-disabled {
+    display: none;
+}
+
+.jpage-holder a:hover, 
+.estab #wrapper .jpage-holder a:hover {
+    text-decoration: none;
+}
+
+
+@media all and (min-width: 856px) {
+.jpage-navigation.small .jpage-holder {
+    width: 76%;
+}
+.jpage-navigation.small .jpage-prevNextBtns:first-child {
+    margin-left: 3%;
+    padding: 13px 2px 13px 0;
+    width: 9%;
+}
+.jpage-navigation.small .jpage-prevNextBtns:last-child {
+    margin-right: 2%;
+    padding: 13px 0;
+    width: 9%;
+}
+.jpage-navigation.small a {
+    margin: 2.5%;
+    padding: 1.7%;
+}
+}
+@media all and (max-width: 855px) and (min-width: 696px) {
+.jpage-navigation .jpage-holder a {
+    margin: 3.8%;
+    padding: 2.5%;
+}
+.jpage-navigation.small .jpage-holder {
+    width: 78%;
+}
+.jpage-navigation.small .jpage-prevNextBtns:first-child {
+    margin-left: 1%;
+    padding: 14px 0;
+    width: 10%;
+}
+.jpage-navigation.small .jpage-prevNextBtns:last-child {
+    margin-right: 1%;
+    padding: 14px 0;
+    width: 10%;
+}
+.jpage-navigation.small .jpage-holder a {
+    margin: 2%;
+    padding: 1.7%;
+}
+}
+@media all and (max-width: 695px) {
+	.jpage-holder {    
+	    margin: 0 5%;    
+	    width: 70%;
+    }
+    
+	.jpage-navigation .jpage-holder a {
+	    margin: 3.5%;
+	    padding: 2.5%;
+	}
+}
+@media all and (max-width: 530px) {
+.jpage-navigation .jpage-holder a {
+    margin: 2.2%;
+    padding: 2.5%;
+}
+}

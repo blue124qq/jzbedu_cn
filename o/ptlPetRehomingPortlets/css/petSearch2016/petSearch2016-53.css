@@ -1,0 +1,957 @@
+#petRehomingPortlet hr {
+    width: calc(100% - 4px);
+    border: 2px solid;
+    clear: both;
+    float: left;
+    margin-top: 20px;
+}
+
+#petRehomingPortlet h1 {
+    margin: 7px 0 6px 0;
+}
+
+.estab #wrapper li.schemeBackgroundDk a h3 {
+    color: white;
+}
+
+body.defaultTheme #wrapper li.schemeBackground a h3 {
+    color: #003473;
+}
+
+#petRehomingPortlet>h3 {
+    margin-top: 20px;
+}
+
+#wrapper .filterType h3 {
+    padding: 0;
+    font-size: 16px;
+}
+
+body #wrapper #petSearchResults {
+    margin: 0;
+}
+
+#petRehomingPortlet #specialAppealsOR {
+    float: left;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+body #wrapper #content #petSearchResults li {
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+#petRehomingPortlet #returnToSearchButton {
+    margin-top: 10px;
+}
+
+body:not(.defaultTheme) #petRehomingPortlet #returnToSearchButton{
+	margin-left: 15px;
+}
+
+#wrapper #petRehomingPortlet #filters li {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+#wrapper #content #petRehomingPortlet #filters ul {
+    margin: 0;
+}
+
+#petRehomingPortlet #specialAppealsGoButton {
+    float: left;
+}
+
+.filterButtons {
+    float: left;
+    clear: left;
+}
+
+#petRehomingPortlet .schemeButton {
+    -webkit-appearance: none;
+    margin-top: 0;
+}
+
+#petRehomingPortlet #favouritesLink .schemeButton {
+    padding: 10px;
+}
+
+#wrapper .petSearchNoAnimals #sortArrival,
+#wrapper .petSearchNoAnimals #sortDistance,
+#wrapper .petSearchNoAnimals #animalsNum {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#yourFilters .yourFilter p {
+    margin: initial;
+    display: initial;
+    line-height: initial;
+    font-weight: initial;
+    padding: initial;
+}
+
+#wrapper #favouritesLink {
+    float: right;
+    margin: 8px 5px 0px 10px;
+    padding-bottom: 0;
+}
+
+body:not(.defaultTheme)  #wrapper #favouritesLink {
+    padding-top: 4px;
+}
+
+#favouritesLink img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+#petRehomingPortlet h2,#petRehomingPortlet h1 {
+    display: inline-block;
+    max-width: calc(100% - 105px);
+}
+
+#wrapper #favouritesLink p {
+    color: #fff;
+    float: left;
+    display: inline-block;
+    margin-left: 5px;
+    padding-bottom: 0;
+}
+
+#petRehomingPortlet .itemFrame {
+	position: relative;
+}
+
+
+#petRehomingPortlet .myreserved {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 5px 10px;
+    background-color: #189CA1;
+    color: #ffffff;
+}
+
+#wrapper #petRehomingPortlet .hidden {
+    display: none;
+}
+
+#wrapper form#searchForm:not(#preferenceCommand)::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+
+#petRehomingPortlet::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+#petRehomingIntro {
+    background-color: transparent;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#blurb {
+    clear: left;
+    width: 100%;
+}
+
+#petSearchFields select,#petSearchFields input {
+    float: left;
+    margin-bottom: 0;
+}
+
+#petSearchFields .animalType,#petSearchFields .location {
+    float: left;
+    margin-right: 10px;
+}
+
+#petSearchFields input#searchedLocation {
+    width: 280px;
+}
+
+#petSearchFields div#searchElement {
+    width: 280px;
+    overflow: hidden;
+}
+
+#searchedLocationGeo {
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+div#searchElement {
+    position: relative;
+}
+
+#petRehomingPortlet .petSearchFilters {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#filterContainer input {
+    float: left;
+    margin: 0px 3px 3px 0;
+}
+
+body:not(.weeble) #filterContainer input {
+    margin-top: 3px;
+}
+
+.petSearchNoAnimals h4 {
+    float: left;
+    margin-right: 5px;
+}
+
+#sortArrival,#sortDistance {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+}
+
+#petRehomingPortlet #refineSearch,#petRehomingPortlet #refineSearch:hover {
+    cursor: pointer;
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 15px;
+    width: 170px;
+}
+
+#wrapper #filterContainer>h3 {
+    float: right;
+    padding: 0;
+}
+
+#filterContainer ul li,#morebreed,.more,.less {
+    float: left;
+    clear: left;
+}
+
+.schemeButton.clearFilters {
+    clear: both;
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+#moreFilters,#lessFilters {
+    margin-left: 150px;
+}
+
+#closeYourFilters span {
+    margin-right: -15px;
+    color: #1F252C;
+}
+
+#petRehomingPortlet #yourFilters {
+    float: left;
+    padding: 0 5px;
+    width: calc(100% - 197px);
+    height: auto;
+    margin-top: 6px;
+}
+
+#yourFilters label,#yourFilters .yourFilter {
+    float: left;
+    padding: 2px 3px;
+    margin: 0 5px 5px 5px;
+}
+
+#yourFilters .yourFilter {
+    border: 1px solid white;
+}
+
+#yourFilters .deleteFilter,
+#yourFilters .deleteFilter:hover {
+    border-radius: 15px;
+    color: #fff;
+    display: block;
+    float: right;
+    margin: 0 1px 0 16px;
+    padding: 0px 6px 3px 6px;
+    line-height: 18px;
+}
+
+#yourFilters .deleteFilter:hover {
+    text-decoration: none;
+}
+
+.petSearchFilters #filterContainer {
+    border: 1px solid;
+    padding: 0 15px 15px 15px;
+    position: absolute;
+    top: 29px;
+    width: calc(100% - 32px);
+    z-index: 1;
+}
+
+#petRehomingPortlet .imagePreloader {
+    height: 1px;
+    width: 1px;
+    margin-bottom: -1px;
+    background: url("https://www.rspca.org.uk/o/ptlPetRehomingPortlets/img/pleaseWait.gif") no-repeat;
+    bacground-size: 1px 1px;
+    opacity: .01;
+    filter: alpha(opacity=100);
+}
+
+.waiter {
+    background: url("https://www.rspca.org.uk/o/ptlPetRehomingPortlets/img/pleaseWait.gif") no-repeat left center;
+    padding-top: 5px;
+    float: left;
+    padding-left: 45px;
+    clear: left;
+    height: 30px;
+}
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("https://www.rspca.org.uk/o/ptlPetRehomingPortlets/img/pleaseWait.gif");
+}
+
+.petSearchNoAnimals {
+    width: 98%;
+    clear: left;
+}
+
+.petSearchFilters .clear,.petSearchFilters .clear:hover {
+    text-decoration: none;
+    color: #1f252c;
+}
+
+.petSearchFilters .clear span {
+    border-radius: 15px;
+    color: #fff;
+    margin-right: 5px;
+    padding: 1px 8px 4px;
+}
+
+.filterType h3>span {
+    display: block;
+    float: left;
+    max-width: calc(100% - 67px);
+    margin-bottom: 5px;
+}
+
+.filterType h3 .clear {
+    float: left;
+    margin-left: 14px;
+}
+
+.filterType h3 a span {
+    margin-right: 3px;
+}
+
+.petSearchFilters #filterButton {
+    text-align: right;
+    width: 100%;
+    clear: both;
+}
+
+.petSearchFilters #filterButton p {
+    float: left;
+    width: calc(100% - 150px);
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.petSearchFilters #applyFilters {
+    width: 125px;
+    display: block;
+    float: right;
+    text-align: center;
+}
+
+.petSearchFilters #applyFilters,.petSearchFilters #applyFilters:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body #wrapper #petSearchResults li {
+    float: left;
+    width: calc(25% - 19px);
+    padding: 5px;
+    margin-top: 12px;
+    position: relative;
+}
+
+#petSearchResults li img.petSearchImg {
+    width: 100%;
+}
+
+img.myFavourite {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+img.myAppeal {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#wrapper #petSearchResults li h3 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 9px 0 5px 0;
+}
+
+#petSearchResults li.themeBackgroundLadybird h3 {
+    color: #fff;
+}
+
+#petSearchResults li:hover a,#petSearchResults li:hover h3 {
+    color: #fff;
+    text-decoration: none;
+}
+
+#petSearchResults li:hover {
+    background-color: #be1c42;
+}
+
+.jpage-navigation {
+    width: 100%;
+    clear: both;
+    width: 100%;
+}
+
+#wrapper #petSearchFields .searchErrorMsg {
+    float: left;
+    clear: left;
+    width: 95%;
+    margin-top: 3px;
+}
+
+body.defaultTheme #wrapper #petSearchFields .searchErrorMsg {
+    padding: 0 4px;
+    border: 1px dashed;
+    background-color: white;
+}
+
+#bottomButtons a.backButton {
+    color: #fff;
+    background-color: #189ca1;
+}
+
+#bottomButtons a:hover {
+    text-decoration: none;
+}
+
+.subscribe {
+    width: 100%;
+    margin: 10px 10px 0 0;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    clear: both;
+}
+
+
+@media all and (min-width: 1007px) {
+       
+    #wrapper form#searchForm:not(#preferenceCommand) {
+        padding: 13px;
+    }
+    
+	#wrapper .petSearchNoAnimals #sortArrival,
+	#wrapper .petSearchNoAnimals #sortDistance, 
+	#wrapper .petSearchNoAnimals #animalsNum {
+	    display: inline-block;
+	}
+	
+	#wrapper .petSearchNoAnimals #sortArrival,
+	#wrapper .petSearchNoAnimals #sortDistance {
+		margin: 10px 0 10px 5px;
+	}
+	
+	#wrapper .petSearchNoAnimals #animalsNum {
+		margin: 10px 0 10px 5px;
+	}    
+    .petSearchFilters #filterContainer .filterType {
+        width: calc(31% - 4px);
+        float: left;
+        margin-bottom: 12px;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-of-type(3n-1) {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-child(1) {
+        clear: both;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-child(4),.petSearchFilters #filterContainer .filterType:nth-child(7) {
+        clear: left;
+    }
+
+    #petSearchResults li:nth-of-type(4n+5) {
+        clear: both;
+    }
+
+    #petSearchResults li:nth-of-type(2n),#petSearchResults li:nth-of-type(4n+3) {
+        margin-left: 12px;
+    }
+
+    #bottomButtons {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 1006px){
+	/* Weeble - mobile */
+	.removeHover{display:none;}
+	
+	#petRehomingPortlet #bottomButtons a {
+        width: 120px;
+        margin: 10px auto 10px auto;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        float: none;
+    }
+    
+    body #wrapper #petSearchResults {
+	    margin: 0 0 0 11px;
+	    width: calc(100% - 20px);
+	}
+	
+	#wrapper .petSearchNoAnimals #sortArrival,
+	#wrapper .petSearchNoAnimals #sortDistance, 
+	#wrapper .petSearchNoAnimals #animalsNum {
+	    display: inline-block;
+	}
+	
+	#wrapper .petSearchNoAnimals #sortArrival,
+	#wrapper .petSearchNoAnimals #sortDistance {
+		margin: 10px 0 10px 5px;
+	}
+	
+	#wrapper .petSearchNoAnimals #animalsNum {
+		margin: 10px 0 10px 5px;
+	}
+	
+}
+
+@media all and (max-width: 1006px) and (min-width:768px) {
+	
+	
+	/* non weeble - mobile */
+	body:not(.defaultTheme) .removeHover{display:none;}
+	
+    #wrapper form#searchForm:not(#preferenceCommand) {
+        background-color:#e4e1ca;
+        padding-bottom: 15px;
+    }
+
+    #petSearchFields {
+        clear: left;
+    }
+
+    #petRehomingPortlet h1 {
+        max-width: 50%;
+    }
+
+    #petRehomingPortlet #yourFilters {
+        margin-bottom: 5px;
+    }
+
+    .petSearchFilters #filterButton p {
+        width: calc(100% - 268px);
+    }
+
+    #petRehomingIntro {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 0px 5px 10px;
+    }
+
+    #petRehomingPortlet h2 {
+        float: left;
+    }
+
+    #topRightSearchHolder {
+        float: right;
+    }
+
+    .petSearchNoAnimals {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #petRehomingPortlet .petSearchFilters {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 5px 5px 10px;
+    }
+
+    .petSearchFilters #filterContainer {
+        width: calc(100% - 32px);
+        left: 0;
+        top: 35px;
+    }
+
+    .petSearchFilters #filterContainer .filterType {
+        width: calc(44% - 4px);
+        float: left;
+        margin-bottom: 12px;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-of-type(2n-1) {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-child(odd) {
+        clear: both;
+        float: left;
+    }
+
+    .petSearchFilters #filterContainer .filterType:nth-child(even) {
+        float: right;
+    }
+
+    body #wrapper #petSearchResults li {
+        width: calc(33% - 16px);
+    }
+
+    #petSearchResults li:nth-of-type(3n+4) {
+        clear: both;
+    }
+
+    #petSearchResults li:nth-of-type(3n),#petSearchResults li:nth-of-type(3n+2) {
+        margin-left: 12px;
+    }
+
+    #bottomButtons {
+        width: 100%;
+        clear: both;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        clear: both;
+        float: left;
+    }
+
+    #bottomButtons a {
+        width: 35%;
+        margin: 10px 5% 10px 5%;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
+    #bottomButtons a.backButton.onOwn {
+        margin-left: 32.5%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    #wrapper #favouritesLink>a {
+        display:block;
+        max-height: 33px;
+    }        
+    
+    #wrapper #favouritesLink>a {
+        padding-top: 3px;
+        padding-bottom: 0px;
+    }
+
+    #wrapper #favouritesLink img {
+   	    margin-top: -5px;
+    }
+}
+
+@media all and (max-width: 767px) {
+	/* non weeble - mobile */
+	body:not(.defaultTheme) .removeHover{display:none;}
+	
+    #wrapper form#searchForm:not(#preferenceCommand) {
+        background-color:#e4e1ca;
+        padding: 0 0 14px 0;
+    }
+
+    .filterButtons {
+        width: 100%;
+    }
+    
+    #wrapper #favouritesLink{
+    	float: right;
+    	margin: 8px 0px 0px 11px;
+    	padding: 3px 3px 3px 3px;
+    	height: 38px;
+    	width: 39px;
+    	min-height: 38px;
+    }
+
+    #wrapper #topRightSearchHolder {
+    	float: right;
+    	margin: 8px 0px 0px 11px;
+    	padding: 5px 3px 3px 3px;
+    	height: 38px;
+    	width: 39px;
+    	min-height: 38px;
+    }
+
+    #petRehomingPortlet #specialAppealsOR {
+        margin-left: 45%;
+    }
+
+    #petRehomingPortlet #returnToSearchButton {
+        display: none;
+    }
+
+    #petRehomingPortlet #specialAppealsGoButton {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #wrapper #favouritesLink p {
+        display: none;
+    }
+
+    #petSearchFields {
+        clear: left;
+        margin-top: 12px;
+    }
+
+    #petRehomingIntro {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #topRightSearchHolder {
+        float: right;
+        margin-top: 8px;
+        height: 35px;
+    }
+
+    .petSearchFilters #filterButton p {
+        width: calc(100% - 10px);
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .petSearchNoAnimals {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #petRehomingPortlet .petSearchFilters {
+        width: calc(98% - 15px);
+        margin: 5px auto;
+        padding: 5px 5px 5px 10px;
+    }
+
+    #petSearchFields div#searchElement,#petSearchFields select,#wrapper form:not(#preferenceCommand) #petSearchFields input[type="text"],#addressSearchGoButton {
+        width: 100%;
+        max-width: 100%!important;
+    }
+
+    #petRehomingPortlet #refineSearch,#petRehomingPortlet #refineSearch:hover {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #petRehomingPortlet #yourFilters {
+        width: 98%;
+    }
+
+    #yourFilters label,#yourFilters .yourFilter {
+        clear: left;
+        width: calc(100% - 22px);
+    }
+
+    #moreFilters,#lessFilters {
+        margin-left: 10px;
+    }
+
+    #favouritesLink {
+        height: 35px;
+    }
+
+    #clearYourFilters {
+        clear: both;
+        width: 100%;
+        float: left;
+        margin-top: 5px;
+    }
+
+    .petSearchFilters #filterContainer {
+        width: calc(100% - 45px);
+        left: 1%;
+        top: 37px;
+        border: 0;
+        padding-top: 5px;
+    }
+
+    .petSearchFilters #filterContainer .filterType {
+        width: calc(100% - 15px);
+        padding-bottom: 5px;
+        border-bottom: 1px solid #d2d3d5;
+        margin-bottom: 15px;
+        clear: bot;
+        overflow: hidden;
+    }
+
+    .petSearchFilters #filterContainer .filterType:last-child {
+        border: 0;
+    }
+
+    .animalType,.location {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+	
+    body #wrapper #petSearchResults li {
+        width: calc(100% - 10px);
+    }
+
+    .petSearchFilters #applyFilters {
+        width: calc(100% - 15px);
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        float: left;
+        margin: 0 0 0 5px;
+    }
+
+    #yourFilters #clearFilters.schemeButton {
+        width: calc(100% - 25px);
+    }
+
+    #clearFilters.schemeButton {
+        margin: 0 5px 0 0;
+    }
+
+    .petSearchFilters #filterButton {
+        width: 100%;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+	body #petSearchResults li {
+        width: calc(100% - 30px);
+    }
+
+    #bottomButtons {
+        width: 100%;
+        clear: both;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        clear: both;
+        float: left;
+    }
+
+    #petRehomingPortlet #bottomButtons a {
+        width: 35%;
+        margin: 10px auto 10px auto;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+    }
+
+    #wrapper #petSearchFields .searchErrorMsg {
+        width: 100%;
+    }
+
+    #wrapper #petSearchFields .searchErrorMsg,#wrapper #petSearchFields #animalTypeConflicts {
+        width: calc(100% - 10px);
+    }
+}
+
+
+
+@media all and (max-width: 530px) {
+    #bottomButtons a {
+        width:calc(50% - 30px);
+        margin: 10px 5px 10px 5px;
+    }
+
+    #bottomButtons a.backButton {
+        float: right;
+    }
+
+    .petSearchFilters #filterContainer {
+        width: calc(100% - 36px);
+    }
+}
+
+body.defaultTheme #column-2 .portlet-body {
+    background-color: transparent;
+}
+
+body.defaultTheme.staging:not(.estab) #wrapper form:not(#preferenceCommand)#searchForm {
+    min-height: 228px;
+}
+
+@media all and (min-width: 856px) {
+    .defaultTheme:not(.estab) #wrapper form#searchForm:not(#preferenceCommand) {
+        min-height:263px;
+    }
+}
+
+body.estab #searchedLocationGeo {
+    right: 6px;
+}
+
+body.estab #PSanimalType {
+    padding: 4px 0;
+}
+
+body.estab #animalsNum {
+    margin: 10px 0;
+}
+
+
+body.estab #yourFilters .deleteFilter {
+    padding: 1px 5px;
+}
+
+
+body.estab #yourFilters label,body.estab #yourFilters .yourFilter {
+    margin: 0 5px 7px 5px;
+}
+
+
+
+@media all and (max-width: 767px) {
+    body.estab #wrapper #back-container form#searchForm:not(#preferenceCommand) {
+        padding-bottom:14px;
+    }
+}

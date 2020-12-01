@@ -1,0 +1,3338 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- SERVERNAME:PRD server 2 / IX ptl02 -->
+
+
+	<!-- SERVERNAME:PRD server 2 / IX ptl02 -->
+
+
+
+
+
+
+<!-- SITE NAME:  RSPCA   -->
+	<!-- GOOGLE Key found in page:  UA-1859103-1   -->
+	<!-- GOOGLE TESTING Key found in page:  GTM-5PJT8M4   -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+(function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+
+
+ga('create', 'UA-1859103-1', 'auto');
+console.log("GA created");
+ga('require', 'ecommerce');
+console.log("ecommerce");
+
+//Check whether we want to suppress the page view in special cases
+docReady( function(){
+	if( document.getElementById("noPageTracking") == null){
+		ga('require', 'GTM-5PJT8M4');
+		console.log("GA required");
+		ga('send', 'pageview');
+		console.log("Page view sent");
+	}
+});
+
+
+</script>
+<html class="ltr" dir="ltr" lang="en-US">
+<head>
+	<title>Site map | jzbedu.cn</title>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_160612.js" type="text/javascript"></script>
+<link data-senna-track="permanent" href="o/frontend-theme-font-awesome-web/css/main.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+		
+			
+				<link data-senna-track="temporary" href="" rel="canonical">
+			
+		
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="o/ptl2017Theme/css/clay-other_mainSiteTheme_WAR_ptl1.css" id="liferayAUICSS" rel="stylesheet" type="text/css">
+
+
+
+<link data-senna-track="temporary" href="o/frontend-css-web/main-other_mainSiteTheme_WAR_ptl.css" id="liferayPortalCSS" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<link data-senna-track="temporary" href="http://www.jzbedu.cn/combo?browserId=other&minifierType=&themeId=mainSiteTheme_WAR_ptl2017Theme&languageId=en_US&b=7210&com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fcss%2Fmain.css&com_liferay_staging_bar_web_portlet_StagingBarPortlet:%2Fcss%2Fmain.css&t=1606132264000" id="a6ae36e7" rel="stylesheet" type="text/css">
+
+	
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function() {
+				return 81.0;
+			},
+
+			getRevision: function() {
+				return '537.36';
+			},
+			getVersion: function() {
+				return '81.0';
+			},
+
+			
+
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return true;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return true;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return false;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return true;
+			},
+			isSafari: function() {
+				return true;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return true;
+			},
+			isWindows: function() {
+				return true;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			null
+
+			
+
+			
+		];
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			NTLM_AUTH_ENABLED: false,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 104857600
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function() {
+					return '471';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function() {
+					return '/group/rspca/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function() {
+					return '/utilities/sitemap';
+				},
+				getLayoutURL: function() {
+					return 'http://www.jzbedu.cn/utilities/sitemap';
+				},
+				getParentLayoutId: function() {
+					return '66';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function() {
+				return 'en-US';
+			},
+			getCanonicalURL: function() {
+
+				
+
+				return 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2futilities\x2fsitemap';
+			},
+			getCDNBaseURL: function() {
+				return 'http://www.jzbedu.cn';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '260730';
+			},
+			getCompanyId: function() {
+				return '10108';
+			},
+			getDefaultLanguageId: function() {
+				return 'en_US';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'en_US';
+			},
+			getParentGroupId: function() {
+				return '1494939';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/c';
+			},
+			getPathThemeImages: function() {
+				return 'http://www.jzbedu.cn/o/ptl2017Theme/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/ptl2017Theme';
+			},
+			getPlid: function() {
+				return '1571241';
+			},
+			getPortalURL: function() {
+				return 'http://www.jzbedu.cn';
+			},
+			getScopeGroupId: function() {
+				return '1494939';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '1494939';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'http://www.jzbedu.cn/group/rspca/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '1494939';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=1571241';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2fhome';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '10110';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=mainSiteTheme_WAR_ptl2017Theme&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1606131989189';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064&';
+			},
+			getDateFormat: function() {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=mainSiteTheme_WAR_ptl2017Theme&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1595908832064';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064';
+			}
+		};
+
+		Liferay.authToken = 'TXzvAhDt';
+
+		
+
+		Liferay.currentURL = '\x2futilities\x2fsitemap';
+		Liferay.currentURLEncoded = '\x252Futilities\x252Fsitemap';
+	// ]]>
+</script>
+
+<script src="o/js_loader_config-1606129063058.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_159590.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595901.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595902.js" type="text/javascript"></script>
+
+
+
+
+	
+
+	<script data-senna-track="temporary" src="o/js_bundle_config-1606129127104.js" type="text/javascript"></script>
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<script data-senna-track="temporary" src="combo-other_mainSiteTheme_WAR_pt.js" type="text/javascript"></script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="o/ptl2017Theme/css/main-other_mainSiteTheme_WAR_ptl1.css" id="liferayThemeCSS" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3_ .portlet-content {
+
+}
+#portlet_85_INSTANCE_HSmlhh7tHKf3 {
+
+padding:8px;
+background-color:white;
+border-style:dashed;
+border-width:2px;
+border-color:#003473
+	
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd_ .portlet-content {
+margin: 10px
+}
+
+#p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd_{
+padding:8px;
+background-color:white;
+border-style:dashed;
+border-width:2px;
+border-color:#189ca1
+	
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<script type="text/javascript">
+// <![CDATA[
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){
+  	if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1579606832323757');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1579606832323757&ev=PageView&noscript=1">
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google AdWords: 1007595157 -->
+<script async="" src="gtag/js-AW-1007595157.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1007595157');
+  gtag('config', 'DC-6522851');
+  
+   <!-- Google Tag Manager -->
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NK3CPVP');
+  <!-- End Google Tag Manager -->
+</script>
+<!-- end Global site tag  -->
+<!-- Bing tracking -->
+<script>
+(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"17020132"};
+o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)}
+,i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+<!-- end Bing tracking -->	<link href="https://plus.google.com/100597930162075621755/" rel="publisher">
+
+
+
+
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/cookieBar/css/jquery.cookiebar.refresh.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/fontAwesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/templates-20.09.00.css">
+
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="google-site-verification" content="F8ZWAMxjbusBK4XDxAe4ptWDpAe_zEprBWhkIVR-RWU">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+<meta content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport"> 
+
+
+	<meta property="og:title" content="Site map | jzbedu.cn">
+
+
+	
+	
+<meta property="og:image" content="http://www.jzbedu.cn/o/ptl2017Theme/images/RSPCA_Logo_Big.png">
+	<meta property="og:image:width" content="1396">
+	<meta property="og:image:height" content="775">
+
+
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://www.jzbedu.cn/utilities/sitemap">
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="o/ptl2017Theme/js/askAnnie-1.js"></script>	
+<script type="text/javascript" src="webContent/webComponents/pluginIncludeFilesChecker/js/pluginIncludeFilesChecker.js"></script>
+<script type="text/javascript" src="webContent/webComponents/cookieBar/js/jquery.cookiebar.refresh.js"></script>
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/auiValidation-20.09.00.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/collapse.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/handlebars.js"></script>
+
+
+	<!-- Begin TVSquared Tracking Code -->
+<script type="text/javascript">
+var _tvq = window._tvq = window._tvq || [];
+(function() {
+var u = (("https:" == document.location.protocol) ? "https://collector-1412.tvsquared.com/" : "http://collector-1412.tvsquared.com/");
+_tvq.push(['setSiteId', "TV-81548172-1"]);
+_tvq.push(['setTrackerUrl', u + 'tv2track.php']);
+_tvq.push([function()
+
+{ this.deleteCustomVariable(5, 'page') }
+]);
+_tvq.push(['trackPageView']);
+var d = document,
+g = d.createElement('script'),
+s = d.getElementsByTagName('script')[0];
+g.type = 'text/javascript';
+g.defer = true;
+g.async = true;
+g.src = u + 'tv2track.js';
+s.parentNode.insertBefore(g, s);
+})();
+</script>
+<!-- End TVSquared Tracking Code --></head>
+<body class=" controls-visible  yui3-skin-sam signed-out public-page site theme default">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="javascript:;" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="o/ptl2017Theme/js/flyout-99.js" type="text/javascript"></script>
+
+
+
+<a name="backtotoplink"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="quick-access-nav" id="bgvg_quickAccessNav">
+		<h1 class="hide-accessible">Navigation</h1>
+
+		<ul>
+			
+				<li><a href="#main-content">Skip to Content</a></li>
+			
+
+			
+
+		</ul>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pt-0" id="wrapper">
+
+<header id="banner" role="banner">
+	<div id="heading">
+		<a class="logo custom-logo" href="home.html" title="" key="go-to-x"></a>
+		<img alt="Royal Society for the Prevention of Cruelty to Animals" src="o/ptl2017Theme/images/img/rspca.png">
+		
+
+			<div id="mobile-nav-menu">
+				<a class="hardcoded nav-item nav-search" href="search.html"><img src="o/ptl2017Theme/images/rspca_navigation/nav-search.png" alt="Search the RSPCA'"></a>
+				<img class="headerSeparator" src="o/ptl2017Theme/images/img/separator.png" alt="">
+				<img class="menu-icon" src="o/ptl2017Theme/images/rspca_navigation/mobile-menu.png" alt="RSPCA site navigation">
+			</div>
+			<div id="header-nav-menu">
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-parent" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1577931" data-parent-id="0" id="layout_1577931" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1577931" href="home.html" class="themeTxtSmBd" role="menuitem"><span>Home</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1565924" data-parent-id="0" id="layout_1565924" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1565924" href="findapet.html" class="themeTxtSmBd" role="menuitem"><span>Find a pet</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1565926" data-parent-id="1565924" id="layout_1565926" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1565926" href="rehomeapet.html" class="themeTxtSm" role="menuitem"><span>Rehome a pet</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1565928" data-parent-id="1565924" id="layout_1565928" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1565928" href="rehomeahorse.html" class="themeTxtSm" role="menuitem"><span>Rehome a horse</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1565933" data-parent-id="1565924" id="layout_1565933" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1565933" href="foster.html" class="themeTxtSm" role="menuitem"><span>Foster an animal</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="2454111" data-parent-id="1565924" id="layout_2454111" role="presentation">
+					<div>
+					<a aria-labelledby="layout_2454111" href="adopters.html" class="themeTxtSm" role="menuitem"><span>Advice for adopters</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207752" data-parent-id="0" id="layout_12207752" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207752" href="adviceandwelfare.html" class="themeTxtSmBd" role="menuitem"><span>Advice and welfare</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="12207761" data-parent-id="12207752" id="layout_12207761" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207761" href="pets.html" class="themeTxtSm" role="menuitem"><span>Pets</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207770" data-parent-id="12207752" id="layout_12207770" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207770" href="laboratory.html" class="themeTxtSm" role="menuitem"><span>Lab animals</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207779" data-parent-id="12207752" id="layout_12207779" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207779" href="farm.html" class="themeTxtSm" role="menuitem"><span>Farm animals</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207788" data-parent-id="12207752" id="layout_12207788" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207788" href="wildlife.html" class="themeTxtSm" role="menuitem"><span>Wildlife</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207797" data-parent-id="12207752" id="layout_12207797" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207797" href="litter.html" class="themeTxtSm" role="menuitem"><span>Litter</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207806" data-parent-id="12207752" id="layout_12207806" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207806" href="seasonal.html" class="themeTxtSm" role="menuitem"><span>Seasonal advice</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207815" data-parent-id="12207752" id="layout_12207815" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207815" href="diseases.html" class="themeTxtSm" role="menuitem"><span>Diseases</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12207824" data-parent-id="12207752" id="layout_12207824" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12207824" href="performinganimals.html" class="themeTxtSm" role="menuitem"><span>Performing animals</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563828" data-parent-id="0" id="layout_1563828" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563828" href="getinvolved.html" class="themeTxtSmBd" role="menuitem"><span>Get involved</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1563830" data-parent-id="1563828" id="layout_1563830" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563830" href="volunteer.html" class="themeTxtSm" role="menuitem"><span>Volunteer</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563845" data-parent-id="1563828" id="layout_1563845" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563845" href="campaign.html" class="themeTxtSm" role="menuitem"><span>Campaign</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563833" data-parent-id="1563828" id="layout_1563833" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563833" href="donate.html" class="themeTxtSm" role="menuitem"><span>Donate</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="4038446" data-parent-id="1563828" id="layout_4038446" role="presentation">
+					<div>
+					<a aria-labelledby="layout_4038446" href="win.html" class="themeTxtSm" role="menuitem"><span>Win</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563856" data-parent-id="1563828" id="layout_1563856" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563856" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Fundraise</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="3086132" data-parent-id="1563828" id="layout_3086132" role="presentation">
+					<div>
+					<a aria-labelledby="layout_3086132" href="young.html" class="themeTxtSm" role="menuitem"><span>Young people</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563867" data-parent-id="1563828" id="layout_1563867" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563867" href="becomeamember.html" class="themeTxtSm" role="menuitem"><span>Membership</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563844" data-parent-id="1563828" id="layout_1563844" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563844" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Events</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1563880" data-parent-id="1563828" id="layout_1563880" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1563880" href="businesses.html" class="themeTxtSm" role="menuitem"><span>Businesses</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1573248" data-parent-id="0" id="layout_1573248" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1573248" href="whatwedo.html" class="themeTxtSmBd" role="menuitem"><span>What we do</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1573249" data-parent-id="1573248" id="layout_1573249" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1573249" href="yourlocal.html" class="themeTxtSm" role="menuitem"><span>Your local RSPCA</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="3485340" data-parent-id="1573248" id="layout_3485340" role="presentation">
+					<div>
+					<a aria-labelledby="layout_3485340" href="javascript:;" class="themeTxtSm" role="menuitem"><span>End cruelty</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="3485345" data-parent-id="1573248" id="layout_3485345" role="presentation">
+					<div>
+					<a aria-labelledby="layout_3485345" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Care for animals</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="5150114" data-parent-id="1573248" id="layout_5150114" role="presentation">
+					<div>
+					<a aria-labelledby="layout_5150114" href="education.html" class="themeTxtSm" role="menuitem"><span>Education</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1571377" data-parent-id="1573248" id="layout_1571377" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1571377" href="latest.html" class="themeTxtSm" role="menuitem"><span>Latest</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1570769" data-parent-id="1573248" id="layout_1570769" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1570769" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="3485358" data-parent-id="1573248" id="layout_3485358" role="presentation">
+					<div>
+					<a aria-labelledby="layout_3485358" href="howwework.html" class="themeTxtSm" role="menuitem"><span>How we work</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1575882" data-parent-id="0" id="layout_1575882" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1575882" href="shoponline.html" class="themeTxtSmBd" role="menuitem"><span>Shop</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="6524222" data-parent-id="1575882" id="layout_6524222" role="presentation">
+					<div>
+					<a aria-labelledby="layout_6524222" href="index1.html" class="themeTxtSm" role="menuitem"><span>Online shop</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1575884" data-parent-id="1575882" id="layout_1575884" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1575884" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Pet insurance</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="5071782" data-parent-id="1575882" id="layout_5071782" role="presentation">
+					<div>
+					<a aria-labelledby="layout_5071782" href="holidays.html" class="themeTxtSm" role="menuitem"><span>Pet friendly holidays</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="5071790" data-parent-id="1575882" id="layout_5071790" role="presentation">
+					<div>
+					<a aria-labelledby="layout_5071790" href="shopanddonate.html" class="themeTxtSm" role="menuitem"><span>Shop and donate</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="3817828" data-parent-id="1575882" id="layout_3817828" role="presentation">
+					<div>
+					<a aria-labelledby="layout_3817828" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Exotic pet insurance</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="13016969" data-parent-id="0" id="layout_13016969" role="presentation">
+					<div>
+					<a aria-labelledby="layout_13016969" href="coronavirus.html" class="themeTxtSmBd" role="menuitem"><span>Coronavirus latest</span></a>
+						<img class="nav-open nav-button" src="o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="13144091" data-parent-id="13016969" id="layout_13144091" role="presentation">
+					<div>
+					<a aria-labelledby="layout_13144091" href="dogwalking.html" class="themeTxtSm" role="menuitem"><span>Walking someone else's dog</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="13339601" data-parent-id="13016969" id="layout_13339601" role="presentation">
+					<div>
+					<a aria-labelledby="layout_13339601" href="countrysidedogwalks.html" class="themeTxtSm" role="menuitem"><span>Walking your dog in the countryside</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+	</ul>
+				<div class="header-nav-menu-buttons">
+					<div class="crueltyDonateButtons">
+						<a href="javascript:;" class="crueltyButton"><img src="o/ptl2017Theme/images/img/reportCruelty.png" alt="Icon">Report cruelty</a>
+						<a href="javascript:;" class="themeDonationButton">Donate</a>
+					</div>
+						<div class="askQuestionButton ask-question"><img src="o/ptl2017Theme/images/img/askaquestion.png" alt="Icon">Ask us a question</div>
+					<a href="yourlocal.html" class="yourLocalButton"><img src="o/ptl2017Theme/images/img/yourRSPCA.png" alt="Icon">Your local RSPCA</a>
+					<a class="myRSPCA" href="javascript:;"><img src="o/ptl2017Theme/images/img/myRSPCA.png" alt="Icon"><span>my RSPCA</span></a>
+				</div>
+			</div>
+			<hr>
+			<div class="headerButtons">
+					<div class="askQuestionButton ask-question"><img src="o/ptl2017Theme/images/img/askaquestion.png" alt="Icon">Ask us a question</div>
+				<a href="yourlocal.html" class="yourLocalButton"><img src="o/ptl2017Theme/images/img/yourRSPCA.png" alt="Icon">Your local RSPCA</a>
+				<a href="javascript:;" class="crueltyButton"><img src="o/ptl2017Theme/images/img/reportCruelty.png" alt="Icon">Report cruelty</a>
+					<a href="javascript:;" class="themeDonationButton">Donate</a>
+			</div>
+	</div>
+</header>		<div id="breadcrumbSocialShare">
+
+	<div id="navigation-breadcrumb">
+	</div>
+
+	<!-- Adding social elements -->
+	<script type="text/javascript">// <![CDATA[ var addthis_config = {data_ga_property: 'UA-1859103-1',data_track_clickback:true}; // ]]></script>
+	<div class="addthis_container left">
+		<span class="addthis_title themeTxtSm">Share this...</span>
+		<div addthis:url="http://www.jzbedu.cn/utilities/sitemap" class="addthis_toolbox addthis_default_style addthis_32x32_style addthis_right">
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_email"></a>
+			<a class="addthis_button_google_plusone_share"></a>
+		</div>
+	</div>
+		</div>
+
+	<div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="divcolumns" id="main-content" role="main">
+	<div class="portlet-layout lfr-grid rspca-layout-01-18" id="layout-grid">
+		<div id="holderdiv">
+			<div class="portlet-column portlet-column-only lfr-column" id="column-1">
+				<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1"></div><div class="spacer">&nbsp;</div>
+			</div>
+			<div class="section-desktop">
+				<div class="portlet-column portlet-column-only lfr-column" id="column-2">
+					<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_snippet_WAR_ptlHTMLSnippetPortlet_  portlet-static portlet-static-end portlet-default  " id="p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75_">
+		<span id="p_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+<div class="visibilityDesktop html-snippet">
+	<h1>Site map</h1>
+<p>To go to a page please select the page title below.</p>
+<p>Select one of the arrows on the left-hand side to see the pages underneath.</p>
+<p>&nbsp;</p>
+</div>
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div><div class="spacer">&nbsp;</div>
+				</div>
+				<div class="portlet-column portlet-column-only lfr-column" id="column-3">
+					<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_  portlet-static portlet-static-end portlet-default portlet-site-map " id="p_p_id_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3_">
+		<span id="p_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<ul><li><a href="home.html"> Home</a></li><li><a href="findapet.html"> Find a pet</a><ul><li><a href="rehomeapet.html"> Rehome a pet</a><ul><li><a href="javascript:;"> How to rehome</a><ul><li><a href="rehomeadog.html"> How to rehome a dog</a></li><li><a href="rehomeacat.html"> How to rehome a cat</a></li><li><a href="rehomeafarmanimal.html"> Rehome a farm animal</a></li></ul></li></ul></li><li><a href="rehomeahorse.html"> Rehome a horse</a><ul><li><a href="javascript:;"> How to rehome a horse</a><ul><li><a href="applicationform.html"> Online application</a></li></ul></li></ul></li><li><a href="foster.html"> Foster an animal</a><ul><li><a href="javascript:;"> Horse fostering</a><ul><li><a href="howtoapply.html"> How to apply</a></li></ul></li></ul></li><li><a href="adopters.html"> Advice for adopters</a></li></ul></li><li><a href="adviceandwelfare.html"> Advice and welfare</a><ul><li><a href="pets.html"> Pets</a><ul><li><a href="javascript:;"> Dogs</a><ul><li><a href="javascript:;"> Buying a puppy</a><ul><li><a href="javascript:;"> Which puppy is right for you</a></li><li><a href="javascript:;"> A puppy dealers advert</a></li><li><a href="javascript:;"> Finding a good breeder</a></li><li><a href="healthy.html"> A healthy, happy puppy</a></li><li><a href="javascript:;"> Dog breeds</a><ul><li><a href="javascript:;"> Bulldog</a></li><li><a href="javascript:;"> Cavalier King Charles spaniel</a></li><li><a href="javascript:;"> Cocker spaniel</a></li><li><a href="javascript:;"> German shepherd</a></li><li><a href="javascript:;"> Husky</a></li><li><a href="javascript:;"> Labrador</a></li><li><a href="javascript:;"> Staffordshire bull terrier</a></li></ul></li><li><a href="javascript:;"> Pedigree dogs</a><ul><li><a href="javascript:;"> Health problems</a></li></ul></li></ul></li><li><a href="javascript:;"> Environment</a><ul><li><a href="javascript:;"> Dog crates</a></li><li><a href="javascript:;"> Living outside</a></li><li><a href="javascript:;"> Dog beds</a></li><li><a href="javascript:;"> Dog toys</a></li><li><a href="javascript:;"> Boarding kennels</a></li></ul></li><li><a href="diet.html"> Diet</a></li><li><a href="behaviour.html"> Behaviour</a><ul><li><a href="javascript:;"> Aggression</a></li><li><a href="javascript:;"> Separation anxiety</a><ul><li><a href="javascript:;"> Treatment</a></li></ul></li><li><a href="javascript:;"> Body language</a></li><li><a href="javascript:;"> Barking</a></li></ul></li><li><a href="javascript:;"> Company</a><ul><li><a href="javascript:;"> Dogs and children</a><ul><li><a href="javascript:;"> Staying safe</a></li></ul></li><li><a href="javascript:;"> Building a good relationship</a></li><li><a href="javascript:;"> Meeting an unfamiliar dog</a></li></ul></li><li><a href="javascript:;"> Health and welfare</a><ul><li><a href="javascript:;"> Looking after a puppy</a></li><li><a href="javascript:;"> Dogs die in hot cars</a><ul><li><a href="javascript:;"> Infographic</a></li></ul></li><li><a href="javascript:;"> Heatstroke</a></li><li><a href="javascript:;"> Dog grooming</a></li><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Common poisons</a></li></ul></li><li><a href="javascript:;"> Common dog illnesses</a></li><li><a href="javascript:;"> Caring for older dogs</a><ul><li><a href="javascript:;"> How long do dogs live</a></li></ul></li><li><a href="javascript:;"> Vaccinations</a></li><li><a href="javascript:;"> Dental care</a></li></ul></li><li><a href="straydogs.html"> Lost and stray dogs</a></li><li><a href="javascript:;"> Training your dog</a><ul><li><a href="javascript:;"> Learning to be left alone</a></li><li><a href="javascript:;"> Find a trainer</a></li><li><a href="javascript:;"> Toilet training</a></li><li><a href="javascript:;"> Sit</a></li><li><a href="javascript:;"> Stay</a></li><li><a href="javascript:;"> Lie down</a></li><li><a href="javascript:;"> Come when called</a></li><li><a href="javascript:;"> Walk without pulling</a></li><li><a href="javascript:;"> Leave alone</a></li></ul></li><li><a href="kind.html"> #DogKind</a></li></ul></li><li><a href="javascript:;"> Cats</a><ul><li><a href="straycats.html"> Stray cats</a></li><li><a href="javascript:;"> Environment</a><ul><li><a href="javascript:;"> Keeping cats indoors</a></li><li><a href="javascript:;"> Keeping cats out of gardens</a></li><li><a href="javascript:;"> Cat Litter</a></li></ul></li><li><a href="diet1.html"> Diet</a></li><li><a href="behaviour1.html"> Behaviour</a><ul><li><a href="javascript:;"> Understanding cat behaviour</a></li></ul></li><li><a href="company1.html"> Company</a></li><li><a href="health.html"> Health and welfare</a><ul><li><a href="javascript:;"> Neutering</a><ul><li><a href="javascript:;"> Infographic</a></li><li><a href="javascript:;"> Cat neutering scheme</a></li></ul></li><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Antifreeze</a></li></ul></li><li><a href="javascript:;"> Common cat illnesses</a></li><li><a href="javascript:;"> Grooming</a></li><li><a href="javascript:;"> Vaccinations</a></li><li><a href="javascript:;"> FIV</a></li></ul></li><li><a href="javascript:;"> Kittens</a><ul><li><a href="javascript:;"> How to look after a kitten</a></li></ul></li></ul></li><li><a href="javascript:;"> Rabbits</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a><ul><li><a href="javascript:;"> Unhealthy muesli</a></li><li><a href="javascript:;"> Common myths</a></li><li><a href="javascript:;"> Meal planner</a></li><li><a href="javascript:;"> Feeding tips</a></li></ul></li><li><a href="behaviour2.html"> Behaviour</a><ul><li><a href="javascript:;"> Agility</a></li><li><a href="javascript:;"> Enrichment</a><ul><li><a href="javascript:;"> Dietary enrichment</a></li><li><a href="javascript:;"> Guidance</a></li><li><a href="javascript:;"> Hiding places</a></li><li><a href="javascript:;"> Platforms</a></li><li><a href="javascript:;"> Toys and objects</a></li></ul></li><li><a href="javascript:;"> Understanding rabbit behaviour</a></li></ul></li><li><a href="company.html"> Company</a><ul><li><a href="javascript:;"> Handling</a></li><li><a href="javascript:;"> Keeping rabbits and guinea pigs together</a></li><li><a href="javascript:;"> Bonding rabbits</a></li></ul></li><li><a href="health1.html"> Health and welfare</a><ul><li><a href="javascript:;"> Health checks</a></li><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Common poisons</a></li></ul></li><li><a href="javascript:;"> Vaccinations</a></li></ul></li></ul></li><li><a href="javascript:;"> Horses</a><ul><li><a href="environment.html"> Environment</a></li><li><a href="diet2.html"> Diet</a></li><li><a href="behaviour3.html"> Behaviour</a><ul><li><a href="javascript:;"> Body language</a></li></ul></li><li><a href="company2.html"> Company</a></li><li><a href="health2.html"> Health and welfare</a><ul><li><a href="javascript:;"> Identification methods</a></li><li><a href="tethering.html"> Tethering</a></li><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Common poisons</a></li></ul></li><li><a href="javascript:;"> Winter care advice</a></li></ul></li><li><a href="buyinghorses.html"> Buying a horse</a></li></ul></li><li><a href="rodents.html"> Rodents</a><ul><li><a href="javascript:;"> Guinea pigs</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="javascript:;"> Hamsters</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="javascript:;"> Chinchillas</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="gerbils.html"> Gerbils</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="rats.html"> Rats</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="javascript:;"> Mice</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="degus.html"> Degus</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="javascript:;"> Chipmunks</a><ul><li><a href="javascript:;"> Environment</a><ul><li><a href="javascript:;"> Transporting or moving chipmunks</a></li></ul></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health and Welfare</a></li></ul></li><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Common poisons</a></li></ul></li></ul></li><li><a href="javascript:;"> Ferrets</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Health</a><ul><li><a href="javascript:;"> Poisoning</a><ul><li><a href="javascript:;"> Common poisons</a></li></ul></li><li><a href="javascript:;"> Neutering</a></li></ul></li></ul></li><li><a href="javascript:;"> Exotic pets</a><ul><li><a href="javascript:;"> Bearded Dragon</a></li><li><a href="javascript:;"> Corn Snake</a></li><li><a href="javascript:;"> Leopard gecko</a></li><li><a href="javascript:;"> Royal python</a></li><li><a href="javascript:;"> Terrapin</a></li><li><a href="javascript:;"> Our concerns</a></li><li><a href="javascript:;"> Primates kept as pets</a><ul><li><a href="javascript:;"> Capuchins</a></li><li><a href="javascript:;"> Marmosets</a></li><li><a href="javascript:;"> Squirrel monkey</a></li></ul></li><li><a href="javascript:;"> Raccoon dogs</a></li><li><a href="javascript:;"> Meerkats</a></li><li><a href="javascript:;"> African pygmy hedgehogs</a></li></ul></li><li><a href="javascript:;"> Ornamental Fish</a><ul><li><a href="javascript:;"> Environment</a></li><li><a href="diet3.html"> Diet</a></li><li><a href="javascript:;"> Behaviour</a></li><li><a href="company3.html"> Company</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="javascript:;"> General</a><ul><li><a href="javascript:;"> Vaccinating</a></li><li><a href="javascript:;"> Fleas</a></li><li><a href="javascript:;"> Neutering</a></li><li><a href="worms.html"> Worms</a></li><li><a href="microchipping.html"> Microchipping</a><ul><li><a href="javascript:;"> Dogs</a></li></ul></li><li><a href="javascript:;"> Fireworks</a><ul><li><a href="javascript:;"> Animals and fireworks safety</a></li></ul></li><li><a href="javascript:;"> Animal behaviourist</a></li><li><a href="javascript:;"> Going on holiday</a></li><li><a href="javascript:;"> Pet obesity</a></li><li><a href="javascript:;"> Poisoning</a></li><li><a href="javascript:;"> Flystrike</a></li><li><a href="javascript:;"> Ticks</a></li></ul></li><li><a href="unwantedpets.html"> Unwanted pets</a></li><li><a href="javascript:;"> Pet bereavement</a></li><li><a href="findavet.html"> Find or call a vet</a></li></ul></li><li><a href="laboratory.html"> Lab animals</a><ul><li><a href="areanimalexperimentsnecessary.html"> Are animal experiments necessary?</a></li><li><a href="testingchemicals.html"> Testing chemicals</a><ul><li><a href="javascript:;"> Cosmetics testing</a></li><li><a href="householdproducts.html"> Household products</a></li></ul></li><li><a href="javascript:;"> Medicines and vaccines</a></li><li><a href="replacinganimals.html"> Replacing research animals</a></li><li><a href="reducingsuffering.html"> Reducing research animal suffering</a></li><li><a href="primates.html"> Primates and research</a></li><li><a href="javascript:;"> Biotechnology</a><ul><li><a href="javascript:;"> Cloned animals</a></li><li><a href="geneticallyalteredanimals.html"> Genetically altered animals</a></li></ul></li></ul></li><li><a href="farm.html"> Farm animals</a><ul><li><a href="farmanimals.html"> Farm animals as pets</a><ul><li><a href="javascript:;"> Goats</a><ul><li><a href="javascript:;"> Care</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> The Law</a></li></ul></li><li><a href="pigs1.html"> Pigs</a><ul><li><a href="javascript:;"> Care</a></li><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> The law</a></li></ul></li><li><a href="chickens.html"> Chickens</a><ul><li><a href="javascript:;"> Company</a></li><li><a href="javascript:;"> Diet</a></li><li><a href="javascript:;"> Environment</a></li><li><a href="javascript:;"> Health and welfare</a></li></ul></li><li><a href="ducksandgeese.html"> Ducks and geese</a><ul><li><a href="javascript:;"> Care</a></li><li><a href="javascript:;"> Indoor environment</a></li><li><a href="javascript:;"> Outdoor environment</a></li></ul></li></ul></li><li><a href="slaughter.html"> Slaughter</a><ul><li><a href="javascript:;"> Factfile</a></li><li><a href="javascript:;"> Religious slaughter</a></li><li><a href="javascript:;"> What are we doing?</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li></ul></li><li><a href="onfarm.html"> On-farm</a></li><li><a href="livetransport.html"> Live transport</a><ul><li><a href="javascript:;"> Factfile</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="pigs.html"> Pigs</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="layinghens.html"> Laying hens</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="sheep.html"> Sheep</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="fish.html"> Farmed fish</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="meatchickens.html"> Meat chickens</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="ducks.html"> Ducks</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="dairy.html"> Dairy cows</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="beef.html"> Beef cattle</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="turkeys.html"> Turkeys</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="rabbits.html"> Farmed rabbits</a><ul><li><a href="javascript:;"> Farming</a></li><li><a href="javascript:;"> Key welfare issues</a></li><li><a href="javascript:;"> How can you help?</a></li><li><a href="javascript:;"> What are we doing?</a></li></ul></li><li><a href="foiegras.html"> Foie Gras</a></li><li><a href="worriedaboutafarmanimal.html"> Worried about a farm animal?</a><ul><li><a href="javascript:;"> Flystrike</a></li></ul></li><li><a href="bovinetb.html"> Bovine TB</a></li></ul></li><li><a href="wildlife.html"> Wildlife</a><ul><li><a href="injuredanimals.html"> Injured wild animals</a></li><li><a href="orphanedanimals.html"> Orphaned wild animals</a><ul><li><a href="javascript:;"> Baby hedgehogs</a></li><li><a href="javascript:;"> Fox cubs</a></li><li><a href="babybirds.html"> Baby birds</a></li><li><a href="javascript:;"> Seal pups</a></li><li><a href="javascript:;"> Badger cubs</a></li><li><a href="ducklings.html"> Ducklings</a></li></ul></li><li><a href="captivity.html"> Wildlife in captivity</a><ul><li><a href="javascript:;"> Wild animals in circuses</a></li><li><a href="licences.html"> Licences to keep wild animals</a></li></ul></li><li><a href="animals.html"> Animals in the wild</a><ul><li><a href="badgers.html"> Badgers</a><ul><li><a href="javascript:;"> Badgers and the law</a></li></ul></li><li><a href="deer.html"> Deer</a></li><li><a href="javascript:;"> Feeding garden birds</a><ul><li><a href="birdfeedingguide.html"> Bird feeding guide</a></li></ul></li><li><a href="javascript:;"> Foxes</a></li><li><a href="gardenhedgehogs.html"> Hedgehogs in the garden</a></li><li><a href="javascript:;"> Frogs and toads</a></li><li><a href="greysquirrels.html"> Grey squirrels</a><ul><li><a href="javascript:;"> Feeding squirrels and using nest boxes</a></li><li><a href="keepout.html"> How to keep squirrels out of your garden</a></li></ul></li></ul></li><li><a href="livingwith.html"> Living with wildlife</a></li><li><a href="laws.html"> Wildlife laws</a></li><li><a href="findarehabilitator.html"> Find a rehabilitator</a></li><li><a href="helping.html"> How we&#39;re helping</a></li><li><a href="deterrents.html"> Wildlife deterrents</a></li></ul></li><li><a href="litter.html"> Litter</a><ul><li><a href="fishing.html"> Fishing litter</a></li><li><a href="chineselanterns.html"> Chinese lanterns</a></li><li><a href="balloon-and-sky-lantern-alternat.html"> Alternatives to balloons and sky lanterns</a></li></ul></li><li><a href="seasonal.html"> Seasonal advice</a><ul><li><a href="spring.html"> Spring</a></li><li><a href="summer.html"> Summer</a><ul><li><a href="javascript:;"> Cat care in summer</a></li><li><a href="javascript:;"> Dog care in summer</a></li><li><a href="javascript:;"> Wildlife in summer</a></li><li><a href="javascript:;"> Farm animal in summer</a></li><li><a href="javascript:;"> Rabbits and rodents</a></li><li><a href="javascript:;"> Other pets in summer</a></li><li><a href="javascript:;"> Horse care in summer</a></li></ul></li><li><a href="autumn.html"> Autumn</a></li><li><a href="winter.html"> Winter</a><ul><li><a href="javascript:;"> Wildlife in winter</a></li><li><a href="javascript:;"> Pets in cold weather</a></li></ul></li><li><a href="floods.html"> Floods</a></li><li><a href="christmas.html"> Pets at Christmas</a><ul><li><a href="javascript:;"> Keeping pets calm at Christmas</a></li><li><a href="javascript:;"> Having a pet safe Christmas</a></li><li><a href="javascript:;"> Food and treats</a></li></ul></li><li><a href="garden.html"> Wildlife in the garden</a></li></ul></li><li><a href="diseases.html"> Diseases</a><ul><li><a href="javascript:;"> Alabama rot</a></li></ul></li><li><a href="performinganimals.html"> Performing animals</a><ul><li><a href="javascript:;"> Guidelines</a></li><li><a href="javascript:;"> Report concerns</a></li><li><a href="faqs.html"> FAQs</a></li></ul></li></ul></li><li><a href="getinvolved.html"> Get involved</a><ul><li><a href="volunteer.html"> Volunteer</a><ul><li><a href="opportunities.html"> Find a volunteering opportunity</a></li><li><a href="whatcanido.html"> What can I do?</a></li><li><a href="corporate.html"> Corporate volunteering</a></li><li><a href="javascript:;"> What&#39;s it like to volunteer with us?</a></li></ul></li><li><a href="campaign.html"> Campaign</a><ul><li><a href="slaughter1.html"> Stun before slaughter</a><ul><li><a href="javascript:;"> Take action in Wales</a></li><li><a href="javascript:;"> Take action in England</a></li></ul></li><li><a href="javascript:;"> Puppy trade</a></li><li><a href="javascript:;"> Breed Specific Legislation</a><ul><li><a href="javascript:;"> What happens to banned dogs?</a></li><li><a href="javascript:;"> How does the Dangerous Dogs Act affect me?</a></li></ul></li><li><a href="javascript:;"> Sentient beings</a></li><li><a href="javascript:;"> Fireworks</a></li><li><a href="javascript:;"> Circuses</a></li><li><a href="javascript:;"> Sanctuaries</a><ul><li><a href="javascript:;"> Take action</a></li></ul></li><li><a href="farmanimals1.html"> Farm Animals</a></li><li><a href="cheapchicken.html"> Cheap chicken</a></li><li><a href="endskylitter.html"> #EndSkyLitter</a></li><li><a href="sentencing.html"> Tougher sentencing</a></li><li><a href="javascript:;"> Make Wales kinder for animals</a></li><li><a href="javascript:;"> Stop live exports</a></li><li><a href="javascript:;"> Join our campaign network</a></li><li><a href="imacelebrity.html"> I&#39;m a Celebrity</a></li></ul></li><li><a href="donate.html"> Donate</a><ul><li><a href="javascript:;"> Donate online</a></li><li><a href="javascript:;"> Leaving a legacy</a><ul><li><a href="javascript:;"> Step-by-step guide</a></li><li><a href="javascript:;"> FAQs</a></li><li><a href="javascript:;"> Information for Executors</a></li><li><a href="javascript:;"> Request a gift in your Will guide</a></li><li><a href="javascript:;"> Let us know your intentions</a></li></ul></li><li><a href="monthly.html"> Giving monthly</a><ul><li><a href="javascript:;"> Payroll Giving</a></li><li><a href="javascript:;"> Mobile</a></li></ul></li><li><a href="currentappeals.html"> Current appeals</a></li><li><a href="javascript:;"> Sponsorship</a><ul><li><a href="javascript:;"> Cat pods</a></li><li><a href="javascript:;"> Dog kennels</a></li></ul></li><li><a href="javascript:;"> Donate in memory</a><ul><li><a href="javascript:;"> Giving a gift in memory</a></li><li><a href="javascript:;"> Funeral collections</a></li><li><a href="javascript:;"> Garden of memories</a></li></ul></li><li><a href="javascript:;"> Advice for donors</a><ul><li><a href="javascript:;"> Door to door fundraising</a><ul><li><a href="javascript:;"> FAQ&#39;s</a></li></ul></li><li><a href="javascript:;"> Private sites fundraising</a></li><li><a href="javascript:;"> Gift Aid</a></li><li><a href="javascript:;"> No UK bank account</a></li><li><a href="javascript:;"> Supporter promise</a></li></ul></li><li><a href="javascript:;"> Unwanted items</a><ul><li><a href="javascript:;"> Donating tack</a></li></ul></li></ul></li><li><a href="win.html"> Win</a><ul><li><a href="javascript:;"> Raffle</a></li><li><a href="lottery.html"> Lottery</a></li></ul></li><li><a href="javascript:;"> Fundraise</a><ul><li><a href="javascript:;"> Running</a><ul><li><a href="javascript:;"> Great North Run</a></li><li><a href="javascript:;"> London Marathon</a></li><li><a href="javascript:;"> Brighton Marathon</a></li><li><a href="javascript:;"> London Landmarks Half Marathon</a></li><li><a href="javascript:;"> Royal Parks Half Marathon</a></li><li><a href="javascript:;"> Asics London 10k</a></li><li><a href="javascript:;"> Hackney Half</a></li><li><a href="javascript:;"> Oxford Half Marathon</a></li><li><a href="javascript:;"> Wales Marathon</a></li><li><a href="javascript:;"> Wales Half Marathon</a></li><li><a href="javascript:;"> Wales 10km</a></li><li><a href="javascript:;"> Wales 5km</a></li><li><a href="javascript:;"> Yorkshire Marathon</a></li><li><a href="javascript:;"> Run Bournemouth Half Marathon</a></li><li><a href="javascript:;"> Run Bournemouth 10km</a></li><li><a href="javascript:;"> Run Bournemouth 5km</a></li><li><a href="javascript:;"> Hampton Court Palace Half Marathon</a></li><li><a href="javascript:;"> Manchester Marathon</a></li><li><a href="javascript:;"> Yorkshire 10 Mile</a></li><li><a href="javascript:;"> Wales Long Course Weekend</a></li></ul></li><li><a href="trekking.html"> Trekking</a><ul><li><a href="javascript:;"> Lake District five peaks challenge</a></li><li><a href="javascript:;"> National three peaks challenge</a></li><li><a href="javascript:;"> Welsh 3000&#39;s challenge</a></li><li><a href="javascript:;"> Jurassic Coast Challenge</a></li><li><a href="javascript:;"> Scottish Highlands Triple Challenge</a></li><li><a href="javascript:;"> Thames Path Challenge</a></li><li><a href="javascript:;"> South West Coast to Coast</a></li><li><a href="javascript:;"> Peak District</a></li><li><a href="javascript:;"> Cotswold Way</a></li><li><a href="javascript:;"> Southdowns at Night</a></li><li><a href="javascript:;"> Yorkshire 3 Peaks at Night</a></li><li><a href="javascript:;"> London Royal Parks Challenge</a></li><li><a href="javascript:;"> Isle of Wight Challenge</a></li></ul></li><li><a href="javascript:;"> Cycling</a><ul><li><a href="javascript:;"> London to Paris Bike Ride</a></li><li><a href="javascript:;"> Brighton Marathon Ride</a></li><li><a href="javascript:;"> Coast to Coast cycle challenge</a></li></ul></li><li><a href="javascript:;"> Own place in an event</a></li><li><a href="javascript:;"> Ideas and resources</a><ul><li><a href="javascript:;"> For individuals</a></li><li><a href="javascript:;"> At school</a></li><li><a href="javascript:;"> At work</a></li><li><a href="javascript:;"> For groups</a></li><li><a href="javascript:;"> Tips for success</a></li><li><a href="javascript:;"> Set up a JustGiving page</a></li><li><a href="javascript:;"> My Big Walkies</a></li><li><a href="javascript:;"> At home</a></li><li><a href="javascript:;"> Downloads</a></li><li><a href="javascript:;"> Eco-friendly fundraising ideas</a></li></ul></li><li><a href="javascript:;"> Fundraising pack</a></li><li><a href="javascript:;"> Pay in your offline fundraising</a></li><li><a href="javascript:;"> Virtual challenges</a></li><li><a href="javascript:;"> Animal Hero</a></li><li><a href="javascript:;"> Training hub</a><ul><li><a href="javascript:;"> Running training zone</a></li><li><a href="javascript:;"> Trekking training zone</a></li><li><a href="javascript:;"> Swimming training zone</a></li><li><a href="javascript:;"> Cycling training zone</a></li></ul></li><li><a href="javascript:;"> Gaming</a></li></ul></li><li><a href="young.html"> Young people</a><ul><li><a href="javascript:;"> Subscription</a></li><li><a href="javascript:;"> Renewal</a></li><li><a href="javascript:;"> Buttercup Farm</a></li><li><a href="javascript:;"> 30DaysForAnimals</a></li></ul></li><li><a href="becomeamember.html"> Membership</a><ul><li><a href="javascript:;"> Adult member</a><ul><li><a href="javascript:;"> Membership policy statement</a></li></ul></li><li><a href="javascript:;"> Teenage member</a></li></ul></li><li><a href="javascript:;"> Events</a><ul><li><a href="javascript:;"> Local events</a></li><li><a href="javascript:;"> Big Walkies Live</a></li><li><a href="javascript:;"> Honours</a><ul><li><a href="javascript:;"> Categories</a></li><li><a href="javascript:;"> Winners stories</a></li><li><a href="javascript:;"> Judges</a></li><li><a href="javascript:;"> Sponsors</a></li></ul></li><li><a href="javascript:;"> One Fun Day</a></li><li><a href="javascript:;"> Challenge events</a></li><li><a href="christmasconcert.html"> Christmas Concert</a></li><li><a href="javascript:;"> Howloween</a></li></ul></li><li><a href="businesses.html"> Businesses</a><ul><li><a href="partnerships.html"> Become a partner</a></li><li><a href="javascript:;"> Our corporate partners</a></li><li><a href="javascript:;"> Other ways companies can support</a></li></ul></li></ul></li><li><a href="whatwedo.html"> What we do</a><ul><li><a href="yourlocal.html"> Your local RSPCA</a></li><li><a href="javascript:;"> End cruelty</a><ul><li><a href="javascript:;"> Investigate cruelty</a><ul><li><a href="javascript:;"> Organised cruelty</a></li><li><a href="javascript:;"> Tackling dog fighting</a></li></ul></li><li><a href="rescue.html"> Rescue animals</a><ul><li><a href="frontline.html"> Frontline</a></li></ul></li><li><a href="prevention.html"> Prevent suffering</a></li><li><a href="javascript:;"> Prosecution</a><ul><li><a href="javascript:;"> Deciding to prosecute</a></li><li><a href="javascript:;"> Reviewing our work</a></li><li><a href="javascript:;"> Animal cruelty stories</a></li></ul></li><li><a href="javascript:;"> Change the law</a><ul><li><a href="whatwechanged.html"> What have we changed?</a><ul><li><a href="animalwelfareact.html"> Animal Welfare Act</a></li></ul></li><li><a href="javascript:;"> Changing the law in Wales</a></li><li><a href="javascript:;"> Brexit</a></li></ul></li><li><a href="javascript:;"> Work internationally</a><ul><li><a href="javascript:;"> How you can help</a></li><li><a href="javascript:;"> Reports and resources</a></li></ul></li></ul></li><li><a href="javascript:;"> Care for animals</a><ul><li><a href="javascript:;"> Rehabilitation</a><ul><li><a href="javascript:;"> Wildlife rehabilitation</a></li></ul></li><li><a href="javascript:;"> Release</a><ul><li><a href="javascript:;"> Post-release</a></li></ul></li><li><a href="javascript:;"> Our wildlife centres</a></li><li><a href="vetcare.html"> Veterinary care</a></li><li><a href="javascript:;"> Home for Life</a><ul><li><a href="javascript:;"> How it works</a></li><li><a href="javascript:;"> How to apply</a></li><li><a href="javascript:;"> Existing registrants</a></li><li><a href="javascript:;"> FAQs</a></li><li><a href="javascript:;"> Request an information pack</a></li><li><a href="javascript:;"> Arranging collection of a pet</a></li><li><a href="javascript:;"> Real life stories</a></li></ul></li><li><a href="javascript:;"> Financial assistance</a></li></ul></li><li><a href="education.html"> Education</a><ul><li><a href="javascript:;"> Children in school</a></li><li><a href="javascript:;"> Disadvantaged youth</a></li><li><a href="offenders.html"> Young offenders</a></li><li><a href="athome.html"> At home</a></li></ul></li><li><a href="latest.html"> Latest</a><ul><li><a href="news.html"> News</a></li><li><a href="blogs.html"> Our blog</a></li><li><a href="publications.html"> Publications</a><ul><li><a href="javascript:;"> Reports and accounts</a></li><li><a href="print.html"> Print publications</a></li><li><a href="review.html"> Annual review</a></li></ul></li><li><a href="dogrescuers.html"> The Dog Rescuers</a></li><li><a href="kittenrescue.html"> Jo Brand&#39;s Kitten Rescue</a></li><li><a href="mediacontacts.html"> Media contacts</a></li><li><a href="facts.html"> Facts</a></li><li><a href="adoptober.html"> Adoptober</a></li></ul></li><li><a href="javascript:;"> Who we are</a><ul><li><a href="history.html"> Our history</a><ul><li><a href="airporthostel.html"> The Airport Hostel</a></li><li><a href="firstworldwar.html"> First World War</a><ul><li><a href="sickandwounded.html"> Fund for sick and wounded horses</a></li><li><a href="animals1.html"> Animals in WW1</a></li><li><a href="soldiers.html"> Fallen soldiers</a></li></ul></li><li><a href="secondworldwar.html"> Second World War</a></li></ul></li><li><a href="governance.html"> Governance</a><ul><li><a href="members.html"> Board members</a></li><li><a href="agm.html"> Annual General Meeting</a></li></ul></li><li><a href="patronsandvps.html"> Our VIPs</a></li><li><a href="branches.html"> Our branches</a></li><li><a href="executives.html"> Our executives</a></li><li><a href="ambassadors.html"> Our ambassadors</a></li></ul></li><li><a href="howwework.html"> How we work</a><ul><li><a href="mission.html"> Our mission</a></li><li><a href="policies.html"> Policies</a><ul><li><a href="javascript:;"> Prioritising animals</a></li><li><a href="javascript:;"> Vegetarianism</a></li><li><a href="javascript:;"> Ethics</a></li></ul></li><li><a href="rules.html"> RSPCA&#39;s rules</a></li></ul></li></ul></li><li><a href="shoponline.html"> Shop</a><ul><li><a href="index1.html"> Online shop</a></li><li><a href="javascript:;"> Pet insurance</a><ul><li><a href="cat.html"> Cat insurance</a><ul><li><a href="commonillnesses.html"> Common illnesses</a></li></ul></li><li><a href="dog.html"> Dog insurance</a><ul><li><a href="javascript:;"> Common illnesses</a></li></ul></li><li><a href="compare.html"> Compare our policies</a></li><li><a href="benefits.html"> Do I need pet insurance?</a></li></ul></li><li><a href="holidays.html"> Pet friendly holidays</a><ul><li><a href="cottages.html"> Cottages</a></li><li><a href="hoseasons.html"> Hoseasons Holiday Parks</a></li></ul></li><li><a href="shopanddonate.html"> Shop and donate</a></li><li><a href="javascript:;"> Exotic pet insurance</a></li></ul></li><li><a href="coronavirus.html"> Coronavirus latest</a><ul><li><a href="dogwalking.html"> Walking someone else&#39;s dog</a></li><li><a href="countrysidedogwalks.html"> Walking your dog in the countryside</a></li></ul></li></ul>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div><div class="spacer">&nbsp;</div>
+				</div>
+				<div class="section-ipad">
+					<div class="portlet-column portlet-column-only lfr-column" id="column-4">
+						<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_snippet_WAR_ptlHTMLSnippetPortlet_  portlet-static portlet-static-end portlet-default  " id="p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd_">
+		<span id="p_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+<div class="visibilityBoth html-snippet">
+	<h2>Site maps for specialist audience sites</h2>
+<p><span style="font-size: medium;"><a title="Science site map" href="javascript:;" target="_blank">Science</a></span></p>
+<p><span style="font-size: medium;"><a title="Education site map" href="javascript:;" target="_blank">Education</a></span></p>
+</div>
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_branchListing_WAR_ptlBranchPortlets_  portlet-static portlet-static-end portlet-default  " id="p_p_id_branchListing_WAR_ptlBranchPortlets_">
+		<span id="p_branchListing_WAR_ptlBranchPortlets"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_branchListing_WAR_ptlBranchPortlets">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="http://www.jzbedu.cn/o/ptlBranchPortlets/css/branchListing/branchListing.css?a=1">
+<div id="branchListPortlet" class="themeBackgroundMouse">
+	
+	
+	
+		
+			
+			<h3>Please select a region</h3>
+			
+				
+					
+				
+				<a href="javascript:;">North</a>
+			
+				
+					
+				
+				<a href="javascript:;">South</a>
+			
+				
+					
+				
+				<a href="javascript:;">Wales & Midlands</a>
+			
+		
+		
+</div>
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div><div class="spacer">&nbsp;</div>
+					</div>
+					<div class="divider">
+						<div class="portlet-column portlet-column-only lfr-column" id="column-5">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-5"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-6">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-6"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-7">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-7"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-8">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-8"></div><div class="spacer">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+					<div class="divider">
+						<div class="portlet-column portlet-column-only lfr-column" id="column-9">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-9"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-10">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-10"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-11">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-11"></div><div class="spacer">&nbsp;</div>
+						</div>
+					</div>
+					<div class="divider">
+						<div class="portlet-column portlet-column-only lfr-column" id="column-12">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-12"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-13">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-13"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column portlet-column-only lfr-column" id="column-14">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-14"></div><div class="spacer">&nbsp;</div>
+						</div>
+					</div>
+				<div class="portlet-column portlet-column-only lfr-column" id="column-15">
+					<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-15"></div><div class="spacer">&nbsp;</div>
+				</div>
+				<div class="portlet-column portlet-column-only lfr-column" id="column-16">
+					<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-16"></div><div class="spacer">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<form action="#" class="hide" id="hrefFm" method="post" name="hrefFm" aria-hidden="true"><span></span><input hidden="" type="submit"></form>	</div>
+
+
+<footer id="footer" role="contentinfo">
+
+
+
+
+	<section>
+		<div class="footerColumnArea">
+            <div class="footerColumn">
+                <h3 class="footer">How we help</h3>
+        		<hr>
+				<p class="themeTxtSm">More than</p>
+        		<p class="themeTotalNum">102,900</p>
+                <p class="themeTxtSm">Animals were rescued and collected last year</p>
+        	</div>
+            <div class="footerColumn">
+        		<h3 class="footer">Get in touch</h3>
+        		<hr>
+        		<ul>
+                    <li><div class="ask-question">Ask a question</div></li>
+                    <li><a href="yourlocal.html">Find your local RSPCA</a></li>
+                    <li><a href="javascript:;">Contact us</a></li>
+                    <li><a href="javascript:;">Report cruelty</a></li>
+        		</ul>
+        	</div>
+            <div class="footerColumn">
+        		<h3 class="footer">Our charity</h3>
+        		<hr>
+        		<ul>
+                    <li><a href="javascript:;" target="_blank">Media centre</a></li>
+                    <li><a href="home1.html" target="_blank">Science</a></li>
+                    <li><a href="javascript:;" target="_blank">RSPCA Assured</a></li>
+                    <li><a href="home2.html" target="_blank">Education</a></li>
+        		</ul>
+        	</div>
+            <div class="footerColumn">
+        		<h3 class="footer">Follow us</h3>
+        		<hr>
+				<div class="follow">
+					<a href="javascript:;" target="_blank"><img src="webContent/staticImages/theme2017/followFacebook.png" alt="Follow us on Facebook"></a>
+					<a href="javascript:;" target="_blank"><img src="webContent/staticImages/theme2017/followTwitter.png" alt="Follow us on Twitter"></a>
+					<a href="javascript:;" target="_blank"><img src="webContent/staticImages/theme2017/followUtube.png" alt="Follow us on YouTube"></a>
+					<a href="javascript:;" target="_blank"><img src="webContent/staticImages/theme2017/followInstragram.png" alt="Follow us on Instagram"></a>
+                </div>
+                
+                
+                 
+                 
+                                
+                
+        		<form id="footerSignUp" action="/utilities/aboutus/stayinformed" method="get">
+					<p class="themeTxtSm">Or sign up for email updates</p>
+        			<input type="hidden" name="source" value="RSPCA_Website">
+					<input type="submit" value="Sign up">
+        		</form>
+        	</div>
+		</div>
+	</section>
+	<div id="footerBottom">
+		<div id="footerFlex">
+			<div id="footerContact">
+				<div id="reg-charity">
+					<p class="themeTxtSm">&#169; RSPCA 2020. All rights reserved. The RSPCA helps animals in England and Wales. Registered charity no.219099.</p>
+				</div>
+				<div id="footerNav">
+					<ul>
+
+								<li><a href="javascript:;">Jobs</a></li>
+								<li><a href="javascript:;">Contact us</a></li>
+								<li><a href="termsandconditions.html">Terms and conditions</a></li>
+								<li><a href="">Site map</a></li>
+								<li><a href="javascript:;">National privacy notice</a></li>
+								<li><a href="accessibility.html">Accessibility</a></li>
+								<li><a href="javascript:;">Modern slavery</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="footerImage">
+				<img class="FundraisingRImage" src="webContent/webComponents/rspcaStaticContent/shared/images/img/FundraisingRegulator.png">
+			</div>
+		</div>
+	</div>
+</footer></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		
+
+			
+
+			
+		
+	
+
+	Liferay.BrowserSelectors.run();
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2futilities\x2fsitemap';
+		Liferay.currentURLEncoded = '\x252Futilities\x252Fsitemap';
+
+	// ]]>
+</script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+				
+
+				
+			
+		// ]]>
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function(event) {
+		if (window.Analytics) {
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function(data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function() {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function(event) {
+		if (window.Analytics) {
+			Analytics.send('posted', 'Comment', {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text
+			});
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var pathnameRegexp = /\/documents\/(\d+)\/(\d+)\/(.+?)\/([^&]+)/;
+
+	function handleDownloadClick(event) {
+		if (event.target.nodeName.toLowerCase() === 'a' && window.Analytics) {
+			var anchor = event.target;
+			var match = pathnameRegexp.exec(anchor.pathname);
+
+			var fileEntryId =
+				anchor.dataset.analyticsFileEntryId ||
+				(anchor.parentElement &&
+					anchor.parentElement.dataset.analyticsFileEntryId);
+
+			if (fileEntryId && match) {
+				var getParameterValue = function(parameterName) {
+					var result = null;
+
+					anchor.search
+						.substr(1)
+						.split('&')
+						.forEach(function(item) {
+							var tmp = item.split('=');
+
+							if (tmp[0] === parameterName) {
+								result = decodeURIComponent(tmp[1]);
+							}
+						});
+
+					return result;
+				};
+
+				Analytics.send('documentDownloaded', 'Document', {
+					groupId: match[1],
+					fileEntryId: fileEntryId,
+					preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+					title: decodeURIComponent(match[3].replace(/\+/gi, ' ')),
+					version: getParameterValue('version')
+				});
+			}
+		}
+	}
+
+	document.body.addEventListener('click', handleDownloadClick);
+
+	var onDestroyPortlet = function() {
+		document.body.removeEventListener('click', handleDownloadClick);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+	if (Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				attributeName: 'data-href',
+				polyfill: true
+			}
+		);
+	}
+
+	
+		Liferay.Portlet.register('branchListing_WAR_ptlBranchPortlets');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_branchListing_WAR_ptlBranchPortlets_',
+			portletId: 'branchListing_WAR_ptlBranchPortlets',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1571241\x26p_p_id\x3dbranchListing_WAR_ptlBranchPortlets\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-4\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Futilities\x252Fsitemap',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd_',
+			portletId: 'snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1571241\x26p_p_id\x3dsnippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_0Obd\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-4\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Futilities\x252Fsitemap',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75_',
+			portletId: 'snippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1571241\x26p_p_id\x3dsnippet_WAR_ptlHTMLSnippetPortlet_INSTANCE_gO75\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Futilities\x252Fsitemap',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3_',
+			portletId: 'com_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1571241\x26p_p_id\x3dcom_liferay_site_navigation_site_map_web_portlet_SiteNavigationSiteMapPortlet_INSTANCE_HSmlhh7tHKf3\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Futilities\x252Fsitemap',
+			refreshURLData: {}
+		}
+	);
+Liferay.Loader.require('metal-dom/src/all/dom', 'clay-tooltip/src/ClayTooltip', function(metalDomSrcAllDom, clayTooltipSrcClayTooltip) {
+(function(){
+var dom = metalDomSrcAllDom;
+var ClayTooltip = clayTooltipSrcClayTooltip;
+(function() {var $ = AUI.$;var _ = AUI._;
+	var focusInPortletHandler = dom.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			dom.addClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+
+	var focusOutPortletHandler = dom.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			dom.removeClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP) {
+		Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP = ClayTooltip.default.init(
+			{
+				selectors: [
+					'.manage-collaborators-dialog .lexicon-icon[data-title]:not(.lfr-portal-tooltip)',
+					'.manage-collaborators-dialog .lexicon-icon[title]:not(.lfr-portal-tooltip)',
+					'.management-bar [data-title]:not(.lfr-portal-tooltip)',
+					'.management-bar [title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [data-title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [title]:not(.lfr-portal-tooltip)',
+					'.progress-container[data-title]',
+					'.source-editor__fixed-text__help[data-title]',
+					'.taglib-discussion [data-title]:not(.lfr-portal-tooltip)',
+					'.taglib-discussion [title]:not(.lfr-portal-tooltip):not([title=""])',
+					'.upper-tbar [data-title]:not(.lfr-portal-tooltip)',
+					'.upper-tbar [title]:not(.lfr-portal-tooltip)'
+				]
+			}
+		);
+	}
+})();})();
+});AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_TOOLTIP) {
+		var triggerShowEvent = ['mouseenter', 'MSPointerDown', 'touchstart'];
+
+		if (A.UA.ios) {
+			triggerShowEvent = ['touchstart'];
+		}
+
+		Liferay.Data.LFR_PORTAL_TOOLTIP = new A.TooltipDelegate(
+			{
+				constrain: true,
+				opacity: 1,
+				trigger: '.lfr-portal-tooltip',
+				triggerHideEvent: ['click', 'mouseleave', 'MSPointerUp', 'touchend'],
+				triggerShowEvent: triggerShowEvent,
+				visible: false,
+				zIndex: Liferay.zIndex.TOOLTIP
+			}
+		);
+
+		Liferay.on(
+			'beforeNavigate',
+			function(event) {
+				Liferay.Data.LFR_PORTAL_TOOLTIP.getTooltip().hide();
+			}
+		);
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {var $ = AUI.$;var _ = AUI._;
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2fhome',
+					sessionLength: 3590,
+					warningLength: 0
+				}
+			);
+
+			
+		})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="o/ptl2017Theme/js/main-other_js_en_US_7210_1606132.js" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		AUI().use(
+			'aui-base',
+			function(A) {
+				var frameElement = window.frameElement;
+
+				if (frameElement && frameElement.getAttribute('id') === 'simulationDeviceIframe') {
+					A.getBody().addClass('lfr-has-simulation-panel');
+				}
+			}
+		);
+	// ]]>
+</script><input name="isUserLoggedIn" type="hidden" value="$is_signed_in" id="isUserLoggedIn">
+<!-- Javascript-->
+<script type="text/javascript">
+_linkedin_data_partner_id = "222170";
+</script>
+<script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="collect/222170_gif.jpg">
+</noscript></body>
+</html>
+

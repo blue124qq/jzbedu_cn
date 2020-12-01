@@ -1,0 +1,309 @@
+.iyaSearchPortlet {
+    overflow: hidden;
+    margin: 5px;
+}
+
+#searchForm,#searchElement {
+    width: 100%;
+    float: left;
+}
+
+#searchForm {
+    padding: 15px;
+}
+
+.iyaSearchPortlet h1 {
+    margin-bottom: 1px;
+}
+
+.iyaSearchPortlet .topBlock {
+    width: 100%;
+    float: left;
+}
+
+.iyaSearchPortlet .headerIntroPref {
+    width: 58%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.iyaSearchPortlet .owningBranch {
+    width: calc(100% - 18px);
+    float: right;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    padding: 7px;
+    margin-top: 15px;
+}
+
+.iyaSearchPortlet .owningBranch.financial {
+    width: 98%;
+    float: left;
+}
+
+.iyaSearchPortlet .ownigBranchName p {
+    float: left;
+}
+
+.iyaSearchPortlet .ownigBranchName a {
+    float: left;
+    display: block;
+    line-height: 1.1rem;
+    margin: 8px 8px;
+}
+
+.iyaSearchPortlet .owningBranch a {
+    font-weight: bold;
+}
+
+.iyaSearchPortlet .ownigBranchLink {
+    float: right;
+    margin-top: 2px;
+}
+
+.iyaSearchPortlet .listSize {
+    margin-bottom: -10px;
+}
+
+.iyaSearchPortlet #searchedLocation,.iyaSearchPortlet #addressSearchGoButton {
+    float: left;
+    margin-right: 10px;
+}
+
+.iyaSearchPortlet #searchedLocation {
+    width: 260px;
+}
+
+.iyaSearchPortlet #searchElementContainer {
+    width: 280px;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.iyaSearchPortlet #searchedLocationGeo {
+    margin-right: 10px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.searchErrorMsg,#searchedLocationConflicts a:hover {
+    color: red!important;
+}
+
+#searchedLocationConflicts {
+    font-size: 10pt;
+    width: 100%;
+}
+
+body #wrapper #content #itemContainer li {
+    list-style-type: none;
+    padding-bottom: 7px;
+}
+
+#searchedLocationConflicts {
+    margin-top: 5px;
+}
+
+#searchedLocationConflicts li {
+    padding-bottom: 5px;
+    display: block;
+}
+
+.iyaSearchPortlet .searchBoxNormal #searchedLocation {
+    border: 1px solid;
+    border-color: #bfbfbf #dedede #dedede #bfbfbf;
+}
+
+.iyaSearchPortlet .searchBoxRed #searchedLocation {
+    border: 1px solid red;
+}
+
+#searchSpinner {
+    background: red;
+    height: 35px;
+    padding-bottom: 10px;
+    margin-left: 165px;
+}
+
+.waiter {
+    padding-top: 5px;
+    float: left;
+    padding-left: 45px;
+}
+
+#searchForm .filterOptions {
+    float: left;
+    margin-top: 10px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    display: none;
+    margin-bottom: 5px;
+}
+
+#estabTypeFilterGroupId {
+    margin-right: 30px;
+}
+
+#servTypeFilterGroupId {
+    margin-left: 30px;
+}
+
+#searchForm .filterDiv {
+    float: left;
+}
+
+#wrapper .ownigBranchName a {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 8px;
+}
+
+.ownigBranchName {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#wrapper .ownigBranchName p {
+    padding: 0;
+    margin: 0;
+}
+
+.iyaSearchPortlet .listOfAgendaObject .eachEntry {
+    border: 0;
+}
+
+.iyaSearchPortlet .listOfAgendaObject .eachEntry.selected {
+    box-shadow: 5px 5px #aaa;
+    margin-bottom: 7px;
+    width: 98%;
+}
+
+.iyaSearchPortlet .entryInfo .addressBlock {
+	width: 98%;
+}
+
+#searchForm .filterLink {
+    margin-left: 5px;
+    margin-top: 7px;
+    float: left;
+}
+
+#searchForm .filterSign {
+    margin-left: 24px;
+}
+
+#searchForm .filterSign:hover {
+    text-decoration: none;
+}
+
+body.defaultTheme .iyaSearchPortlet {
+    padding-bottom: 5px;
+}
+
+body.defaultTheme .iyaSearchPortlet .topBlock {
+    clear: both;
+    float: none;
+}
+
+body.defaultTheme #searchForm,body.defaultTheme #searchElement {
+    width: 97%;
+}
+
+body.defaultTheme .listDetail {
+    clear: both;
+}
+
+body.defaultTheme .iyaSearchPortlet .ownigBranchLink a {
+    padding: 5px 8px;
+}
+
+body.defaultTheme #searchedLocationConflicts {
+    display: none;
+    clear: both;
+    margin-top: 5px;
+    width: 210px;
+    border: 1px dashed;
+    padding-left: 2px;
+    background-color: white;
+}
+
+.iyaSearchPortlet #searchForm #searchedLocationSuggestion {
+    color: green;
+    font-size: .75rem;
+    margin: 5px 0;
+    max-width: 210px;
+    border: 1px dashed;
+    padding-left: 2px;
+    background-color: #fff;
+    display: none;
+    clear: both;
+}
+
+body.defaultTheme #searchForm .filterOptions {
+    border: 0;
+}
+
+body.defaultTheme #searchForm a.filterLink {
+    color: #003473;
+}
+
+body.defaultTheme .entryInfo .findMoreLink a {
+    padding: 5px 12px;
+}
+
+@media all and (max-width: 855px) and (min-width:695px) {
+    a.portletJump {
+        display: none;
+    }
+}
+
+@media all and (max-width: 695px) {
+    body.defaultTheme #back-container form:not(#preferenceCommand) input[type="text"] {
+        max-width: 210px;
+    }
+
+    .iyaSearchPortlet .ownigBranchName a,.iyaSearchPortlet .ownigBranchLink {
+        clear: left;
+        margin-left: 0;
+    }
+
+    .iyaSearchPortlet .listOfAgendaObject .eachEntry.selected {
+        margin-bottom: 0;
+    }
+
+    #wrapper .iyaSearchPortlet #searchedLocation {
+        width: 207px;
+        padding-right: 24px;
+    }
+
+    .iyaSearchPortlet #searchElementContainer {
+        width: 240px;
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 4px;
+    }
+
+   .iyaSearchPortlet #searchedLocationGeo{
+        margin-right: 0px;
+    }
+
+    .iyaSearchPortlet #searchedLocation{
+        margin-right: 3px;
+    }
+
+    .iyaSearchPortlet #addressSearchGoButton{
+        margin-right: 3px;
+        margin-left:5px;
+    }
+
+    .iyaSearchPortlet #searchElement {
+        width: calc(100% - 30px);
+    }
+}

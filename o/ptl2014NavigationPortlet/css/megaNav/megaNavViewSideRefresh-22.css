@@ -1,0 +1,154 @@
+#wrapper .sidenav {
+    background-color: #189ca1;
+    border-top: 1px solid #189ca1;
+    border-bottom: 1px solid #189ca1;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent {
+    margin: 0;
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link {
+    padding: 8px 0 8px 12px;
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link.selected,
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link:hover,
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link:hover a {
+    color: #000;
+    background-color: #FFF;
+    font-family: openSansBold, Arial;
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link.selected .linkContainer {
+    padding-left: 0;
+    width: calc(100% - 50px);
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent li li a {
+    font-family: openSansRegular;
+}
+
+#wrapper .sidenav ul.nav-list-grand-parent li .nav-list-grand-parent-link.selected img:hover {
+    cursor: default;
+}
+
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link {
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0 3px 0;
+}
+
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link{
+    border-bottom:1px solid #46B0B4;
+}
+
+#wrapper .sidenav ul.nav-list-parent li:last-child .nav-list-parent-link{
+    border-bottom:1px solid #189ca1;
+}
+
+#wrapper .sidenav ul.nav-list-child li:last-child{
+    border-bottom: 1px solid #46B0B4;
+}
+
+#wrapper .sidenav li {
+    min-height: 30px;
+    width: calc(100% - 2px);   
+    margin: 0 0 0 1px;
+    padding-bottom: 0;
+}
+
+#wrapper .sidenav li li{
+    margin: 0px 0 0px 1px;
+    padding: 2px 0 2px 0;
+    width: calc(100% - 2px);
+}
+
+#wrapper .sidenav ul.nav-list-parent li ul{
+    padding: 0;
+    clear: both;
+}
+
+#wrapper .sidenav a {
+    color: #fff;
+}
+
+#wrapper .sidenav .staging {
+    color: #ff0000;
+}
+
+#wrapper .sidenav img {
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#wrapper .sidenav img:hover{
+	cursor: pointer;
+}
+
+#wrapper .sidenav .nav-list-parent {
+    margin: 0;
+}
+
+#wrapper .sidenav .nav-list-child {
+    display: none; 
+    margin: 0;
+}
+
+#wrapper .sidenav .linkContainer {
+    width: calc(100% - 67px);
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#wrapper .sidenav .linkContainerChild{
+    width: calc(100% - 20px);
+    display: inline-block;
+    padding: 3px 0px 3px 15px;
+}
+
+#wrapper .sidenav ul.nav-list-parent li .nav-button {
+    display: none;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link:not(.open) .nav-open.nav-non-hover {
+	display: inline-block;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link:not(.open):hover .nav-open.nav-hover {
+	display: inline-block;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link:not(.open):hover .nav-open.nav-non-hover {
+	display: none;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link.open .nav-close.nav-non-hover {
+	display: inline-block;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link.open:hover .nav-close.nav-hover {
+	display: inline-block;
+}
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link.open:hover .nav-close.nav-non-hover {
+	display: none;
+}
+
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link:hover,
+#wrapper .sidenav ul.nav-list-parent li ul li:hover{
+    background-color: #fff;
+    color: #1f252c;
+}
+
+#wrapper .sidenav ul.nav-list-parent li .nav-list-parent-link:hover a,
+#wrapper .sidenav ul.nav-list-parent li ul li:hover a{
+    color: #1f252c;
+}
+
+@media all and (max-width: 1006px) {
+	#wrapper .sidenav {
+		display: none;
+	}
+}

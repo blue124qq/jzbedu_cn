@@ -1,0 +1,6127 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SERVERNAME:server20:443 -->
+
+
+
+<!-- SERVERNAME:server20:443 -->
+
+
+
+
+
+
+
+<!-- SITE NAME:  RSPCA   -->
+	<!-- GOOGLE Key found in page:  UA-1859103-1   -->
+	<!-- GOOGLE TESTING Key found in page:  GTM-5PJT8M4   -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+(function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+
+
+ga('create', 'UA-1859103-1', 'auto');
+console.log("GA created");
+ga('require', 'ecommerce');
+console.log("ecommerce");
+
+//Check whether we want to suppress the page view in special cases
+docReady( function(){
+	if( document.getElementById("noPageTracking") == null){
+		ga('require', 'GTM-5PJT8M4');
+		console.log("GA required");
+		ga('send', 'pageview');
+		console.log("Page view sent");
+	}
+});
+</script>
+
+<html class="ltr" dir="ltr" lang="en-US">
+
+<head>
+	<title>Join the Christmas Rescue | RSPCA | Donate Now</title>
+
+	<script type="text/javascript" src="webContent/webComponents/carousel/js/variableWidthCarousel.js"></script>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+<meta content="Help support our work and join the Christmas rescue now. We cannot turn our backs on animals." lang="en-US" name="description">
+
+
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_160612.js" type="text/javascript"></script>
+<link data-senna-track="permanent" href="o/frontend-theme-font-awesome-web/css/main.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+		
+			
+				<link data-senna-track="temporary" href="" rel="canonical">
+			
+		
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="o/thmLandingPage/css/clay-other_thmLandingPage_WAR_th.css" id="liferayAUICSS" rel="stylesheet" type="text/css">
+
+
+
+<link data-senna-track="temporary" href="http://www.jzbedu.cn/o/frontend-css-web/main.css?browserId=other&themeId=thmLandingPage_WAR_thmLandingPage&minifierType=css&languageId=en_US&b=7210&t=1595908830430" id="liferayPortalCSS" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<link data-senna-track="temporary" href="http://www.jzbedu.cn/combo?browserId=other&minifierType=&themeId=thmLandingPage_WAR_thmLandingPage&languageId=en_US&b=7210&com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e:%2Fcss%2Fmain.css&com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fcss%2Fmain.css&com_liferay_staging_bar_web_portlet_StagingBarPortlet:%2Fcss%2Fmain.css&t=1603272156000" id="c011be87" rel="stylesheet" type="text/css">
+
+	
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function() {
+				return 81.0;
+			},
+
+			getRevision: function() {
+				return '537.36';
+			},
+			getVersion: function() {
+				return '81.0';
+			},
+
+			
+
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return true;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return true;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return false;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return true;
+			},
+			isSafari: function() {
+				return true;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return true;
+			},
+			isWindows: function() {
+				return true;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			null
+
+			
+
+			
+		];
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			NTLM_AUTH_ENABLED: false,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 104857600
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function() {
+					return '4214';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function() {
+					return '/group/rspca/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function() {
+					return '/getinvolved/donate/christmas';
+				},
+				getLayoutURL: function() {
+					return 'http://www.jzbedu.cn/getinvolved/donate/christmas';
+				},
+				getParentLayoutId: function() {
+					return '72';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function() {
+				return 'en-US';
+			},
+			getCanonicalURL: function() {
+
+				
+
+				return 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2fgetinvolved\x2fdonate\x2fchristmas';
+			},
+			getCDNBaseURL: function() {
+				return 'http://www.jzbedu.cn';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '260730';
+			},
+			getCompanyId: function() {
+				return '10108';
+			},
+			getDefaultLanguageId: function() {
+				return 'en_US';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'en_US';
+			},
+			getParentGroupId: function() {
+				return '1494939';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/c';
+			},
+			getPathThemeImages: function() {
+				return 'http://www.jzbedu.cn/o/thmLandingPage/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/thmLandingPage';
+			},
+			getPlid: function() {
+				return '13756757';
+			},
+			getPortalURL: function() {
+				return 'http://www.jzbedu.cn';
+			},
+			getScopeGroupId: function() {
+				return '1494939';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '1494939';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'http://www.jzbedu.cn/group/rspca/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '1494939';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=13756757';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2fhome';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '10110';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=thmLandingPage_WAR_thmLandingPage&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1606131989189';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064&';
+			},
+			getDateFormat: function() {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=thmLandingPage_WAR_thmLandingPage&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1595908832064';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064';
+			}
+		};
+
+		Liferay.authToken = '3WD4GPO6';
+
+		
+
+		Liferay.currentURL = '\x2fgetinvolved\x2fdonate\x2fchristmas';
+		Liferay.currentURLEncoded = '\x252Fgetinvolved\x252Fdonate\x252Fchristmas';
+	// ]]>
+</script>
+
+<script src="o/js_loader_config-1606129063058.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_159590.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595901.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595902.js" type="text/javascript"></script>
+
+
+
+
+	
+
+	<script data-senna-track="temporary" src="o/js_bundle_config-1606129127104.js" type="text/javascript"></script>
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<script data-senna-track="temporary" src="combo-other_mainSiteTheme_WAR_pt.js" type="text/javascript"></script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="http://www.jzbedu.cn/o/thmLandingPage/css/main.css?browserId=other&themeId=thmLandingPage_WAR_thmLandingPage&minifierType=css&languageId=en_US&b=7210&t=1603272156000" id="liferayThemeCSS" rel="stylesheet" type="text/css">
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+		@media print {
+        .journal-content-article  *{
+            display: block !important;
+        }
+        .journal-content-article p img, .print-action{
+            display: none !important;
+        }
+}
+
+#dynDonationAsks label {
+    display: inline;
+}
+
+.unapproved-warning {
+   border: 1px solid #f00!important;
+}
+
+.textContainer{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 178px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+}
+
+.contentImage {
+    width: 100%;
+    height: 131px;
+}
+
+body #wrapper .donations-launcher .image-section img, 
+body #wrapper .media-text-content .media-text-header img {
+    border-bottom: 7px solid #189ca1
+}
+
+#wrapper   a.themeActionButton,  #wrapper   a.themeActionButton:hover, .themeActionButton:visited,  .themeDonationButton:focus, #wrapper .journal-content-article .themeActionButton {
+	display: inline;
+}
+
+#wrapper .moreInfoLink a.themeActionButton {
+        display: block;
+}
+body #wrapper #banner {
+    position: fixed;
+    width: 100%;
+    z-index: 1200;
+    top: 0;
+    border-bottom: 5px solid #189ca1;
+}
+.portlet-topper-toolbar .portlet-options {
+	right:  20px;
+}
+@media all and (max-width: 1006px) and (min-width:768px) {
+    .journal-content-article .mobileContentHorizontal {
+        display: flex;
+        overflow: hidden;        
+    }
+    
+	.journal-content-article .textContainer.hideAbstractMobile {
+        height:129px;
+    }
+	
+    #wrapper .journal-content-article .mobileContentHorizontal .title {
+        margin: 0;
+        padding: 0;
+    }
+	
+    .journal-content-article .mobileContentHorizontal .abstract {
+        display: none;
+    }
+
+    .journal-content-article .mobileContentVertical .abstract {
+        display: none;
+    }
+
+    .journal-content-article .mobileContentHorizontal .contentImage {
+        width: 50%;
+        height: 50%;
+        flex: 1;
+    }
+
+	.journal-content-article .imageDiv {
+		  flex:1;
+	}
+    .journal-content-article .mobileContentHorizontal .abstract {
+        display: none;
+    }
+
+    .journal-content-article .mobileContentHorizontal .textContainer {
+        width: calc(50% - 30px);
+        height: auto;
+        flex: 1;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .journal-content-article .mobileContentHorizontal {
+        display: flex;
+        overflow: hidden;
+    }
+	.journal-content-article .textContainer.hideAbstractMobile {
+        height:129px;
+    }
+
+	#wrapper .journal-content-article .mobileContentHorizontal .title{
+        margin: 0;
+        padding: 0;
+    }
+
+    .journal-content-article .mobileContentVertical .abstract {
+        display: none;
+    }
+	
+	.journal-content-article .imageDiv {
+		  flex:1;
+	}
+
+    .journal-content-article .mobileContentHorizontal .abstract {
+        display: none;
+    }
+
+    .journal-content-article .mobileContentHorizontal .contentImage {
+        width: 50%;
+        height: 50%;
+        flex: 1;
+    }
+    
+   .journal-content-article .standardContent:not(.mobileContentHorizontal) .contentImage{
+        height: auto;
+    }
+
+    .journal-content-article .mobileContentHorizontal .textContainer {
+        width: calc(50% - 30px);
+        height: auto;
+        flex: 1;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+body #wrapper .donations-landing-sticky-cta-with-images .donations-launcher .image-section:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(http://www.jzbedu.cn/documents/1494939/7712581/Christmas+cold+mobile+banner.png/05ab8c6a-a6a8-44ae-d437-5e841d79d829?t=1603988243290) no-repeat;
+        background-size: cover;
+border-bottom: 7px solid #189ca1
+    }
+}
+	</style>
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg_ .portlet-content {
+
+}
+#portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg {
+    margin-bottom: 30px !important;
+    margin-top: -30px !important;
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW_ .portlet-content {
+
+}
+#portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW {
+	
+    margin-bottom: -20px;
+
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU_ .portlet-content {
+
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx_ .portlet-content {
+
+}
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx_ {
+	
+    padding-bottom: 25px;
+
+}
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW_ .portlet-content {
+background-color: #F4F4F4
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU_ .portlet-content {
+background-color: #003473
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+				
+
+					
+
+#p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v_ .portlet-content {
+background-color: #FFFFFF
+}
+
+
+
+
+				
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<script type="text/javascript">
+// <![CDATA[
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){
+  	if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1579606832323757');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1579606832323757&ev=PageView&noscript=1">
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google AdWords: 1007595157 -->
+<script async="" src="gtag/js-AW-1007595157.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1007595157');
+  gtag('config', 'DC-6522851');
+  
+   <!-- Google Tag Manager -->
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NK3CPVP');
+  <!-- End Google Tag Manager -->
+  
+</script>
+<!-- end Global site tag  -->
+<!-- Bing tracking -->
+<script>
+(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"17020132"};
+o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)}
+,i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+<!-- end Bing tracking -->	<link href="https://plus.google.com/100597930162075621755/" rel="publisher">
+
+
+
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/cookieBar/css/jquery.cookiebar.refresh.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/fontAwesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/templates-20.09.00.css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="google-site-verification" content="F8ZWAMxjbusBK4XDxAe4ptWDpAe_zEprBWhkIVR-RWU">
+<meta content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport"> 
+
+
+	<meta property="og:title" content="Join the Christmas Rescue | RSPCA | Donate Now">
+
+	<meta property="og:description" content="Help support our work and join the Christmas rescue now. We cannot turn our backs on animals.">
+
+	
+	
+<meta property="og:image" content="http://www.jzbedu.cn/o/thmLandingPage/images/RSPCA_Logo_Big.png">
+	<meta property="og:image:width" content="1396">
+	<meta property="og:image:height" content="775">
+
+
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://www.jzbedu.cn/getinvolved/donate/christmas">
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="o/ptl2017Theme/js/askAnnie-1.js"></script>
+<script type="text/javascript" src="webContent/webComponents/pluginIncludeFilesChecker/js/pluginIncludeFilesChecker.js"></script>
+<script type="text/javascript" src="webContent/webComponents/cookieBar/js/jquery.cookiebar.refresh.js"></script>
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/auiValidation-20.09.00.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/collapse.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/handlebars.js"></script>
+
+<!-- Begin TVSquared Tracking Code -->
+<script type="text/javascript">
+var _tvq = window._tvq = window._tvq || [];
+(function() {
+var u = (("https:" == document.location.protocol) ? "https://collector-1412.tvsquared.com/" : "http://collector-1412.tvsquared.com/");
+_tvq.push(['setSiteId', "TV-81548172-1"]);
+_tvq.push(['setTrackerUrl', u + 'tv2track.php']);
+_tvq.push([function()
+
+{ this.deleteCustomVariable(5, 'page') }
+]);
+_tvq.push(['trackPageView']);
+var d = document,
+g = d.createElement('script'),
+s = d.getElementsByTagName('script')[0];
+g.type = 'text/javascript';
+g.defer = true;
+g.async = true;
+g.src = u + 'tv2track.js';
+s.parentNode.insertBefore(g, s);
+})();
+</script>
+<!-- End TVSquared Tracking Code --></head>
+
+<body class=" controls-visible  yui3-skin-sam signed-out public-page site">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="quick-access-nav" id="hpdj_quickAccessNav">
+		<h1 class="hide-accessible">Navigation</h1>
+
+		<ul>
+			
+				<li><a href="#main-content">Skip to Content</a></li>
+			
+
+			
+
+		</ul>
+	</nav>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="javascript:;" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="header">
+	<div class="divider-indent">
+					<div class="floating-logo">
+				<a href="home.html" title="" key="go-to-x"></a>
+					<img alt="Royal Society for the Prevention of Cruelty to Animals" src="http://www.jzbedu.cn/webContent/webComponents/images/img/rspca.png">
+				
+			</div>
+			<div class="secure-logo">
+				<div class="secure-text">SECURE</div>
+				<img alt="Secure" src="http://www.jzbedu.cn/webContent/webComponents/rspcaStaticContent/shared/images/img/secure.svg">
+			</div>
+	</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pt-0 full-footer" id="wrapper">
+	<div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="donation-page-layout" id="main-content" role="main">
+	<div class="portlet-layout">
+		<div class="portlet-column portlet-column-only" id="column-1">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-default portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14784880" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14782718" data-analytics-asset-title="Cold Christmas 2020" data-analytics-asset-type="web-content">
+	
+
+	
+
+
+
+
+
+
+
+
+<div class="donations-landing-sticky-cta-with-images">
+    <div class="donations-launcher">
+            <div class='image-section top' style="background-image: url('http://www.jzbedu.cn/documents/13853408/14783598/Christmas+cold+banner.jpg/84f04fe9-181b-e839-881d-f64f243cec6e?t=1603276725066')">
+                <picture data-fileentryid="14886831"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/14886831/Thumbnail-300x300/Christmas+cold+banner.jpg?t=1603276725066"><source media="(max-width:1000px) and (min-width:300px)" srcset="/o/adaptive-media/image/14886831/Preview-1000x0/Christmas+cold+banner.jpg?t=1603276725066"><img src="http://www.jzbedu.cn/documents/13853408/14783598/Christmas+cold+banner.jpg/84f04fe9-181b-e839-881d-f64f243cec6e?t=1603276725066"></picture>
+            </div>
+
+        <div class="content-area">
+            <div class="content-section">
+                <form action="" class="form" id="donateForm1" method="post" name="donateForm1" novalidate="">
+                    <div class="asks-area">
+                            <div class="switch-payment-option-section">
+                                <div class="switch-payment-option-button donate-regular themeButton themeBackgroundSwallow themeWhiteTxt selected" data-hide="regular">
+                                    Give once
+                                </div>
+                                    <div class="switch-payment-option-button donate-regular themeButton" data-hide="single">
+                                        Give monthly
+                                    </div>
+                            </div>
+                            <div class="asks-section donate-regular-area" style="display: none;">
+                                <div class="asks">
+                                        <div class="donate-amount donate-regular form-control" data-amount="6" data-index="0">
+                                            <div class="donate-amount-main-text">
+                                                £6
+                                            </div>
+                                            <div class="donate-amount-additional-text">
+                                                /month
+                                            </div>
+                                        </div>
+                                        <div class="donate-amount donate-regular form-control" data-amount="10" data-index="1">
+                                            <div class="donate-amount-main-text">
+                                                £10
+                                            </div>
+                                            <div class="donate-amount-additional-text">
+                                                /month
+                                            </div>
+                                        </div>
+                                        <div class="donate-amount donate-regular form-control" data-amount="12" data-index="2">
+                                            <div class="donate-amount-main-text">
+                                                £12
+                                            </div>
+                                            <div class="donate-amount-additional-text">
+                                                /month
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="asks-section donate-single-area">
+                                <div class="asks">
+        	                    	    <div class="donate-amount donate-single form-control" data-amount="15" data-index="0">
+        	                    	        <div class="donate-amount-main-text">
+        	                    	            £15
+                                            </div>
+        	                    	    </div>
+        	                    	    <div class="donate-amount donate-single form-control themeBackgroundSwallow themeWhiteTxt selected" data-amount="25" data-index="1">
+        	                    	        <div class="donate-amount-main-text">
+        	                    	            £25
+                                            </div>
+        	                    	    </div>
+        	                    	    <div class="donate-amount donate-single form-control" data-amount="40" data-index="2">
+        	                    	        <div class="donate-amount-main-text">
+        	                    	            £40
+                                            </div>
+        	                    	    </div>
+                                </div>
+                            </div>
+                        <div class="donation-info-section">
+                            <div class="donation-info-text-section">
+                                <div class="donation-info-text">
+                                        £25 could help keep our Animal Rescue Teams on the road. Join the Christmas rescue.
+                                </div>
+                            </div>
+                            <div class="donation-info-image-section">
+                                    	<img alt="RSPCA Inspector holding a dog" src="http://www.jzbedu.cn/documents/13853408/14783598/25+single+dontion.jpg/860d96bb-0886-c3eb-46e9-64589233118f?t=1603281706941">
+                            </div>
+                        </div>
+                        <div class="other-donation-amount">
+                            <div class="input-group">
+                                <div class="input-group-border">
+                                    <span class="input-group-addon">£</span>
+                                    <input class="field amount form-control donation-amount-input" id="_donationAmount" name="_donationAmount" placeholder="Other amount" title="donation-amount" type="number" onfocus="clearErrMsg();" value="">
+                                </div>
+                                <div class="form-validator-stack help-block">
+                                    <div id="errDiv" role="alert"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donate-button-area">
+                            <button class="themeButton themeStraightButton donate-button themeBackgroundSwallow themeWhiteTxt" onclick="submitDonateForm();">
+                                    Give £25 now
+                            </button>
+    	                    <div class="payment-options payment-options-single" style="display: none;">
+    	                        <img alt="" src="http://www.jzbedu.cn/documents/13853408/14115256/payment+logo%403x.png/edd7690a-eecb-7992-178f-84a091779d29?t=1601465864121">
+                            </div>
+                            <div class="payment-options payment-options-regular">
+    	                        <img alt="" src="http://www.jzbedu.cn/documents/13853408/14115256/payment+logo%403x+%281%29.png/e78c29c5-ef5a-3ea8-e530-b1e1583bbafa?t=1601465867367">
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-section divider-indent">
+            <div class="header">
+                <h1>Join the Christmas rescue now</h1>
+
+<h2>We cannot turn our backs on animals</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+        var regularAsks = [];
+            regularAsks.push({
+                buttonText: "£6",
+                infoText: "£6/month could help answer calls to our Animal Rescue Line. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/6+monthly+donation.jpg/2b53df63-9b7c-88a7-f644-6982c16931b5?t=1603282514322"
+            });
+            regularAsks.push({
+                buttonText: "£10",
+                infoText: "£10/month could help our Animal Rescue Teams reach desperate animals. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/10+monthly+donation.jpg/9417455b-99db-dfe0-dcfa-ff62b779a90f?t=1603282515005"
+            });
+            regularAsks.push({
+                buttonText: "£12",
+                infoText: "£12/month could help pay for a warm blanket, treats and a toy. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/12+monthly+donation.jpg/aeefee75-80a8-469d-3266-e95f28a674ab?t=1603282515370"
+            });
+
+        var singleAsks = [];
+            singleAsks.push({
+                buttonText: "£15",
+                infoText: "£15 could help answer calls to our Animal Rescue Line this Christmas. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/15+single+donation.jpg/eba9b593-4f81-61b5-c7c3-dc52c56085ee?t=1603281706551"
+            });
+            singleAsks.push({
+                buttonText: "£25",
+                infoText: "£25 could help keep our Animal Rescue Teams on the road. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/25+single+dontion.jpg/860d96bb-0886-c3eb-46e9-64589233118f?t=1603281706941"
+            });
+            singleAsks.push({
+                buttonText: "£40",
+                infoText: "£40 could help pay for five cats and dogs to be microchipped. Join the Christmas rescue.",
+                infoImageURL: "/documents/13853408/14783598/40+single+donation.jpg/9c40aac7-be1c-71d6-93e3-4689e1708274?t=1603281707260"
+            });
+    
+    $('.donation-amount-input').on("click", function(event) {
+        updateEmptyDonation()
+    });
+    
+    $('.donate-amount').on("click", function(event) {
+        var currentTarget = $(event.currentTarget);
+        var index = currentTarget.data("index");
+
+        if (currentTarget.hasClass("donate-regular")) {
+            var buttonText = "Give " + regularAsks[index].buttonText + " monthly now";
+            var infoText = regularAsks[index].infoText;
+            var infoImageURL = regularAsks[index].infoImageURL;
+        } else {
+            var buttonText = "Give " + singleAsks[index].buttonText + " now";
+            var infoText = singleAsks[index].infoText;
+            var infoImageURL = singleAsks[index].infoImageURL;
+        }
+        
+        $('.donation-info-image-section img').attr("src", infoImageURL);
+        $('.donation-info-text').html(infoText);
+        $('.donate-button').html(buttonText);
+        
+        $('.donation-info-section').slideDown(1000);
+
+        $('.donate-amount').removeClass("selected");
+        $('.donate-amount').removeClass("themeBackgroundSwallow");
+        $('.donate-amount').removeClass("themeWhiteTxt");
+        $(currentTarget).addClass("selected");
+        $(currentTarget).addClass("themeBackgroundSwallow");
+        $(currentTarget).addClass("themeWhiteTxt");
+    });
+    
+    $(".switch-payment-option-button").on("click", function(event) {
+        var currentTarget = $(event.currentTarget);
+        var hide = $(event.currentTarget).data("hide");
+        
+        $('.asks-section').show();
+        $('.donate-footer-area').show();
+        $('.payment-options').show();
+
+        $('.donate-' + hide + '-area').hide();
+        $('.donate-' + hide + '-footer-area').hide();
+        $('.payment-options-' + hide).hide();
+
+        $(".switch-payment-option-button").removeClass("selected");
+        $(".switch-payment-option-button").removeClass("themeBackgroundSwallow");
+        $(".switch-payment-option-button").removeClass("themeWhiteTxt");
+
+        $(currentTarget).addClass("selected");
+        $(currentTarget).addClass("themeBackgroundSwallow");
+        $(currentTarget).addClass("themeWhiteTxt");
+        
+        if ((hide == "regular" && true) || (hide == "single" && true)) {
+            updateDefaultDonation(hide);
+        } else {
+            updateEmptyDonation();
+        }
+    });
+
+    function updateDefaultDonation(hidden) {
+        if (hidden == "single") {
+            var index = 1;
+            var buttonText = "Give " + regularAsks[index].buttonText + " monthly now";
+            var infoText = regularAsks[index].infoText;
+            var infoImageURL = regularAsks[index].infoImageURL;
+            var askSelector = ".donate-amount.donate-regular"
+        } else {
+            var index = 1
+            var buttonText = "Give " + singleAsks[index].buttonText + " now";
+            var infoText = singleAsks[index].infoText;
+            var infoImageURL = singleAsks[index].infoImageURL;
+            var askSelector = ".donate-amount.donate-single"
+        }
+        
+        $('.donation-info-image-section img').attr("src", infoImageURL);
+        $('.donation-info-text').html(infoText);
+        $('.donate-button').html(buttonText);
+        
+        $('.donation-info-section').slideDown(1000);
+
+        $('.donate-amount').removeClass("selected");
+        $('.donate-amount').removeClass("themeBackgroundSwallow");
+        $('.donate-amount').removeClass("themeWhiteTxt");
+
+        $($(askSelector)[index]).addClass("selected");
+        $($(askSelector)[index]).addClass("themeBackgroundSwallow");
+        $($(askSelector)[index]).addClass("themeWhiteTxt");
+    }
+
+    function updateEmptyDonation() {
+            $('.donation-text-area').html("");
+
+        $('.donation-info-section').slideUp(1000);
+        
+
+        $('.donate-amount').removeClass("selected");
+        $('.donate-amount').removeClass("themeBackgroundSwallow");
+        $('.donate-amount').removeClass("themeWhiteTxt");
+
+        if ($('.donate-regular-area').is(":visible")) {
+            $('.donate-button').html("Give monthly now");
+        } else {
+            $('.donate-button').html("Give now");
+        }
+    }
+
+    function submitDonateForm() {
+        var minAmount = 1;
+        var amount = 0.00;
+        var target = event.target;
+        var form = $(target).parents('form:first');
+
+        if ($('.donate-amount.selected').length > 0) {
+            amount = $('.donate-amount.selected').data("amount");
+        } else {
+            amount = $(form).find("#_donationAmount").val();
+        }
+        
+        if ($('.donate-regular-area').is(":visible")) {
+            url = "/getinvolved/donate/christmas/monthly"
+        } else {
+            url = "/getinvolved/donate/christmas/single"
+        }
+
+        if (url == "/getinvolved/donate/christmas/single") {
+                minAmount = 1
+
+                var maxAmount = 50
+        } else {
+                minAmount = 2
+
+                var maxAmount = 1000
+        }
+        
+        var regEx = /^\d+(\.\d{1,2})?$/;
+       
+        if (amount == '' || isNaN(amount)) {
+            $(form).find("#errDiv").html( "Please enter amount");
+            event.preventDefault();
+            return;   
+        } else if (amount < minAmount) {
+            $(form).find("#errDiv").html("Due to administration costs we are unable to accept donations under £" + minAmount);
+            event.preventDefault();
+            return;
+        } else if (typeof(maxAmount) != "undefined" && amount > maxAmount) {
+            $(form).find("#errDiv").html("We do no accept monthly donations of greater than £" + maxAmount + " via our website. <a href='http://www.jzbedu.cn/utilities/contactus/askus' target='_blank'>Contact us</a> for help.");
+            event.preventDefault();
+            return;
+        } else if (!regEx.test(amount)) {
+            $(form).find("#errDiv").html("Please enter a valid amount (no commas and only 2 digits after the decimal)");
+            event.preventDefault();
+            return;   
+        } else {
+            var finalUrl = '';
+
+            if (url.indexOf('?') > 0) {
+                finalUrl = url + '&amount=' + amount;    
+            } else {
+                finalUrl = url + '?amount=' + amount; 
+            }
+            form.attr('action', finalUrl);       
+        }
+    }
+    
+    /* Deal with floating CTA's */
+    
+    $(window).on("scroll", function(event) {
+        checkStickyPos();
+    });
+    
+    $(window).on("resize", function(event) {
+        checkStickyPos();
+    });
+    
+    function checkStickyPos() {
+        if ($(window).outerWidth() < 768) {
+            $(".content-section").css({position: "relative", top: "0"});
+
+            if ($(".content-section").offset().top + $(".content-section").height()  < $(window).scrollTop() + $('#banner').height()) {
+                $('.floating-donate').show();
+            } else {
+                $('.floating-donate').hide();
+            }
+        } else {
+            $('.floating-donate').hide();
+            
+            var headerHeight = 0;
+            if ($('#banner').css("position") == "fixed") {
+                headerHeight = $('#banner').height()
+            }
+            
+            if ($(window).scrollTop() + headerHeight > $(".donations-launcher").offset().top) {
+                $(".content-section").css({position: "fixed", top: headerHeight + 100 + "px"});
+            } else {
+                if ($(".content-section").css("position") != "absolute") {
+                    $(".content-section").css({position: "absolute", top: "100px"});
+                }
+            }
+        }
+    }
+    
+    function clearErrMsg() {
+        document.getElementById("errDiv").innerHTML = "";
+    }
+</script>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886858" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886326" data-analytics-asset-title="Bella - Cold Christmas" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content header-only">
+    <div class="media-text-header">
+            <div class="embed-image">
+                <picture data-fileentryid="14886848"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/14886848/Thumbnail-300x300/Bella+case+study+image.jpg?t=1603277591475"><source media="(max-width:855px) and (min-width:300px)" srcset="/o/adaptive-media/image/14886848/Preview-1000x0/Bella+case+study+image.jpg?t=1603277591475"><img src="http://www.jzbedu.cn/documents/1494939/7712581/Bella+case+study+image.jpg/233b75c3-b6fc-26d4-f87e-3872c07ff920?t=1603277591475"></picture>
+            </div>
+            <h2>
+                Bella was skin and bone. Her wide and fearful eyes seemed to be pleading - RESCUE ME
+            </h2>
+            <p>
+                <p>Bella was tied to a stairlift and left to starve. When Emma, our animal rescuer found her, this young Staffy was little more than a bag of bones. She had no access to food or water, and no comfy bed where she could rest her frail body.</p>
+
+<p>"I was completely shocked when I saw Bella tied to the stairs,"&nbsp;Emma said. "She had sores on her feet and was emaciated. It was heartbreaking to see."</p>
+
+<p>Today, Bella has found her forever home. But there are many more animals like Bella who urgently need rescuing now. That's why we need you to send your gift today.</p>
+
+<p><strong>Please, will you join the Christmas rescue by sending an urgent gift today? </strong></p>
+
+<p>Bella today...</p>
+            
+    </div>
+</div>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886879" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886380" data-analytics-asset-title="Bella after - Christmas cold" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content header-only">
+    <div class="media-text-header">
+            <div class="embed-image">
+                <picture data-fileentryid="14886869"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/14886869/Thumbnail-300x300/bellanow+case+study+image.jpg?t=1603278080066"><source media="(max-width:860px) and (min-width:300px)" srcset="/o/adaptive-media/image/14886869/Preview-1000x0/bellanow+case+study+image.jpg?t=1603278080066"><img src="http://www.jzbedu.cn/documents/1494939/7712581/bellanow+case+study+image.jpg/564155e4-6ad5-2c63-a0ef-9dad68db260d?t=1603278080066"></picture>
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886940" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886494" data-analytics-asset-title="Scroll to top button - blue" data-analytics-asset-type="web-content">
+	
+
+	<div class="scroll-to-button-area">
+    <button id="scroll-to-button-ovst_" class="scroll-to-button
+            themeButton fullWidthButton
+            themeBackgroundSwallow
+            themeWhiteTxt
+            mobileOnly" data-scroll-time="1" data-scroll-to="#donateForm1">
+        Give an urgent gift today ^
+    </button>
+</div>
+
+<script>
+    $('#scroll-to-button-ovst_').on("click", function(event) {
+        var scrollToElement = $(event.currentTarget).data("scrollTo");
+        var scrollToTime = $(event.currentTarget).data("scrollTime");
+        var scrollPos = $(scrollToElement).offset().top;
+        if (scrollPos > 10) {
+            scrollPos -= 10;
+        }
+        $([document.documentElement, document.body]).animate({
+            scrollTop: scrollPos
+        }, scrollToTime * 1000);
+    });
+</script>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div>
+		</div>
+	</div>
+	<div class="portlet-layout divider-indent">
+		<div class="portlet-column portlet-column-only" id="column-2">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886891" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886404" data-analytics-asset-title="Christmas - 2019 stats" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content header-only">
+    <div class="media-text-header">
+            <p>
+                <div class="themeHeaderBg">During the 2019 Christmas period, more than <span style="color: #189CA1">2,500</span> animals were taken into our care</div>
+            
+    </div>
+</div>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886903" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886439" data-analytics-asset-title="Christmas cold - video promo" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content header-only">
+    <div class="media-text-header">
+            <p>
+                <p>Our animal rescuers work tirelessly every day -&nbsp;even Christmas Day. We're there for all animals, whether they've been injured, abandoned by the side of the road or, like Bella, trying to survive in the most horrific conditions.</p>
+
+<p>Once they're rescued, we ensure each animal gets the veterinary treatment they often urgently need. We then help each one recover from their ordeal with love, attention and expert care before we can help them find a new forever home.</p>
+
+<p><strong>Make your donation today and you will be an animal rescuer too.</strong></p>
+            
+    </div>
+</div>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div>
+		</div>
+	</div>
+	<div class="portlet-layout">
+		<div class="portlet-column portlet-column-only" id="column-3">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14886940" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14886494" data-analytics-asset-title="Scroll to top button - blue" data-analytics-asset-type="web-content">
+	
+
+	<div class="scroll-to-button-area">
+    <button id="scroll-to-button-virv_" class="scroll-to-button
+            themeButton fullWidthButton
+            themeBackgroundSwallow
+            themeWhiteTxt
+            mobileOnly" data-scroll-time="1" data-scroll-to="#donateForm1">
+        Give an urgent gift today ^
+    </button>
+</div>
+
+<script>
+    $('#scroll-to-button-virv_').on("click", function(event) {
+        var scrollToElement = $(event.currentTarget).data("scrollTo");
+        var scrollToTime = $(event.currentTarget).data("scrollTime");
+        var scrollPos = $(scrollToElement).offset().top;
+        if (scrollPos > 10) {
+            scrollPos -= 10;
+        }
+        $([document.documentElement, document.body]).animate({
+            scrollTop: scrollPos
+        }, scrollToTime * 1000);
+    });
+</script>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14744761" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14744346" data-analytics-asset-title="More than 80 pence" data-analytics-asset-type="web-content">
+	
+
+	
+<script type="text/javascript" src="ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script type="text/javascript" src="webContent/webComponents/charting/rspcaCharter.js"></script>
+
+<div class="percent-3-part-breakdown-two-thirds-layout">
+	<div class="percent-header-section">
+		<div class="percent-header-text themeHeaderBg">
+		    More than 80 pence
+		</div>
+		<div class="percent-header-description">
+		    of every pound we spend goes directly to animals who desperately need help.
+Select the tabs to read more.
+		</div>
+		<div class="percent-header-instruction">
+		    
+		</div>
+	</div>
+	<div class="percent-main-section">
+		<div class="percent-main-left">
+		    <canvas id="main-chart-uazu_"></canvas>
+		    <div class="main-chart-info">£1</div>
+		</div>
+		<div class="percent-main-right">
+		    <div class="percent-main-right-top">
+		    
+    		         
+                		<div class="percent-sub-chart" data-namespace="uazu_" data-percentage="81" data-child-id="0" style="color:#189CA1;">
+                		    <canvas id="sub-chart-uazu_-0"></canvas>
+                		    <div class="sub-chart-info">
+                    		    <div class="heading">81p</div>
+                    		    <div class="sub-heading">goes straight to animal welfare</div>  
+                    		</div>
+                		</div>
+
+    		         
+                		<div class="percent-sub-chart" data-namespace="uazu_" data-percentage="18" data-child-id="1" style="color:#913493;">
+                		    <canvas id="sub-chart-uazu_-1"></canvas>
+                		    <div class="sub-chart-info">
+                    		    <div class="heading">18p</div>
+                    		    <div class="sub-heading">goes straight to raising the next pound</div>  
+                    		</div>
+                		</div>
+
+    		         
+                		<div class="percent-sub-chart" data-namespace="uazu_" data-percentage="1" data-child-id="2" style="color:#003473;">
+                		    <canvas id="sub-chart-uazu_-2"></canvas>
+                		    <div class="sub-chart-info">
+                    		    <div class="heading">1p</div>
+                    		    <div class="sub-heading">is spent on governance</div>  
+                    		</div>
+                		</div>
+
+
+		    
+    		</div>
+		    <div class="percent-main-right-bottom">
+        		<div class="percent-right-bottom-content">
+
+    		        <div class="percent-bottom-section-uazu_-0 percent-bottom-section" style="background-color:#D1EBEC;; border-color:#D1EBEC;">
+                		<div class="percent-bottom-text-0 percent-desc-text">
+                		    More than 80 percent of your donation will go to rescuing and rehoming or releasing vulnerable animals. This means abandoned dogs and cats will be cared for, or an injured fox can get a much needed check-up. Most importantly, it ensures that the voice of all animals can be heard.    
+                		</div>
+                		<img src="http://www.jzbedu.cn/documents/1494939/0/dog-cat.svg/f19a3aad-04cc-7e9b-13d2-b6d3a6501888?t=1543262444394">
+                	</div>
+    		        <div class="percent-bottom-section-uazu_-1 percent-bottom-section" style="background-color:#E9D6E9;; border-color:#E9D6E9;">
+                		<div class="percent-bottom-text-1 percent-desc-text">
+                		    From bats to badgers and seals to sparrows, we help animals great and small. Each year, we rescue more than 100,000 of them. Without the funds gained through our marketing, we would not be able to finance our crucial work.    
+                		</div>
+                		<img src="http://www.jzbedu.cn/documents/1494939/0/dog-cat.svg/f19a3aad-04cc-7e9b-13d2-b6d3a6501888?t=1543262444394">
+                	</div>
+    		        <div class="percent-bottom-section-uazu_-2 percent-bottom-section" style="background-color:#CCD6E3;; border-color:#CCD6E3;">
+                		<div class="percent-bottom-text-2 percent-desc-text">
+                		    Your 1p will support our board members as they create campaigns and push for governance change. At home or abroad, our prevention campaigns are essential for improving the safety and happiness of animals.    
+                		</div>
+                		<img src="http://www.jzbedu.cn/documents/1494939/0/dog-cat.svg/f19a3aad-04cc-7e9b-13d2-b6d3a6501888?t=1543262444394">
+                	</div>
+        		
+        		</div>
+    		</div>
+		</div>
+	</div>
+	<div class="percent-footer-section">
+		<div class="percent-footer-text">
+		    
+		</div>
+	</div>
+</div>
+
+<script>
+    var rspcaCharter = new RspcaCharter();
+    rspcaCharter.createMultiDoughnutChart('#main-chart-uazu_', '.percent-sub-chart[data-namespace="uazu_"]');
+
+	$('.percent-sub-chart[data-namespace="uazu_"]').on('click', function(event) {
+        var childId = $(event.currentTarget).data("childId");
+        $('.percent-bottom-section').hide();
+        $('.percent-bottom-section-uazu_-'+childId).show();
+	})
+</script>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14917755" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14917607" data-analytics-asset-title="Donate by phone - 0800 012 1826" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content mobile-fifty-fifty">
+
+    
+    <div class="media-text-main">
+        <div class="media-text-media 
+             media-quarter 
+             media-left 
+             mobile ">
+        
+                <div class="embed-image 
+                ">
+                    <picture data-fileentryid="14744775"><source media="(max-width:84px)" srcset="/o/adaptive-media/image/14744775/Preview-1000x0/phonelogo.png?t=1601393249697"><source media="(max-width:84px) and (min-width:84px)" srcset="/o/adaptive-media/image/14744775/Thumbnail-300x300/phonelogo.png?t=1601393249697"><img src="http://www.jzbedu.cn/documents/1494939/0/phonelogo.png/6db369b7-6ad6-3bf7-5760-f0d0748995fc?t=1601393249697"></picture>
+                </div>
+
+
+        </div>
+        
+        <div id="text-collapse" class="media-text-text
+            
+             media-quarter 
+             media-left ">
+            
+
+            <div class="media-text-main-content">
+                <p class="themeTxtBg themeWhiteTxt">Donate by phone, call now</p>
+
+<p><a class="themeHeaderBg themeWhiteTxt" href="tel:08000121826">0800 012 1826</a></p>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-centre-align-two-thirds-width portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v">
+
+
+
+
+	<div class="portlet-content">
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-14744806" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="14744530" data-analytics-asset-title="Regulated and Secure" data-analytics-asset-type="web-content">
+	
+
+	
+<div class="media-text-content">
+
+    
+    <div class="media-text-main">
+        <div class="media-text-media 
+              
+             media-right 
+             top ">
+        
+                <div class="embed-image">
+                    <picture data-fileentryid="14744796"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/14744796/Thumbnail-300x300/RegulatedAndSecure.png?t=1601393797135"><source media="(max-width:436px) and (min-width:300px)" srcset="/o/adaptive-media/image/14744796/Preview-1000x0/RegulatedAndSecure.png?t=1601393797135"><img src="http://www.jzbedu.cn/documents/1494939/0/RegulatedAndSecure.png/8fafc047-b207-66f6-640a-b1e516802a48?t=1601393797135"></picture>
+                </div>
+
+
+        </div>
+        
+        <div id="text-collapse" class="media-text-text
+            
+              
+             media-right ">
+            
+
+            <div class="media-text-main-content">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div>
+		</div>
+	</div>
+	<div class="portlet-layout divider-indent">
+		<div class="portlet-column portlet-column-only" id="column-4">
+			<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-4"></div>
+		</div>
+	</div>
+	<div class="portlet-layout divider-indent flex-layout">
+		<div class="portlet-column portlet-column-first" id="column-5">
+			<div class="empty portlet-dropzone portlet-column-content portlet-column-content-first" id="layout-column_column-5"></div>
+		</div>
+		<div class="portlet-column" id="column-6">
+			<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-6"></div>
+		</div>
+		<div class="portlet-column portlet-column-last" id="column-7">
+			<div class="empty portlet-dropzone portlet-column-content portlet-column-content-last" id="layout-column_column-7"></div>
+		</div>
+	</div>
+	<div class="portlet-layout">
+		<div class="portlet-column portlet-column-only" id="column-8">
+			<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-8"></div>
+		</div>
+	</div>
+</div>
+
+
+<form action="#" class="hide" id="hrefFm" method="post" name="hrefFm" aria-hidden="true"><span></span><input hidden="" type="submit"></form>	</div>
+	<input name="isUserLoggedIn" type="hidden" value="$is_signed_in" id="isUserLoggedIn">
+<footer id="footer">
+			<div id="footer-links">
+			<section class="divider-indent">
+				<div class="footerColumnArea">
+					<div class="footerColumn">
+						<h3 class="footer">How we help</h3>
+						<div class="mobileFooter collapsed" data-toggle="collapse" data-target="#footerCollapse1">
+							How we help <i class="fa fa-chevron-down"></i>
+						</div>
+						<div id="footerCollapse1" class="mobileFooterCollapse collapse">
+							<p class="themeTxtSm">More than</p>
+							<p class="themeTotalNum">102,900</p>
+							<p class="themeTxtSm">Animals were rescued and collected last year</p>
+						</div>
+					</div>
+					<div class="footerColumn">
+						<h3 class="footer">Get in touch</h3>
+						<div class="mobileFooter collapsed" data-toggle="collapse" data-target="#footerCollapse2">
+							Get in touch <i class="fa fa-chevron-down"></i>
+						</div>
+						<div id="footerCollapse2" class="mobileFooterCollapse collapse">
+							<div><a href="yourlocal.html">Find your local RSPCA</a></div>
+							<div><a href="javascript:;">Contact us</a></div>
+							<div><a href="javascript:;">Report cruelty</a></div>
+						</div>
+					</div>
+					<div class="footerColumn">
+						<h3 class="footer">Our charity</h3>
+						<div class="mobileFooter collapsed" data-toggle="collapse" data-target="#footerCollapse3">
+							Our charity <i class="fa fa-chevron-down"></i>
+						</div>
+						<div id="footerCollapse3" class="mobileFooterCollapse collapse">
+							<div><a href="javascript:;" target="_blank">Media centre</a></div>
+							<div><a href="home1.html" target="_blank">Science</a></div>
+							<div><a href="javascript:;" target="_blank">RSPCA Assured</a></div>
+							<div><a href="home2.html" target="_blank">Education</a></div>
+						</div>
+					</div>
+					<div class="footerColumn">
+
+						<h3 class="footer">Stay up to date</h3>
+						<p class="themeTxtSm">
+							Sign up for pet care advice, hints and tips on helping wildlife, our latest news, rehoming success stories and more directly to your inbox. Unsubscribe at any time.
+						</p>
+
+						<form id="footerSignUp" action="/utilities/aboutus/stayinformed" method="get" target="_blank">
+
+							<input type="hidden" name="source" value="RSPCA_Website">
+							<input type="submit" class="themeActionButton" value="Sign up">
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="follow-links">
+			<div class="follow-us divider-indent">
+				<div class="follow-us-header">Follow us</div>
+				<div class="follow-us-icons">
+					<a href="javascript:;" target="_blank"><img src="http://www.jzbedu.cn/webContent/webComponents/images/svgIcons/facebook.svg" alt="Follow us on Facebook"></a>
+					<a href="javascript:;" target="_blank"><img src="http://www.jzbedu.cn/webContent/webComponents/images/svgIcons/twitter.svg" alt="Follow us on Twitter"></a>
+					<a href="javascript:;" target="_blank"><img src="http://www.jzbedu.cn/webContent/webComponents/images/svgIcons/youtube.svg" alt="Follow us on YouTube"></a>
+					<a href="javascript:;" target="_blank"><img src="http://www.jzbedu.cn/webContent/webComponents/images/svgIcons/instagram.svg" alt="Follow us on Instagram"></a>
+				</div>
+			</div>
+		</div>
+	<div class="divider-indent row">
+		<div class="copyright-message">
+			<p>&#169; RSPCA 2020. All rights reserved. The RSPCA helps animals in England and Wales. Registered charity no.219099. We're registered with the Fundraising Regulator.</p>
+		</div>
+
+
+		<div id="footerNav">
+			<ul>		
+				
+				   <li><a href="javascript:;">Jobs</a></li>
+				   <li><a href="javascript:;">Contact us</a></li>
+				   <li><a href="termsandconditions.html">Terms and conditions</a></li>
+				   <li><a href="sitemap.html">Site map</a></li>
+				   <li><a href="javascript:;">National privacy notice</a></li>
+				   <li><a href="accessibility.html">Accessibility</a></li>
+				   <li><a href="javascript:;">Modern slavery</a></li>
+	        </ul>
+	    </div>
+    </div>
+</footer></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		
+
+			
+
+			
+		
+	
+
+	Liferay.BrowserSelectors.run();
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fgetinvolved\x2fdonate\x2fchristmas';
+		Liferay.currentURLEncoded = '\x252Fgetinvolved\x252Fdonate\x252Fchristmas';
+
+	// ]]>
+</script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+				
+
+				
+			
+		// ]]>
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_pGIHMfdL60vx\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function(event) {
+		if (window.Analytics) {
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function(data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function() {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function(event) {
+		if (window.Analytics) {
+			Analytics.send('posted', 'Comment', {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text
+			});
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var pathnameRegexp = /\/documents\/(\d+)\/(\d+)\/(.+?)\/([^&]+)/;
+
+	function handleDownloadClick(event) {
+		if (event.target.nodeName.toLowerCase() === 'a' && window.Analytics) {
+			var anchor = event.target;
+			var match = pathnameRegexp.exec(anchor.pathname);
+
+			var fileEntryId =
+				anchor.dataset.analyticsFileEntryId ||
+				(anchor.parentElement &&
+					anchor.parentElement.dataset.analyticsFileEntryId);
+
+			if (fileEntryId && match) {
+				var getParameterValue = function(parameterName) {
+					var result = null;
+
+					anchor.search
+						.substr(1)
+						.split('&')
+						.forEach(function(item) {
+							var tmp = item.split('=');
+
+							if (tmp[0] === parameterName) {
+								result = decodeURIComponent(tmp[1]);
+							}
+						});
+
+					return result;
+				};
+
+				Analytics.send('documentDownloaded', 'Document', {
+					groupId: match[1],
+					fileEntryId: fileEntryId,
+					preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+					title: decodeURIComponent(match[3].replace(/\+/gi, ' ')),
+					version: getParameterValue('version')
+				});
+			}
+		}
+	}
+
+	document.body.addEventListener('click', handleDownloadClick);
+
+	var onDestroyPortlet = function() {
+		document.body.removeEventListener('click', handleDownloadClick);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+	if (Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				attributeName: 'data-href',
+				polyfill: true
+			}
+		);
+	}
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 2,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_7FJy1p5Ehkbg\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d2\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VjVXi3rOZ1ZU\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_L4M8UdX1n8Gr\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 3,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_JdNBdtznoR9v\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d3\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_9IWO9DCYukiW\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 2,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_VxFigzrE1PHU\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d2\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_qJ6TrtLHznis\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_DZZ4E1mKNH4e\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 3,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d13756757\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_LnTxDfzuWVbW\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d3\x26p_p_col_count\x3d4\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fgetinvolved\x252Fdonate\x252Fchristmas',
+			refreshURLData: {}
+		}
+	);
+Liferay.Loader.require('metal-dom/src/all/dom', 'clay-tooltip/src/ClayTooltip', function(metalDomSrcAllDom, clayTooltipSrcClayTooltip) {
+(function(){
+var dom = metalDomSrcAllDom;
+var ClayTooltip = clayTooltipSrcClayTooltip;
+(function() {var $ = AUI.$;var _ = AUI._;
+	var focusInPortletHandler = dom.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			dom.addClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+
+	var focusOutPortletHandler = dom.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			dom.removeClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP) {
+		Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP = ClayTooltip.default.init(
+			{
+				selectors: [
+					'.manage-collaborators-dialog .lexicon-icon[data-title]:not(.lfr-portal-tooltip)',
+					'.manage-collaborators-dialog .lexicon-icon[title]:not(.lfr-portal-tooltip)',
+					'.management-bar [data-title]:not(.lfr-portal-tooltip)',
+					'.management-bar [title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [data-title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [title]:not(.lfr-portal-tooltip)',
+					'.progress-container[data-title]',
+					'.source-editor__fixed-text__help[data-title]',
+					'.taglib-discussion [data-title]:not(.lfr-portal-tooltip)',
+					'.taglib-discussion [title]:not(.lfr-portal-tooltip):not([title=""])',
+					'.upper-tbar [data-title]:not(.lfr-portal-tooltip)',
+					'.upper-tbar [title]:not(.lfr-portal-tooltip)'
+				]
+			}
+		);
+	}
+})();})();
+});AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_TOOLTIP) {
+		var triggerShowEvent = ['mouseenter', 'MSPointerDown', 'touchstart'];
+
+		if (A.UA.ios) {
+			triggerShowEvent = ['touchstart'];
+		}
+
+		Liferay.Data.LFR_PORTAL_TOOLTIP = new A.TooltipDelegate(
+			{
+				constrain: true,
+				opacity: 1,
+				trigger: '.lfr-portal-tooltip',
+				triggerHideEvent: ['click', 'mouseleave', 'MSPointerUp', 'touchend'],
+				triggerShowEvent: triggerShowEvent,
+				visible: false,
+				zIndex: Liferay.zIndex.TOOLTIP
+			}
+		);
+
+		Liferay.on(
+			'beforeNavigate',
+			function(event) {
+				Liferay.Data.LFR_PORTAL_TOOLTIP.getTooltip().hide();
+			}
+		);
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {var $ = AUI.$;var _ = AUI._;
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2erspca\x2eorg\x2euk\x2fhome',
+					sessionLength: 3590,
+					warningLength: 0
+				}
+			);
+
+			
+		})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="o/thmLandingPage/js/main-other_js_en_US_7210_1603272.js" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		AUI().use(
+			'aui-base',
+			function(A) {
+				var frameElement = window.frameElement;
+
+				if (frameElement && frameElement.getAttribute('id') === 'simulationDeviceIframe') {
+					A.getBody().addClass('lfr-has-simulation-panel');
+				}
+			}
+		);
+	// ]]>
+</script>
+<!-- Javascript-->
+<script type="text/javascript">
+_linkedin_data_partner_id = "222170";
+</script>
+<script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="collect/222170_gif.jpg">
+</noscript></body>
+</html>
+

@@ -1,0 +1,3820 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- SERVERNAME:PRD server 2 / IX ptl02 -->
+
+
+	<!-- SERVERNAME:PRD server 2 / IX ptl02 -->
+
+
+
+
+
+
+<!-- SITE NAME:  Science   -->
+	<!-- GOOGLE Key found in page:  UA-1859103-1   -->
+	<!-- GOOGLE TESTING Key found in page:  GTM-5PJT8M4   -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+(function(funcName, baseObj) {
+    // The public function name defaults to window.docReady
+    // but you can pass in your own object and own function name and those will be used
+    // if you want to put them in a different namespace
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    // call this when the document is ready
+    // this function protects itself against being called more than once
+    function ready() {
+        if (!readyFired) {
+            // this must be set to true before we start calling callbacks
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                // if a callback here happens to add new ready handlers,
+                // the docReady() function will see that it already fired
+                // and will schedule the callback to run right after
+                // this event loop finishes so all handlers will still execute
+                // in order and no new ones will be added to the readyList
+                // while we are processing the list
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            // allow any closures held by these functions to free
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    // This is the one public interface
+    // docReady(fn, context);
+    // the context argument is optional - if present, it will be passed
+    // as an argument to the callback
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        // if ready has already fired, then just schedule the callback
+        // to fire asynchronously, but right away
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            // add the function and context to the list
+            readyList.push({fn: callback, ctx: context});
+        }
+        // if document already ready to go, schedule the ready function to run
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            // otherwise if we don't have event handlers installed, install them
+            if (document.addEventListener) {
+                // first choice is DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", ready, false);
+                // backup is window load event
+                window.addEventListener("load", ready, false);
+            } else {
+                // must be IE
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+
+
+ga('create', 'UA-1859103-1', 'auto');
+console.log("GA created");
+ga('require', 'ecommerce');
+console.log("ecommerce");
+
+//Check whether we want to suppress the page view in special cases
+docReady( function(){
+	if( document.getElementById("noPageTracking") == null){
+		ga('require', 'GTM-5PJT8M4');
+		console.log("GA required");
+		ga('send', 'pageview');
+		console.log("Page view sent");
+	}
+});
+
+
+</script>
+<html class="ltr" dir="ltr" lang="en-US">
+<head>
+	<title>Reports and resources | jzbedu.cn</title>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_160612.js" type="text/javascript"></script>
+<link data-senna-track="permanent" href="o/frontend-theme-font-awesome-web/css/main.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+		
+			
+				<link data-senna-track="temporary" href="" rel="canonical">
+			
+		
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="o/ptl2017Theme/css/clay-other_mainSiteTheme_WAR_ptl1.css" id="liferayAUICSS" rel="stylesheet" type="text/css">
+
+
+
+<link data-senna-track="temporary" href="o/frontend-css-web/main-other_mainSiteTheme_WAR_ptl.css" id="liferayPortalCSS" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<link data-senna-track="temporary" href="combo-other_mainSiteTheme_WAR_pt4.css" id="f3ef2570" rel="stylesheet" type="text/css">
+
+	
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function() {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function() {
+				return 81.0;
+			},
+
+			getRevision: function() {
+				return '537.36';
+			},
+			getVersion: function() {
+				return '81.0';
+			},
+
+			
+
+			isAir: function() {
+				return false;
+			},
+			isChrome: function() {
+				return true;
+			},
+			isEdge: function() {
+				return false;
+			},
+			isFirefox: function() {
+				return false;
+			},
+			isGecko: function() {
+				return true;
+			},
+			isIe: function() {
+				return false;
+			},
+			isIphone: function() {
+				return false;
+			},
+			isLinux: function() {
+				return false;
+			},
+			isMac: function() {
+				return false;
+			},
+			isMobile: function() {
+				return false;
+			},
+			isMozilla: function() {
+				return false;
+			},
+			isOpera: function() {
+				return false;
+			},
+			isRtf: function() {
+				return true;
+			},
+			isSafari: function() {
+				return true;
+			},
+			isSun: function() {
+				return false;
+			},
+			isWebKit: function() {
+				return true;
+			},
+			isWindows: function() {
+				return true;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function() {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			null
+
+			
+
+			
+		];
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			NTLM_AUTH_ENABLED: false,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 104857600
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function() {
+					return '6';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function() {
+					return '/group/science/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function() {
+					return '/sciencegroup/companionanimals/reportsandresources';
+				},
+				getLayoutURL: function() {
+					return 'https://science.jzbedu.cn/sciencegroup/companionanimals/reportsandresources';
+				},
+				getParentLayoutId: function() {
+					return '2';
+				},
+				isControlPanel: function() {
+					return false;
+				},
+				isPrivateLayout: function() {
+					return 'false';
+				},
+				isVirtualLayout: function() {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function() {
+				return 'en-US';
+			},
+			getCanonicalURL: function() {
+
+				
+
+				return 'https\x3a\x2f\x2fscience\x2erspca\x2eorg\x2euk\x2fsciencegroup\x2fcompanionanimals\x2freportsandresources';
+			},
+			getCDNBaseURL: function() {
+				return 'https://science.jzbedu.cn';
+			},
+			getCDNDynamicResourcesHost: function() {
+				return '';
+			},
+			getCDNHost: function() {
+				return '';
+			},
+			getCompanyGroupId: function() {
+				return '260730';
+			},
+			getCompanyId: function() {
+				return '10108';
+			},
+			getDefaultLanguageId: function() {
+				return 'en_US';
+			},
+			getDoAsUserIdEncoded: function() {
+				return '';
+			},
+			getLanguageId: function() {
+				return 'en_US';
+			},
+			getParentGroupId: function() {
+				return '1494935';
+			},
+			getPathContext: function() {
+				return '';
+			},
+			getPathImage: function() {
+				return '/image';
+			},
+			getPathJavaScript: function() {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function() {
+				return '/c';
+			},
+			getPathThemeImages: function() {
+				return 'https://science.jzbedu.cn/o/ptl2017Theme/images';
+			},
+			getPathThemeRoot: function() {
+				return '/o/ptl2017Theme';
+			},
+			getPlid: function() {
+				return '1560995';
+			},
+			getPortalURL: function() {
+				return 'https://science.jzbedu.cn';
+			},
+			getScopeGroupId: function() {
+				return '1494935';
+			},
+			getScopeGroupIdOrLiveGroupId: function() {
+				return '1494935';
+			},
+			getSessionId: function() {
+				return '';
+			},
+			getSiteAdminURL: function() {
+				return 'https://science.jzbedu.cn/group/science/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function() {
+				return '1494935';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=1560995';
+			},
+			getURLHome: function() {
+				return 'https\x3a\x2f\x2fscience\x2erspca\x2eorg\x2euk\x2fhome';
+			},
+			getUserEmailAddress: function() {
+				return '';
+			},
+			getUserId: function() {
+				return '10110';
+			},
+			getUserName: function() {
+				return '';
+			},
+			isAddSessionIdToURL: function() {
+				return false;
+			},
+			isImpersonated: function() {
+				return false;
+			},
+			isSignedIn: function() {
+				return false;
+			},
+			isStateExclusive: function() {
+				return false;
+			},
+			isStateMaximized: function() {
+				return false;
+			},
+			isStatePopUp: function() {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=mainSiteTheme_WAR_ptl2017Theme&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1606131989189';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064&';
+			},
+			getDateFormat: function() {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function() {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function() {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function() {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function() {
+				return '/o/frontend-js-web';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=mainSiteTheme_WAR_ptl2017Theme&colorSchemeId=01&minifierType=js&languageId=en_US&b=7210&t=1595908832064';
+			},
+			getPortletRootPath: function() {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=en_US&b=7210&t=1595908832064';
+			}
+		};
+
+		Liferay.authToken = 'sQHnVZ7m';
+
+		
+
+		Liferay.currentURL = '\x2fsciencegroup\x2fcompanionanimals\x2freportsandresources';
+		Liferay.currentURLEncoded = '\x252Fsciencegroup\x252Fcompanionanimals\x252Freportsandresources';
+	// ]]>
+</script>
+
+<script src="o/js_loader_config-1606129063058.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_159590.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595901.js" type="text/javascript"></script>
+<script data-senna-track="permanent" src="combo-other_js_en_US_7210_1595902.js" type="text/javascript"></script>
+
+
+
+
+	
+
+	<script data-senna-track="temporary" src="o/js_bundle_config-1606129127104.js" type="text/javascript"></script>
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+				<script data-senna-track="permanent" id="googleAnalyticsScript" type="text/javascript">
+					(function(i, s, o, g, r, a, m) {
+						i['GoogleAnalyticsObject'] = r;
+
+						i[r] = i[r] || function() {
+							var arrayValue = i[r].q || [];
+
+							i[r].q = arrayValue;
+
+							(i[r].q).push(arguments);
+						};
+
+						i[r].l = 1 * new Date();
+
+						a = s.createElement(o);
+						m = s.getElementsByTagName(o)[0];
+						a.async = 1;
+						a.src = g;
+						m.parentNode.insertBefore(a, m);
+					})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+					
+
+					
+						
+							ga('create', 'UA-1859103-1', 'auto');
+						
+					
+
+					
+
+					
+
+					ga('send', 'pageview');
+
+					
+				</script>
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+		<script data-senna-track="temporary" src="combo-other_mainSiteTheme_WAR_pt.js" type="text/javascript"></script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="o/ptl2017Theme/css/main-other_mainSiteTheme_WAR_ptl1.css" id="liferayThemeCSS" rel="stylesheet" type="text/css">
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+		/* linked lists */
+#wrapper .linked-content-list .content-item-title {
+    padding: 8px;
+}
+#wrapper .linked-content-list .content-item-title a {
+    color: #FFF;
+}
+
+#wrapper .linked-content-list .content-item.content-item-flex {
+            display: flex;
+            padding: 10px 0 14px;
+            border-bottom: 1px dotted #1F2526;
+}
+#wrapper .linked-content-list .content-item.content-item-flex .content-left {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+#wrapper .linked-content-list .content-item.content-item-flex .content-left .content-image {
+    width: 200px;
+    height: 110px;
+}
+
+@media all and (max-width: 767px) {
+    #wrapper .linked-content-list .content-item.content-item-flex .content-left .content-image {
+        width: 150px;
+        height: 88px;
+    }
+}
+/* linked lists END*/
+	</style>
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<script type="text/javascript">
+// <![CDATA[
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					page: event.page
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script data-senna-track="temporary" type="text/javascript">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){
+  	if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1579606832323757');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1579606832323757&ev=PageView&noscript=1">
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google AdWords: 1007595157 -->
+<script async="" src="gtag/js-AW-1007595157.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1007595157');
+  gtag('config', 'DC-6522851');
+  
+   <!-- Google Tag Manager -->
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NK3CPVP');
+  <!-- End Google Tag Manager -->
+</script>
+<!-- end Global site tag  -->
+<!-- Bing tracking -->
+<script>
+(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"17020132"};
+o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)}
+,i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+</script>
+<!-- end Bing tracking -->	<link href="https://plus.google.com/100597930162075621755/" rel="publisher">
+
+
+
+
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/cookieBar/css/jquery.cookiebar.refresh.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/fontAwesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="webContent/webComponents/rspcaStaticContent/shared/css/templates-20.09.00.css">
+
+			<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="google-site-verification" content="F8ZWAMxjbusBK4XDxAe4ptWDpAe_zEprBWhkIVR-RWU">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="email=no">
+<meta content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" name="viewport"> 
+
+
+	<meta property="og:title" content="Reports and resources | jzbedu.cn">
+
+
+	
+	
+<meta property="og:image" content="https://science.jzbedu.cn/o/ptl2017Theme/images/RSPCA_Logo_Big.png">
+	<meta property="og:image:width" content="1396">
+	<meta property="og:image:height" content="775">
+
+
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://science.jzbedu.cn/sciencegroup/companionanimals/reportsandresources">
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="o/ptl2017Theme/js/askAnnie-1.js"></script>	
+<script type="text/javascript" src="webContent/webComponents/pluginIncludeFilesChecker/js/pluginIncludeFilesChecker.js"></script>
+<script type="text/javascript" src="webContent/webComponents/cookieBar/js/jquery.cookiebar.refresh.js"></script>
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/auiValidation-20.09.00.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/collapse.js"></script>
+
+<script type="text/javascript" src="webContent/webComponents/rspcaStaticContent/shared/js/handlebars.js"></script>
+
+
+	<!-- Begin TVSquared Tracking Code -->
+<script type="text/javascript">
+var _tvq = window._tvq = window._tvq || [];
+(function() {
+var u = (("https:" == document.location.protocol) ? "https://collector-1412.tvsquared.com/" : "http://collector-1412.tvsquared.com/");
+_tvq.push(['setSiteId', "TV-81548172-1"]);
+_tvq.push(['setTrackerUrl', u + 'tv2track.php']);
+_tvq.push([function()
+
+{ this.deleteCustomVariable(5, 'page') }
+]);
+_tvq.push(['trackPageView']);
+var d = document,
+g = d.createElement('script'),
+s = d.getElementsByTagName('script')[0];
+g.type = 'text/javascript';
+g.defer = true;
+g.async = true;
+g.src = u + 'tv2track.js';
+s.parentNode.insertBefore(g, s);
+})();
+</script>
+<!-- End TVSquared Tracking Code --></head>
+<body class=" controls-visible  yui3-skin-sam signed-out public-page site theme science">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="javascript:;" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="o/ptl2017Theme/js/flyout-99.js" type="text/javascript"></script>
+
+
+
+<a name="backtotoplink"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav class="quick-access-nav" id="lgcp_quickAccessNav">
+		<h1 class="hide-accessible">Navigation</h1>
+
+		<ul>
+			
+				<li><a href="#main-content">Skip to Content</a></li>
+			
+
+			
+
+		</ul>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pt-0" id="wrapper">
+
+<header id="banner" role="banner">
+	<div id="heading">
+		<a class="logo custom-logo" href="home.html" title="" key="go-to-x"></a>
+		<img alt="Royal Society for the Prevention of Cruelty to Animals" src="https://science.jzbedu.cn/o/ptl2017Theme/images/img/rspca.png">
+		
+		<div id="mobile-nav-menu">
+			<a class="hardcoded nav-item nav-search" href="search1.html"><img src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/nav-search.png" alt="Search the RSPCA'"></a>
+			<img class="headerSeparator" src="https://science.jzbedu.cn/o/ptl2017Theme/images/img/separator.png" alt="">
+			<img class="menu-icon" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/mobile-menu.png" alt="RSPCA site navigation">
+		</div>
+		<div id="header-nav-menu">
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-parent" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1507240" data-parent-id="0" id="layout_1507240" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1507240" href="home1.html" class="themeTxtSmBd" role="menuitem"><span>Science Home</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li aria-selected='true' class="nav-item selected" data-id="1560991" data-parent-id="0" id="layout_1560991" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560991" href="companionanimals.html" class="themeTxtSmBd" role="menuitem"><span>Companion animals</span></a>
+						<img class="nav-open nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1560992" data-parent-id="1560991" id="layout_1560992" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560992" href="whoweare1.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li aria-selected='true' class="nav-item selected" data-id="1560995" data-parent-id="1560991" id="layout_1560995" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560995" href="" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561164" data-parent-id="0" id="layout_1561164" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561164" href="farmanimals2.html" class="themeTxtSmBd" role="menuitem"><span>Farm animals</span></a>
+						<img class="nav-open nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561165" data-parent-id="1561164" id="layout_1561165" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561165" href="whoweare2.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561167" data-parent-id="1561164" id="layout_1561167" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561167" href="welfarescience.html" class="themeTxtSm" role="menuitem"><span>Welfare science</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561168" data-parent-id="1561164" id="layout_1561168" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561168" href="researchprojects.html" class="themeTxtSm" role="menuitem"><span>Research projects</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561169" data-parent-id="1561164" id="layout_1561169" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561169" href="standards.html" class="themeTxtSm" role="menuitem"><span>Farm animal welfare standards</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561183" data-parent-id="1561164" id="layout_1561183" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561183" href="outcomeassessment.html" class="themeTxtSm" role="menuitem"><span>Welfare outcome assessment</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561184" data-parent-id="1561164" id="layout_1561184" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561184" href="veterinaryhealthplanning.html" class="themeTxtSm" role="menuitem"><span>Veterinary health planning</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561185" data-parent-id="1561164" id="layout_1561185" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561185" href="reportsandresources1.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561355" data-parent-id="0" id="layout_1561355" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561355" href="researchanimals.html" class="themeTxtSmBd" role="menuitem"><span>Animals in science</span></a>
+						<img class="nav-open nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561359" data-parent-id="1561355" id="layout_1561359" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561359" href="implementing3rs.html" class="themeTxtSm" role="menuitem"><span>Implementing the 3Rs</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561373" data-parent-id="1561355" id="layout_1561373" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561373" href="ethicalreview.html" class="themeTxtSm" role="menuitem"><span>Ethical review</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="2450427" data-parent-id="1561355" id="layout_2450427" role="presentation">
+					<div>
+					<a aria-labelledby="layout_2450427" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Focus on severe suffering</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561358" data-parent-id="1561355" id="layout_1561358" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561358" href="workinginternationally.html" class="themeTxtSm" role="menuitem"><span>Our international work</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285534" data-parent-id="1561355" id="layout_9285534" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285534" href="tertiaryeducation.html" class="themeTxtSm" role="menuitem"><span>Tertiary education</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561378" data-parent-id="1561355" id="layout_1561378" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561378" href="reportsandresources2.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285543" data-parent-id="1561355" id="layout_9285543" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285543" href="meetings.html" class="themeTxtSm" role="menuitem"><span>Meetings</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561628" data-parent-id="0" id="layout_1561628" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561628" href="wildlife1.html" class="themeTxtSmBd" role="menuitem"><span>Wildlife</span></a>
+						<img class="nav-open nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/down-chevron.png" alt="">
+						<img class="nav-close nav-button" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/up-chevron.png" alt="">
+						</div>
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561629" data-parent-id="1561628" id="layout_1561629" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561629" href="whoweare.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561630" data-parent-id="1561628" id="layout_1561630" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561630" href="whatwedo1.html" class="themeTxtSm" role="menuitem"><span>What we do</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561631" data-parent-id="1561628" id="layout_1561631" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561631" href="currentresearch.html" class="themeTxtSm" role="menuitem"><span>Current research</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561632" data-parent-id="1561628" id="layout_1561632" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561632" href="reportsandresources3.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12358602" data-parent-id="0" id="layout_12358602" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12358602" href="sentience.html" class="themeTxtSmBd" role="menuitem"><span>Animal Sentience</span></a>
+						</div>
+				</li>
+	</ul>
+			<div class="header-nav-menu-buttons">
+				<a class="myRSPCA" href="myrspca.html"><img src="https://science.jzbedu.cn/o/ptl2017Theme/images/img/myRSPCA.png" alt="Icon"><span>my RSPCA</span></a>
+			</div>
+		</div>
+		<hr>
+	</div>
+</header>
+<!-- Starting nav --!>
+<nav id="site-navigation" role="navigation">
+
+
+	<!-- freemarker_version = 2.3.29 --!>
+
+	<div id="theme-nav-bar">
+		<div id="nav-level-0">
+	
+	<ul aria-label="Site Pages" class=" nav-level-0  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1507240" data-parent-id="0" id="layout_1507240" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1507240" href="home1.html" class="themeTxtSm" role="menuitem"><span>Science Home</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li aria-selected='true' class="nav-item selected" data-id="1560991" data-parent-id="0" id="layout_1560991" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560991" href="companionanimals.html" class="themeTxtSm" role="menuitem"><span>Companion animals</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561164" data-parent-id="0" id="layout_1561164" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561164" href="farmanimals2.html" class="themeTxtSm" role="menuitem"><span>Farm animals</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561355" data-parent-id="0" id="layout_1561355" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561355" href="researchanimals.html" class="themeTxtSm" role="menuitem"><span>Animals in science</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561628" data-parent-id="0" id="layout_1561628" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561628" href="wildlife1.html" class="themeTxtSm" role="menuitem"><span>Wildlife</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12358602" data-parent-id="0" id="layout_12358602" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12358602" href="sentience.html" class="themeTxtSm" role="menuitem"><span>Animal Sentience</span></a>
+						</div>
+				</li>
+	</ul>
+
+			<div id="hardcoded-nav-level-0">
+				<div id="nav-myrspca-container">
+					<a class="hardcoded nav-item nav-myrspca" href="myrspca.html"><span>myrspca</span></a>
+	
+	<ul aria-label="Site Pages" class=" nested_nav  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="11600296" data-parent-id="11600278" id="layout_11600296" role="presentation">
+					<div>
+					<a aria-labelledby="layout_11600296" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Change password</span></a>
+						</div>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a href="myrspca.html"><span>Sign in</span></a>
+				</li>
+	</ul>
+
+				</div>
+				<a class="hardcoded nav-item nav-search" href="search1.html"><img src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/nav-search.png" alt="Search the RSPCA"></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="site-nav-container-level-1">
+	
+	<ul aria-label="Site Pages" class="selected_menu nav-level-1  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1560992" data-parent-id="1560991" id="layout_1560992" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560992" href="whoweare1.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li aria-selected='true' class="nav-item selected" data-id="1560995" data-parent-id="1560991" id="layout_1560995" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560995" href="" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-1  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561165" data-parent-id="1561164" id="layout_1561165" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561165" href="whoweare2.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561167" data-parent-id="1561164" id="layout_1561167" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561167" href="welfarescience.html" class="themeTxtSm" role="menuitem"><span>Welfare science</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561168" data-parent-id="1561164" id="layout_1561168" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561168" href="researchprojects.html" class="themeTxtSm" role="menuitem"><span>Research projects</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561169" data-parent-id="1561164" id="layout_1561169" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561169" href="standards.html" class="themeTxtSm" role="menuitem"><span>Farm animal welfare standards</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561183" data-parent-id="1561164" id="layout_1561183" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561183" href="outcomeassessment.html" class="themeTxtSm" role="menuitem"><span>Welfare outcome assessment</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561184" data-parent-id="1561164" id="layout_1561184" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561184" href="veterinaryhealthplanning.html" class="themeTxtSm" role="menuitem"><span>Veterinary health planning</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561185" data-parent-id="1561164" id="layout_1561185" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561185" href="reportsandresources1.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-1  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561359" data-parent-id="1561355" id="layout_1561359" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561359" href="implementing3rs.html" class="themeTxtSm" role="menuitem"><span>Implementing the 3Rs</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561373" data-parent-id="1561355" id="layout_1561373" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561373" href="ethicalreview.html" class="themeTxtSm" role="menuitem"><span>Ethical review</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="2450427" data-parent-id="1561355" id="layout_2450427" role="presentation">
+					<div>
+					<a aria-labelledby="layout_2450427" href="javascript:;" class="themeTxtSm" role="menuitem"><span>Focus on severe suffering</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561358" data-parent-id="1561355" id="layout_1561358" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561358" href="workinginternationally.html" class="themeTxtSm" role="menuitem"><span>Our international work</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285534" data-parent-id="1561355" id="layout_9285534" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285534" href="tertiaryeducation.html" class="themeTxtSm" role="menuitem"><span>Tertiary education</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561378" data-parent-id="1561355" id="layout_1561378" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561378" href="reportsandresources2.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285543" data-parent-id="1561355" id="layout_9285543" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285543" href="meetings.html" class="themeTxtSm" role="menuitem"><span>Meetings</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-1  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561629" data-parent-id="1561628" id="layout_1561629" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561629" href="whoweare.html" class="themeTxtSm" role="menuitem"><span>Who we are</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561630" data-parent-id="1561628" id="layout_1561630" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561630" href="whatwedo1.html" class="themeTxtSm" role="menuitem"><span>What we do</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561631" data-parent-id="1561628" id="layout_1561631" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561631" href="currentresearch.html" class="themeTxtSm" role="menuitem"><span>Current research</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561632" data-parent-id="1561628" id="layout_1561632" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561632" href="reportsandresources3.html" class="themeTxtSm" role="menuitem"><span>Reports and resources</span></a>
+						</div>
+				</li>
+	</ul>
+	</div>
+
+	<div id="site-nav-container-level-2">
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1560993" data-parent-id="1560992" id="layout_1560993" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560993" href="whatwedo2.html" class="themeTxtSm" role="menuitem"><span>What we do</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1560994" data-parent-id="1560992" id="layout_1560994" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560994" href="whoweworkwith.html" class="themeTxtSm" role="menuitem"><span>Who we work with</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1560996" data-parent-id="1560995" id="layout_1560996" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560996" href="expertcontributors.html" class="themeTxtSm" role="menuitem"><span>Expert contributors</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561166" data-parent-id="1561165" id="layout_1561166" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561166" href="whatwedo3.html" class="themeTxtSm" role="menuitem"><span>What we do</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561170" data-parent-id="1561169" id="layout_1561170" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561170" href="workinggroups.html" class="themeTxtSm" role="menuitem"><span>Review and development</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561171" data-parent-id="1561169" id="layout_1561171" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561171" href="chickens1.html" class="themeTxtSm" role="menuitem"><span>Chickens</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561172" data-parent-id="1561169" id="layout_1561172" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561172" href="turkeys1.html" class="themeTxtSm" role="menuitem"><span>Turkeys</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561173" data-parent-id="1561169" id="layout_1561173" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561173" href="ducks1.html" class="themeTxtSm" role="menuitem"><span>Farmed ducks</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1746162" data-parent-id="1561169" id="layout_1746162" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1746162" href="layinghens1.html" class="themeTxtSm" role="menuitem"><span>Laying hens</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561175" data-parent-id="1561169" id="layout_1561175" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561175" href="pullets.html" class="themeTxtSm" role="menuitem"><span>Pullets (laying hens)</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561176" data-parent-id="1561169" id="layout_1561176" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561176" href="hatcheries.html" class="themeTxtSm" role="menuitem"><span>Hatcheries</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="2098140" data-parent-id="1561169" id="layout_2098140" role="presentation">
+					<div>
+					<a aria-labelledby="layout_2098140" href="pigs2.html" class="themeTxtSm" role="menuitem"><span>Pigs</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561178" data-parent-id="1561169" id="layout_1561178" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561178" href="dairycattle.html" class="themeTxtSm" role="menuitem"><span>Dairy cattle</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561179" data-parent-id="1561169" id="layout_1561179" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561179" href="beefcattle.html" class="themeTxtSm" role="menuitem"><span>Beef cattle</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561180" data-parent-id="1561169" id="layout_1561180" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561180" href="sheep1.html" class="themeTxtSm" role="menuitem"><span>Sheep</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561181" data-parent-id="1561169" id="layout_1561181" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561181" href="salmon.html" class="themeTxtSm" role="menuitem"><span>Farmed salmon</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561182" data-parent-id="1561169" id="layout_1561182" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561182" href="trout.html" class="themeTxtSm" role="menuitem"><span>Farmed trout</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="9285570" data-parent-id="1561359" id="layout_9285570" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285570" href="refininghousing.html" class="themeTxtSm" role="menuitem"><span>Refining housing, husbandry and procedures</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285579" data-parent-id="1561359" id="layout_9285579" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285579" href="assessment.html" class="themeTxtSm" role="menuitem"><span>Promoting effective welfare assessment</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="9285588" data-parent-id="1561359" id="layout_9285588" role="presentation">
+					<div>
+					<a aria-labelledby="layout_9285588" href="biotechnology.html" class="themeTxtSm" role="menuitem"><span>Biotechnology and genetically altered animals</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="12967402" data-parent-id="1561373" id="layout_12967402" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12967402" href="whatdowemean.html" class="themeTxtSm" role="menuitem"><span>What do we mean by ethics?</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12967412" data-parent-id="1561373" id="layout_12967412" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12967412" href="harmbenefit.html" class="themeTxtSm" role="menuitem"><span>Harm benefit analysis</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12967422" data-parent-id="1561373" id="layout_12967422" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12967422" href="regulations.html" class="themeTxtSm" role="menuitem"><span>Ethical review within regulations</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12967432" data-parent-id="1561373" id="layout_12967432" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12967432" href="uk.html" class="themeTxtSm" role="menuitem"><span>The UK AWERB</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561376" data-parent-id="1561373" id="layout_1561376" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561376" href="functionstasks.html" class="themeTxtSm" role="menuitem"><span>AWERB functions and tasks</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="12967442" data-parent-id="1561373" id="layout_12967442" role="presentation">
+					<div>
+					<a aria-labelledby="layout_12967442" href="who.html" class="themeTxtSm" role="menuitem"><span>Who should be involved?</span></a>
+						</div>
+				</li>
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+	</ul>
+	
+	<ul aria-label="Site Pages" class=" nav-level-2  nav-list-child" style='columns: 1;' role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1561633" data-parent-id="1561632" id="layout_1561633" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561633" href="inthewild.html" class="themeTxtSm" role="menuitem"><span>In the wild</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561634" data-parent-id="1561632" id="layout_1561634" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561634" href="captivity1.html" class="themeTxtSm" role="menuitem"><span>In captivity</span></a>
+						</div>
+				</li>
+				
+	
+				
+				<li class="nav-item " data-id="1561635" data-parent-id="1561632" id="layout_1561635" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1561635" href="rehabilitation.html" class="themeTxtSm" role="menuitem"><span>Rehabilitation</span></a>
+						</div>
+				</li>
+	</ul>
+	</div>
+</nav>
+<!-- End of Nav --!>
+		<div id="breadcrumbSocialShare">
+
+	<div id="navigation-breadcrumb">
+	<a class="themeTxtSm" href="javascript:;">Home redirect</a>
+/		<a class="themeTxtSm" href="companionanimals.html">Companion animals</a>
+/	Reports and resources
+	</div>
+
+	<!-- Adding social elements -->
+	<script type="text/javascript">// <![CDATA[ var addthis_config = {data_ga_property: 'UA-1859103-1',data_track_clickback:true}; // ]]></script>
+	<div class="addthis_container left">
+		<span class="addthis_title themeTxtSm">Share this...</span>
+		<div addthis:url="https://science.jzbedu.cn/sciencegroup/companionanimals/reportsandresources" class="addthis_toolbox addthis_default_style addthis_32x32_style addthis_right">
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_email"></a>
+			<a class="addthis_button_google_plusone_share"></a>
+		</div>
+	</div>
+    <div id="mobile-child-navigation-menu-holder">
+		<img id="mobile-child-navigation-menu" class="themeBackgroundKingfisher" src="https://science.jzbedu.cn/o/ptl2017Theme/images/rspca_navigation/down-chevron-large.png" alt="Open child pages">	
+	</div>
+	<div id="mobile-child-navigation">
+	
+	<ul aria-label="Site Pages" class=" nested_nav mobile nav-list-parent" role="menubar">
+				
+	
+				
+				<li class="nav-item " data-id="1560996" data-parent-id="1560995" id="layout_1560996" role="presentation">
+					<div>
+					<a aria-labelledby="layout_1560996" href="expertcontributors.html" class="themeTxtSmBd" role="menuitem"><span>Expert contributors</span></a>
+						</div>
+				</li>
+	</ul>
+	</div>
+		</div>
+
+	<div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="divcolumns" id="main-content" role="main">
+	<div class="portlet-layout lfr-grid rspca-layout-01-14" id="layout-grid">
+		<div id="holderdiv">
+			<div class="reOrder">
+				<div class="rowDivider">
+					<div class="sectionDivider">
+						<div class="portlet-column portlet-column-only lfr-column" id="column-2">
+							<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-default portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_">
+		<span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+					<div class="autofit-col autofit-col-end">
+						<div class="autofit-section">
+							<div class="visible-interaction">
+	
+		
+
+		
+
+		
+
+		
+	
+</div>
+						</div>
+					</div>
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="stageaware-journal-content"></span>
+
+
+
+
+	
+		
+			
+				
+					
+
+						
+						<div class="" data-fragments-editor-item-id="10061-9103047" data-fragments-editor-item-type="fragments-editor-mapped-item">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="journal-content-article " data-analytics-asset-id="9103045" data-analytics-asset-title="Reports and resources" data-analytics-asset-type="web-content">
+	
+
+	<div class="articlePortlet">
+    
+    <div class="contents portlet-type-articlePortlet accordian-portlet-1">
+        <div class="title">
+            <h1>Reports and resources</h1>
+        </div>
+        
+        <div class="body">
+            <div style="margin: 0px 5px 0px 0px; float: right;">
+ <img src="http://www.jzbedu.cn/documents/1494935/9042569/downloads_icon_blue_original_size.gif/50aa7fe0-d3f2-c768-a037-20c5dea4750d?t=1553170891389&version=1.0&t=1553170891389" alt="Downloads icon © RSPCA" id="embedded:Image_C:1232716014155">&nbsp;
+</div>
+<p>Our&nbsp;companion animals department produces reports, position papers and submissions in response to consultations by government and other organisations on a range of issues relating to the welfare of companion animals.</p>
+        </div>
+    
+    </div>
+</div>
+</div>
+
+
+
+
+							
+						</div>
+					
+				
+			
+		
+	
+
+
+
+
+	
+
+	
+		<div class="asset-links content-metadata-asset-addon-entries mb-4">
+			
+
+
+
+
+
+
+
+
+
+<div class="content-metadata-asset-addon-entry content-metadata-asset-addon-entry-links">
+	
+</div>
+		</div>
+	
+
+	
+
+	
+		<div class="separator"><!-- --></div>
+
+		<div class="autofit-float autofit-row autofit-row-center mb-4 user-tool-asset-addon-entries">
+
+			
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+			
+			
+			
+			
+		
+
+		<div class="autofit-col print-action user-tool-asset-addon-entry">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<span class="">
+			
+				
+					<a href="javascript:_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_printPage();" target="_self" class="btn btn-monospaced btn-outline-borderless btn-outline-secondary btn-sm lfr-icon-item taglib-icon" id="_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_rjus__column2__0">
+						
+
+
+	
+		<span id="qfkd__column2__0"><svg class="lexicon-icon lexicon-icon-print" focusable="false" role="presentation"><use data-href="https://science.jzbedu.cn/o/ptl2017Theme/images/lexicon/icons.svg#print"></use></svg></span>
+	
+	
+
+
+	
+		<span class="taglib-text ">Print <span class="hide-accessible">Reports and resources</span></span>
+	
+
+					</a>
+				
+				
+		</span>
+	
+
+
+
+		</div>
+
+		
+	
+
+			
+		</div>
+	
+
+	
+
+	
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-default portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug_">
+		<span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   <div class="news-content-list linked-content-list">
+ 
+      	<div class="pull-right">
+		</div>
+
+        <a class="content-link" href="javascript:;">
+            <div class="content-item content-item-flex">
+                <div class="content-right">
+						<span class="content-title themeTxtBd">Horses</span>
+                    <div class="content-short-description themeDarkTxt themeTxtReg">
+							<div>We produce reports, position papers and submissions in response to consultations by third parties on a range of issues relating to the welfare of horses.</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+ 
+      	<div class="pull-right">
+		</div>
+
+        <a class="content-link" href="javascript:;">
+            <div class="content-item content-item-flex">
+                <div class="content-right">
+						<span class="content-title themeTxtBd">Pets</span>
+                    <div class="content-short-description themeDarkTxt themeTxtReg">
+							<div>We produce reports, position papers and submissions in response to consultations by third parties on a range of issues relating to the welfare of pets.</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+   </div> 
+
+
+		
+		
+	
+
+
+
+
+			
+			
+		
+	
+	
+
+
+
+
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column lfr-column" id="column-4">
+							<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-4"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column lfr-column" id="column-5">
+							<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-5"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column lfr-column" id="column-6">
+							<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-6"></div><div class="spacer">&nbsp;</div>
+						</div>					
+						<div class="portlet-column lfr-column" id="column-6a">
+							<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-6a"></div><div class="spacer">&nbsp;</div>
+						</div>
+						<div class="portlet-column lfr-column" id="column-6b">
+							<div class="empty portlet-dropzone portlet-column-content" id="layout-column_column-6b"></div><div class="spacer">&nbsp;</div>
+						</div>					
+						<div class="portlet-column portlet-column-only lfr-column" id="column-7">
+							<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-7"></div><div class="spacer">&nbsp;</div>
+						</div>
+					</div>
+					<div class="portlet-column portlet-column-only lfr-column" id="column-3">
+						<div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_megaNav_WAR_ptl2014NavigationPortlet_  portlet-static portlet-static-end portlet-default  " id="p_p_id_megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM_">
+		<span id="p_megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="o/ptl2014NavigationPortlet/css/megaNav/megaNavViewSideRefresh-22.css">
+
+<div class="mega-nav-portlet sidenav themeNoBullets">
+	
+	
+		<ul class="nav-list-parent">
+			
+				<li>
+					<div class="nav-list-parent-link">
+						
+						
+						<div class="linkContainer">
+							<a target="" href="expertcontributors.html" class="themeTxtSmBd normal">Expert contributors</a>
+						</div>
+					
+					
+						</div>
+					
+				</li>
+			
+		</ul>
+	
+	
+</div>
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+</div><div class="spacer">&nbsp;</div>
+					</div>
+				</div>
+	
+				<div class="rowDivider">
+					<div class="portlet-column portlet-column-only lfr-column" id="column-8">
+						<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-8"></div><div class="spacer">&nbsp;</div>
+					</div>
+					<div class="portlet-column portlet-column-only lfr-column" id="column-9">
+						<div class="empty portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-9"></div><div class="spacer">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<form action="#" class="hide" id="hrefFm" method="post" name="hrefFm" aria-hidden="true"><span></span><input hidden="" type="submit"></form>	</div>
+
+
+<footer id="footer" role="contentinfo">
+
+
+
+
+	<section>
+		<div class="footerColumnArea">
+			<div class="footerColumn">
+				<h3 class="footer">How we help</h3>
+				<hr>
+				<p class="themeTxtSm">More than</p>
+				<p class="themeTotalNum">102,900</p>
+				<p class="themeTxtSm">Animals were rescued and collected last year</p>
+			</div>
+			<div class="footerColumn">
+				<h3 class="footer">Areas of work</h3>
+				<hr>
+				<ul>
+					<li><a href="companionanimals.html">Companion animals</a></li>
+					<li><a href="farmanimals2.html">Farm animals</a></li>
+					<li><a href="researchanimals.html">Research animals</a></li>
+					<li><a href="wildlife1.html">Wildlife</a></li>
+				</ul>
+			</div>
+			<div class="footerColumn">
+				<h3 class="footer">Our charity</h3>
+				<hr>
+				<ul>
+					<li><a href="home.html" target="_blank">Main RSPCA site</a></li>
+					<li><a href="home3.html" target="_blank">Young RSPCA</a></li>
+					<li><a href="home2.html" target="_blank">Education</a></li>
+					<li><a href="javascript:;" target="_blank">RSPCA Assured</a></li>
+				</ul>
+			</div>
+			<div class="footerColumn">
+				<h3 class="footer">Follow us</h3>
+				<hr>
+				<div class="follow">
+					<a href="javascript:;" target="_blank"><img src="https://science.jzbedu.cn/webContent/staticImages/theme2017/followFacebook.png" alt="Follow us on Facebook"></a>
+					<a href="javascript:;" target="_blank"><img src="https://science.jzbedu.cn/webContent/staticImages/theme2017/followTwitter.png" alt="Follow us on Twitter"></a>
+					<a href="javascript:;" target="_blank"><img src="https://science.jzbedu.cn/webContent/staticImages/theme2017/followUtube.png" alt="Follow us on YouTube"></a>
+					<a href="javascript:;" target="_blank"><img src="https://science.jzbedu.cn/webContent/staticImages/theme2017/followInstragram.png" alt="Follow us on Instagram"></a>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+	<div id="footerBottom">
+		<div id="footerFlex">
+			<div id="footerContact">
+				<div id="reg-charity">
+					<p class="themeTxtSm">&#169; RSPCA 2020. All rights reserved. The RSPCA helps animals in England and Wales. Registered charity no.219099.</p>
+				</div>
+				<div id="footerNav">
+					<ul>
+
+								<li><a href="contactus.html">Contact us</a></li>
+								<li><a href="termsandconditions1.html">Terms and conditions</a></li>
+								<li><a href="privacy.html">Privacy and cookies</a></li>
+								<li><a href="sitemap2.html">Site map</a></li>
+								<li><a href="accessibility1.html">Accessibility</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="footerImage">
+				<img class="FundraisingRImage" src="https://science.jzbedu.cn/webContent/webComponents/rspcaStaticContent/shared/images/img/FundraisingRegulator.png">
+			</div>
+		</div>
+	</div>
+</footer></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		
+
+			
+
+			
+		
+	
+
+	Liferay.BrowserSelectors.run();
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fsciencegroup\x2fcompanionanimals\x2freportsandresources';
+		Liferay.currentURLEncoded = '\x252Fsciencegroup\x252Fcompanionanimals\x252Freportsandresources';
+
+	// ]]>
+</script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+				
+
+				
+			
+		// ]]>
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function(event) {
+		if (window.Analytics) {
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function(data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url
+			});
+		}
+	};
+
+	var onDestroyPortlet = function() {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function() {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function(event) {
+		if (window.Analytics) {
+			Analytics.send('posted', 'Comment', {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text
+			});
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	var pathnameRegexp = /\/documents\/(\d+)\/(\d+)\/(.+?)\/([^&]+)/;
+
+	function handleDownloadClick(event) {
+		if (event.target.nodeName.toLowerCase() === 'a' && window.Analytics) {
+			var anchor = event.target;
+			var match = pathnameRegexp.exec(anchor.pathname);
+
+			var fileEntryId =
+				anchor.dataset.analyticsFileEntryId ||
+				(anchor.parentElement &&
+					anchor.parentElement.dataset.analyticsFileEntryId);
+
+			if (fileEntryId && match) {
+				var getParameterValue = function(parameterName) {
+					var result = null;
+
+					anchor.search
+						.substr(1)
+						.split('&')
+						.forEach(function(item) {
+							var tmp = item.split('=');
+
+							if (tmp[0] === parameterName) {
+								result = decodeURIComponent(tmp[1]);
+							}
+						});
+
+					return result;
+				};
+
+				Analytics.send('documentDownloaded', 'Document', {
+					groupId: match[1],
+					fileEntryId: fileEntryId,
+					preview: !!window._com_liferay_document_library_analytics_isViewFileEntry,
+					title: decodeURIComponent(match[3].replace(/\+/gi, ' ')),
+					version: getParameterValue('version')
+				});
+			}
+		}
+	}
+
+	document.body.addEventListener('click', handleDownloadClick);
+
+	var onDestroyPortlet = function() {
+		document.body.removeEventListener('click', handleDownloadClick);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+	if (Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				attributeName: 'data-href',
+				polyfill: true
+			}
+		);
+	}
+
+			function _com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_printPage() {
+				window.open('https://science.jzbedu.cn:443/sciencegroup/companionanimals/reportsandresources?p_p_id=com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v&p_p_lifecycle=0&p_p_state=pop_up&p_p_mode=view&_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_groupId=1494935&_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_articleId=9103045&_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_page=1&_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_viewMode=print', '', 'directories=0,height=480,left=80,location=1,menubar=1,resizable=1,scrollbars=yes,status=0,toolbar=0,top=180,width=640');
+			}
+		
+	
+		Liferay.Portlet.register('com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v_',
+			portletId: 'com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1560995\x26p_p_id\x3dcom_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_j68c0ZBWNW1v\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsciencegroup\x252Fcompanionanimals\x252Freportsandresources',
+			refreshURLData: {}
+		}
+	);
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId = '';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 1,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1560995\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_HA4lFg3Iizug\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-2\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsciencegroup\x252Fcompanionanimals\x252Freportsandresources',
+			refreshURLData: {}
+		}
+	);
+
+	
+		Liferay.Portlet.register('megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM_',
+			portletId: 'megaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1560995\x26p_p_id\x3dmegaNav_WAR_ptl2014NavigationPortlet_INSTANCE_3CeM\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-3\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsciencegroup\x252Fcompanionanimals\x252Freportsandresources',
+			refreshURLData: {}
+		}
+	);
+Liferay.Loader.require('metal-dom/src/all/dom', 'clay-tooltip/src/ClayTooltip', function(metalDomSrcAllDom, clayTooltipSrcClayTooltip) {
+(function(){
+var dom = metalDomSrcAllDom;
+var ClayTooltip = clayTooltipSrcClayTooltip;
+(function() {var $ = AUI.$;var _ = AUI._;
+	var focusInPortletHandler = dom.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			dom.addClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+
+	var focusOutPortletHandler = dom.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			dom.removeClasses(dom.closest(event.delegateTarget, '.portlet'), 'open');
+		}
+	);
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP) {
+		Liferay.Data.LFR_PORTAL_CLAY_TOOLTIP = ClayTooltip.default.init(
+			{
+				selectors: [
+					'.manage-collaborators-dialog .lexicon-icon[data-title]:not(.lfr-portal-tooltip)',
+					'.manage-collaborators-dialog .lexicon-icon[title]:not(.lfr-portal-tooltip)',
+					'.management-bar [data-title]:not(.lfr-portal-tooltip)',
+					'.management-bar [title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [data-title]:not(.lfr-portal-tooltip)',
+					'.preview-toolbar-container [title]:not(.lfr-portal-tooltip)',
+					'.progress-container[data-title]',
+					'.source-editor__fixed-text__help[data-title]',
+					'.taglib-discussion [data-title]:not(.lfr-portal-tooltip)',
+					'.taglib-discussion [title]:not(.lfr-portal-tooltip):not([title=""])',
+					'.upper-tbar [data-title]:not(.lfr-portal-tooltip)',
+					'.upper-tbar [title]:not(.lfr-portal-tooltip)'
+				]
+			}
+		);
+	}
+})();})();
+});AUI().use('aui-tooltip', 'liferay-menu', 'liferay-notice', 'aui-base', 'liferay-session', 'liferay-poller', function(A) {(function() {var $ = AUI.$;var _ = AUI._;
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	if (!Liferay.Data.LFR_PORTAL_TOOLTIP) {
+		var triggerShowEvent = ['mouseenter', 'MSPointerDown', 'touchstart'];
+
+		if (A.UA.ios) {
+			triggerShowEvent = ['touchstart'];
+		}
+
+		Liferay.Data.LFR_PORTAL_TOOLTIP = new A.TooltipDelegate(
+			{
+				constrain: true,
+				opacity: 1,
+				trigger: '.lfr-portal-tooltip',
+				triggerHideEvent: ['click', 'mouseleave', 'MSPointerUp', 'touchend'],
+				triggerShowEvent: triggerShowEvent,
+				visible: false,
+				zIndex: Liferay.zIndex.TOOLTIP
+			}
+		);
+
+		Liferay.on(
+			'beforeNavigate',
+			function(event) {
+				Liferay.Data.LFR_PORTAL_TOOLTIP.getTooltip().hide();
+			}
+		);
+	}
+})();(function() {var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {var $ = AUI.$;var _ = AUI._;
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fscience\x2erspca\x2eorg\x2euk\x2fhome',
+					sessionLength: 3590,
+					warningLength: 0
+				}
+			);
+
+			
+		})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="o/ptl2017Theme/js/main-other_js_en_US_7210_1606129.js" type="text/javascript"></script>
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		AUI().use(
+			'aui-base',
+			function(A) {
+				var frameElement = window.frameElement;
+
+				if (frameElement && frameElement.getAttribute('id') === 'simulationDeviceIframe') {
+					A.getBody().addClass('lfr-has-simulation-panel');
+				}
+			}
+		);
+	// ]]>
+</script><input name="isUserLoggedIn" type="hidden" value="$is_signed_in" id="isUserLoggedIn">
+<!-- Javascript-->
+<script type="text/javascript">
+_linkedin_data_partner_id = "222170";
+</script>
+<script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="collect/222170_gif.jpg">
+</noscript></body>
+</html>
+

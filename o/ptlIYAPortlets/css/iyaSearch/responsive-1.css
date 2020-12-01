@@ -1,0 +1,13 @@
+@media all and (max-width: 695px) {
+	.iyaSearchPortlet .owningBranch{float:left;width:calc(100% - 17px);}
+	.iyaSearchPortlet .owningBranch.financial{display: block;width: 96%}
+	.iyaSearchPortlet .headerIntroPref, .iyaSearchPortlet .header, .iyaSearchPortlet .introText {width:98%}
+}
+
+@media all and (max-width: 530px) {
+.iyaSearchPortlet .owningBranch.financial{width: 94%}
+	.iyaSearchPortlet #estabTypeFilterGroupId, .iyaSearchPortlet .filterOr, .iyaSearchPortlet #servTypeFilterGroupId{float: left;margin-left:0}
+	.iyaSearchPortlet .filterOr{width: 100%;width: 100%;margin-top: 5px;margin-bottom: 5px;}
+	#searchForm .filterOptions {border:none;padding: 5px;padding-left: 0;}
+	#searchForm .filterSign{margin-left: 0px;}
+}

@@ -1,0 +1,184 @@
+#petGalleryPortlet .galleryContainer {
+	width: 100%;
+	overflow: hidden;
+}
+
+#petGalleryPortlet .hiddenForLoading {
+	display: none;
+}
+
+#petGalleryPortlet #headerText {
+	text-align: center;
+}
+
+#petGalleryPortlet .error {
+	color: red;
+	display: block;
+	width: 264px;
+	margin-top: 4px;
+}
+
+body #wrapper #petGalleryPortlet img.myFavourite {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+body #wrapper #petGalleryPortlet img.myAppeals {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+#petGalleryPortlet .myreserved {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 5px 10px;
+    background-color: #189CA1;
+    color: #ffffff;
+}
+
+#petGalleryPortlet ul.slides {
+    margin: 0;
+}
+
+#petGalleryPortlet  #galleryContainer li.slide {
+	padding: 5px 0px;
+	position: relative;
+}
+
+#petGalleryPortlet li.slide .imageContainer {
+	max-width: 232px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#petGalleryPortlet li.slide h3 {
+	text-align: center;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+	padding: 0;
+}
+
+#petGalleryPortlet li.slide h3 a,
+#petGalleryPortlet li.slide h3 a:hover,
+#petGalleryPortlet li.slide h3 a:visited,
+.estab #wrapper #petGalleryPortlet li.slide h3 a,
+.estab #wrapper #petGalleryPortlet li.slide h3 a:hover,
+.estab #wrapper #petGalleryPortlet li.slide h3 a:visited{	
+    width: 100%;
+    display: block;
+	padding: 9px 0 5px 0;
+}
+
+body #wrapper #content #petGalleryPortlet ul li{
+	list-style-type: none;
+}
+
+
+
+/* increase specififity to overide default theme styles */
+body #wrapper #petGalleryPortlet .flex-direction-nav li {
+    list-style-type: none;
+    padding-bottom: 0;
+}
+
+#petGalleryPortlet .flex-direction-nav a,
+.estab #wrapper #petGalleryPortlet .flex-direction-nav a{
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0;
+	position: absolute;
+	bottom: 1px;
+	overflow: hidden;
+	color: #fff;
+}
+
+#petGalleryPortlet .flex-direction-nav a:before {
+	font-size: 40px;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+#petGalleryPortlet .flex-direction-nav .flex-disabled {
+	opacity: 1 !important;
+	z-index: initial;
+  display: none;
+}
+
+#petGalleryPortlet .fa {
+	font-size: 28px;
+  font-weight: bold;
+	width: 70%;
+	text-align: center;
+}
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-prev {
+	text-align: left;
+	opacity: 1;
+	left: 0px;
+  	bottom: -7px;
+}
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-prev:hover {
+	opacity: 1;
+	left: 0px;
+	color: #fff;
+}
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-prev:focus {
+	border: 0px;
+	outline: 0px;
+	outline-width: 0px;
+}
+
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-next {
+  text-align: right;
+  opacity: 1;
+  right: 0px;
+  bottom: -7px;
+}
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-next:focus {
+	border: 0px;
+	outline: 0px;
+	outline-width: 0px;
+}
+
+body #wrapper #petGalleryPortlet .flex-direction-nav .flex-next:hover {
+	opacity: 1;
+	right: 0px;
+	color: #fff;
+}
+
+
+
+@media all and (max-width: 1006px) and (min-width: 768px){
+	body #wrapper #galleryContainer.flexslider{
+		max-width: 485px;
+    	margin: 0 auto;
+	}
+}
+
+@media all and (max-width: 767px){
+	body:not(.defaultTheme) #petGalleryPortlet {
+	    width: calc(100% - 20px);
+	    margin: 0 auto;
+	}
+	
+	#petGalleryPortlet .imageContainer{
+		margin: 0 auto;
+	}
+	
+	#petGalleryPortlet li.slide h3 {
+		width: calc(100% - 80px);
+	}
+	
+}
